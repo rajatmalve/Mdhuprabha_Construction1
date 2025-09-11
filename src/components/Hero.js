@@ -9,19 +9,19 @@ const Hero = () => {
       id: 1,
       title: "LAMASON",
       image: "/images/secondProject.jpg",
-      gradient: "from-blue-400 via-cyan-300 to-green-300",
+      gradient: "from-purple-500 via-pink-400 to-orange-400",
     },
     {
       id: 2,
-      title: "PRAJKTA PARK",
-      image: "/images/prajktaclassic.png",
+      title: "PRAJKTA CLASSIC",
+      image: "/images/park_img_page-0001.jpg",
       gradient: "from-pink-500 via-red-400 to-yellow-400",
     },
     {
       id: 3,
-      title: "PRAJKTA CLASSIC",
-      image: "/images/lomolon.jpg",
-      gradient: "from-purple-400 via-pink-300 to-orange-300",
+      title: "PRAJKTA PARK",
+      image: "/images/HD PHOTO 1.jpg",
+      gradient: "from-pink-500 via-red-400 to-yellow-400",
     },
     {
       id: 4,
@@ -56,10 +56,11 @@ const Hero = () => {
         {carouselData.map((slide, index) => (
           <div key={slide.id} className="min-w-full h-full relative">
             <img
-              src={slide.image}
-              alt={slide.title}
-              className="w-full h-full object-cover"
-            />
+  src={slide.image}
+  alt={slide.title}
+  className="w-full h-full object-fill"
+/>
+
 
             {/* Image Title and Explore Button centered */}
             {index === currentSlide && (
