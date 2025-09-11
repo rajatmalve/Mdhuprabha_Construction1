@@ -443,28 +443,6 @@ export const currentProjectsData = [
   
 ];
 
-export const carouselData = [
-  {
-      image: '/images/certification.jpeg',
-
-    },
-    {
-      image: '/images/carazol5.JPG',
-
-    },
-  {
-
-    image: "/images/vikashsir.jpeg",
-   
-  },
-    {
-
-    image: "/images/secondProject.jpg",
-   
-  },
-
-];
-
 export const galleryImages = [
   {
     id: 1,

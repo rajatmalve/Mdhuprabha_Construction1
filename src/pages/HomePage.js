@@ -4,21 +4,43 @@ import FeaturedProjects from '../components/FeaturedProjects';
 import AboutSection from '../components/AboutSection';
 import ContactSection from '../components/ContactSection';
 import CompletedProjects from '../components/CompletedProjects';
+import AwardsSection from '../components/AwardsSection';
 import Footer from '../components/Footer';
 import { testimonials } from '../mockData';
 import { Star, Quote, ArrowRight } from 'lucide-react';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-gradient-to-b from-white via-red-50 to-white text-gray-900">
       <Hero />
-      <FeaturedProjects />
-      <AboutSection />
-      <ContactSection />
-      <CompletedProjects />
+      
+      {/* About Section with subtle gradient */}
+      <div className="bg-gradient-to-br from-white via-red-50 to-red-100">
+        <AboutSection />
+      </div>
+
+      {/* Awards Section */}
+      <div className="bg-red-50">
+        <AwardsSection />
+      </div>
+
+      {/* Featured Projects Section with distinct gradient */}
+      <div className="bg-gradient-to-br from-white via-red-50 to-red-100">
+        <FeaturedProjects />
+      </div>
+
+      {/* Contact Section */}
+      <div className="bg-red-50">
+        <ContactSection />
+      </div>
+
+      {/* Completed Projects Section */}
+      <div className="bg-gradient-to-br from-white via-red-50 to-red-100">
+        <CompletedProjects />
+      </div>
 
       {/* Testimonials Section */}
-      <section className="relative py-24 bg-white overflow-hidden">
+      <section className="relative py-24 bg-gradient-to-br from-white via-red-50 to-white overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <div className="inline-flex items-center space-x-2 px-6 py-2 rounded-full bg-gray-100 border border-gray-200 shadow-sm mb-6">

@@ -55,7 +55,7 @@ const FeaturedProjects = () => {
   const featuredProjects = currentProjectsData.slice(0, 4);
 
   return (
-    <section className="py-16 lg:py-24 bg-white relative overflow-hidden">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-white via-red-50 to-red-100 relative overflow-hidden">
       {/* Subtle Red Background Glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-32 left-10 w-60 h-60 bg-red-100/40 rounded-full blur-3xl animate-pulse" />

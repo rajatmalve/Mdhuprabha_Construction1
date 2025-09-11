@@ -4,11 +4,21 @@ import { Menu, X, Home, Building, Users, Phone, Image } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  // Handle scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navItems = [
     { name: 'Home', path: '/', icon: Home },
@@ -21,7 +31,11 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
+        ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}
+      `}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -43,8 +57,12 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`relative px-2 py-1 flex items-center space-x-2 font-medium transition 
-                    ${isActive(item.path) ? 'text-red-600 font-semibold' : 'text-red-500 hover:text-red-600'}
+                  className={`relative px-2 py-1 flex items-center space-x-2 font-medium transition
+                    ${isActive(item.path)
+                      ? 'text-red-600 font-semibold'
+                      : scrolled
+                      ? 'text-red-500 hover:text-red-600'
+                      : 'text-white hover:text-red-200'}
                   `}
                 >
                   <Icon className="w-4 h-4" />
@@ -61,7 +79,9 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <Link
               to="/contact"
-              className="px-5 py-2 font-semibold rounded-[50px] bg-red-600 text-white hover:bg-red-700"
+              className={`px-5 py-2 font-semibold rounded-[50px] transition
+                ${scrolled ? 'bg-red-600 text-white hover:bg-red-700' : 'bg-white text-red-600 hover:bg-red-100'}
+              `}
             >
               Get Quote
             </Link>
@@ -80,7 +100,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden mt-4 bg-white rounded-3xl shadow border border-slate-200">
+          <div className="lg:hidden mt-4 bg-white rounded-3xl shadow">
             {navItems.map((item) => {
               const Icon = item.icon;
               return (
@@ -88,11 +108,11 @@ const Navbar = () => {
                   key={item.name}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-6 py-4 mx-3 rounded-2xl flex items-center space-x-4 transition ${
-                    isActive(item.path)
+                  className={`block px-6 py-4 mx-3 rounded-2xl flex items-center space-x-4 transition
+                    ${isActive(item.path)
                       ? 'bg-red-600 text-white font-semibold'
-                      : 'text-red-500 hover:bg-red-100 hover:text-red-600'
-                  }`}
+                      : 'text-red-500 hover:bg-red-100 hover:text-red-600'}
+                  `}
                 >
                   <Icon className="w-5 h-5" />
                   <span className="font-medium">{item.name}</span>
