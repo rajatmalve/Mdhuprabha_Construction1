@@ -11,6 +11,8 @@ import GalleryPage from "./pages/GalleryPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 import AwardsPage from "./pages/AwardsPage";
 import CareerPage from "./pages/CareerPage";
+import BecomPatner from "./pages/BecomPatner";
+import CsrActivity from "./pages/CsrActivity";
 
 import { Award } from "lucide-react";
 
@@ -26,7 +28,9 @@ function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/awards" element={<AwardsPage />} />
           <Route path="/career" element={<CareerPage />} />
-         <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/becomePartner" element={<BecomPatner />} />
+          <Route path="/csrActivity" element={<CsrActivity/>} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/project/:id" element={<ProjectDetailPage />} />
         </Routes>
         <Toaster />
