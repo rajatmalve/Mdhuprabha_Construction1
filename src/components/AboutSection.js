@@ -7,8 +7,8 @@ const AboutSection = () => {
   const stats = [
     { 
       icon: <Award className="w-8 h-8" />, 
-      number: "500+", 
-      label: "Projects Completed",
+      number: "150000+", 
+      label: "Sq.Ft Area Delivered",
       gradient: "from-pink-500 to-red-500",
       bg: "bg-pink-50"
     },
@@ -21,15 +21,15 @@ const AboutSection = () => {
     },
     { 
       icon: <Users className="w-8 h-8" />, 
-      number: "1000+", 
+      number: "150+", 
       label: "Happy Clients",
       gradient: "from-green-400 to-emerald-500",
       bg: "bg-green-50"
     },
     { 
       icon: <CheckCircle className="w-8 h-8" />, 
-      number: "100%", 
-      label: "On-Time Delivery",
+      number: "20+", 
+      label: "Projects done",
       gradient: "from-blue-500 to-indigo-600",
       bg: "bg-blue-50"
     }
@@ -63,7 +63,7 @@ const AboutSection = () => {
               About <span className="text-red-600">Madhuprabha</span>
             </h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              Madhu Prabha Constructions began its journey in 2005 as Ashish Construction, founded with a simple yet powerful vision: to build structures that not only meet but exceed expectations. Over the years, we have evolved from a small construction company to one of Maharashtra's most trusted construction partners.
+              Madhu Prabha Constructions began its journey in 2000 as Ashish Construction, founded with a simple yet powerful vision: to build structures that not only meet but exceed expectations. Over the years, we have evolved from a small construction company to one of Maharashtra's most trusted construction partners.
             </p>
 
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
@@ -93,31 +93,32 @@ const AboutSection = () => {
             </button>
           </div>
 
-          {/* Right Carousel with Slide Effect */}
-          <div className="relative w-full">
-            <div className="relative w-full h-96 overflow-hidden rounded-2xl shadow-2xl">
+          {/* Right Carousel with Stylish Design */}
+          <div className="relative w-full flex justify-center items-center">
+            <div className="relative w-full h-80 md:h-96 overflow-hidden rounded-3xl shadow-2xl">
               <div
                 className="flex h-full transition-transform duration-1000"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               >
                 {carouselImages.map((img, index) => (
-                  <img
-                    key={index}
-                    src={img}
-                    alt={`Slide ${index + 1}`}
-                    className="w-full flex-shrink-0 h-full object-cover"
-                  />
+                  <div key={index} className="relative w-full flex-shrink-0 h-full">
+                    <img
+                      src={img}
+                      alt={`Slide ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+                  </div>
                 ))}
               </div>
             </div>
 
-            {/* Card below carousel, left side */}
-            <div className="relative mt-4 mr-5">
-              <div className="absolute -top-16 left-0 bg-white rounded-2xl p-6 shadow-xl w-44">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">25+</div>
-                  <div className="text-sm text-slate-600">Years of Excellence</div>
-                </div>
+            {/* Floating Card Centered */}
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md rounded-2xl px-6 py-4 shadow-lg">
+              <div className="flex flex-col items-center">
+                <span className="text-2xl font-bold text-red-600">25+</span>
+                <span className="text-sm text-slate-700">Years of Excellence</span>
               </div>
             </div>
           </div>

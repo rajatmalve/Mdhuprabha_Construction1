@@ -85,12 +85,20 @@ const AwardsSection = () => {
           <h3 className="text-2xl font-bold text-slate-800 mb-6">As Featured In</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             {mediaLogos.map((media, index) => (
-              <div key={index} className="group cursor-pointer">
-                <img
-                  src={media.logo}
-                  alt={media.name}
-                  className="mx-auto opacity-60 hover:opacity-100 transition-opacity duration-300 group-hover:scale-110 transform transition-transform"
-                />
+              <div
+                key={index}
+                className="group cursor-pointer bg-white rounded-xl shadow-md p-4 border border-slate-100 hover:shadow-xl transition-all duration-300"
+              >
+                <div className="flex items-center justify-center">
+                  <img
+                    src={media.logo}
+                    alt={media.name}
+                    className="mx-auto opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 rounded-lg"
+                  />
+                </div>
+                <p className="mt-3 text-sm font-semibold text-slate-600 group-hover:text-red-600 transition-colors duration-300">
+                  {media.name}
+                </p>
               </div>
             ))}
           </div>

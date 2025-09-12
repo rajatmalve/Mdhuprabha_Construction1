@@ -8,7 +8,7 @@ const Hero = () => {
   const carouselData = [
     {
       id: 1,
-      title: "LAMASON",
+      title: "PRAJKTA LA MAISON",
       image: "/images/secondProject.jpg",
       gradient: "from-blue-400 via-indigo-500 to-purple-600",
     },
@@ -27,7 +27,7 @@ const Hero = () => {
    {
       id: 4,
       title: "PRAJKTA GREEN SERENITY",
-      image: "images/prajakta Green serenity.png",
+      image: "images/3[1].png",
       gradient: "from-green-400 via-lime-300 to-emerald-500",
     },
   ];
