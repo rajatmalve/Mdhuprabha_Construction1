@@ -55,7 +55,7 @@ const ProjectDetailPage = () => {
     );
   }
 
-  const isCurrentProject = project.status === "In Progress";
+  const isCurrentProject = project.status === "Ongoing";
 
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
@@ -251,7 +251,7 @@ const ProjectDetailPage = () => {
                     <Calendar className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
                     <div>
                       <div className="font-semibold text-slate-900">
-                        {isCurrentProject ? "Expected Completion" : "Completed"}
+                        {isCurrentProject ? "Ongoing" : "Completed"}
                       </div>
                       <div className="text-slate-600">
                         {isCurrentProject
