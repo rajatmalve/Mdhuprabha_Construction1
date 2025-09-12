@@ -9,7 +9,7 @@ const Hero = () => {
       id: 1,
       title: "LAMASON",
       image: "/images/secondProject.jpg",
-      gradient: "from-purple-500 via-pink-400 to-orange-400",
+      gradient: "from-blue-400 via-indigo-500 to-purple-600",
     },
     {
       id: 2,
