@@ -261,21 +261,7 @@ const ProjectDetailPage = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start space-x-4">
-                    <User className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
-                    <div>
-                      <div className="font-semibold text-slate-900">Client</div>
-                      <div className="text-slate-600">{project.client}</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <Award className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
-                    <div>
-                      <div className="font-semibold text-slate-900">Architect</div>
-                      <div className="text-slate-600">{project.architect}</div>
-                    </div>
-                  </div>
+                 
 
                   {isCurrentProject && (
                     <div className="flex items-start space-x-4">
@@ -294,7 +280,7 @@ const ProjectDetailPage = () => {
                 {/* CTA Button */}
                 <div className="mt-8 pt-6 border-t border-slate-200">
                   <Link
-                    to="/contact"
+                    to="/images/Prajakta-Park-E-Brochure-New-1_compressed.pdf"
                     className={`group relative w-full py-4 px-6 font-bold rounded-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 flex items-center justify-center space-x-2`}
                   >
                     <div
@@ -316,7 +302,7 @@ const ProjectDetailPage = () => {
                     ></div>
 
                     <span className="relative z-10 text-white">
-                      Get Similar Project
+                      Download E-Brochure
                     </span>
                   </Link>
                 </div>

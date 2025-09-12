@@ -3,14 +3,15 @@
 export const projectsData = [
   {
     id: 1,
-    title: "Prajakta Park",
-    location: "Abhyankar Nagar, Nagpur",
+    title: "PRAJKTA LAMASON",
+    location: "Nagpur, Maharashtrar",
     area: "3BHK",
     type: "Residential",
-    status: "Completed",
-    image: "https://madhuprabhaconstructions.in/images/prajakta classic3.jpg",
-    description: "Premium residential project with modern amenities.",
-    fullDescription: "This stunning luxury villa represents the pinnacle of contemporary residential design. Spanning 3500 sq ft, the property features an open-plan living concept with floor-to-ceiling windows that flood the interiors with natural light. The villa includes 4 spacious bedrooms, 3 full bathrooms, a modern kitchen with island, and a private garden with swimming pool. High-end finishes throughout include Italian marble flooring, custom millwork, and smart home automation systems. The project was completed on time and within budget, earning exceptional client satisfaction.",
+    status: "Ongoing",
+    status:"ongoing",
+    image: "/images/secondProject.jpg",
+    description: "A Gold Certified Green Building!",
+    fullDescription: "Introducing ‘PRAJAKTA PARK’, our 7 level 3BHK luxurious park view apartment located in the lap of nature. A peaceful location in the heart of the city where you can enjoy your mornings with blissful greenery.A Perfect Home with Modern Amenities at Abhyankar Nagar, Nagpur.",
     features: [
       "4 Bedrooms with en-suite bathrooms",
       "Open-plan living and dining area", 
@@ -22,22 +23,22 @@ export const projectsData = [
       "2-car covered parking"
     ],
     gallery: [
-      "https://ashishconstruction.in/wp-content/uploads/2025/05/IMG-20250514-WA0045.jpg",
-      "https://ashishconstruction.in/wp-content/uploads/2025/05/IMG-20250514-WA0040-Copy.jpg",
-      "https://ashishconstruction.in/wp-content/uploads/2025/05/IMG-20250514-WA0039-Copy.jpg",
-      "https://ashishconstruction.in/wp-content/uploads/2025/05/IMG-20250514-WA0044-Copy.jpg",
+      "/images/WhatsApp Image 2025-09-12 at 18.03.50_78df2fe0.jpg",
+      "/images/WhatsApp Image 2025-09-12 at 18.06.20_682b0c0f.jpg",
+      "/images/WhatsApp Image 2025-09-12 at 18.11.30_7760acc8.jpg",
+      "/images/WhatsApp Image 2025-09-12 at 18.13.45_fc091e08.jpg",
     ]
   },
   {
     id: 2,
-    title: "Madhuprabha Residency",
+    title: "PRAJKTA PARK",
     location: "Telecom Nagar, Nagpur",
     area: "3BHK",
     type: "Residential",
-    status: "Completed",
-    image: "https://madhuprabhaconstructions.in/images/prajkta green serenity1.jpeg",
-    description: "25-unit premium apartment complex with modern amenities.",
-    fullDescription: "A prestigious residential complex featuring 25 premium apartments designed for modern urban living. Each unit offers spacious layouts ranging from 1800 to 2400 sq ft, with high-quality finishes and contemporary design elements. The complex includes a clubhouse, fitness center, landscaped gardens, and 24/7 security. Located in the heart of Andheri East, residents enjoy excellent connectivity to business districts and entertainment hubs.",
+    status: "Ongoing",
+    image: "/images/Prajktapark.png",
+    description: "Prajakta Park – A perfect harmony of nature, comfort, and modern living..",
+    fullDescription: "PRAJKTA PARK – A thoughtfully designed residential project that blends nature with modern living. Prajakta Park offers spacious homes surrounded by greenery, ensuring peace and comfort in every corner. With premium amenities, excellent connectivity, and a vibrant community, it is the perfect place to create memories and celebrate life every day.",
     features: [
       "25 premium apartments",
       "2-3 BHK configurations",
@@ -58,12 +59,12 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "Prajakta Green Serenity",
+    title: "PRAJKTA CLASSIC ",
     location: "Madhav Nagar, Nagpur",
     area: "3BHK",
     type: "Residential",
-    status: "Completed",
-    image: "https://madhuprabhaconstructions.in/images/portfolio4.jpeg",
+    status: "Complete",
+    image: "/images/park_img_page-0001.jpg ",
     description: "Spacious duplex with garden and parking facility.",
     fullDescription: "This elegant duplex home combines traditional charm with modern conveniences across 2800 sq ft of thoughtfully designed space. The ground floor features an open living area, modern kitchen, and guest bedroom, while the upper level houses the master suite and additional bedrooms. The property includes a private garden, covered parking, and premium finishes throughout.",
     features: [
@@ -84,17 +85,15 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: 'Shopping Mall Construction',
+    title: 'Prajakta Green Serenity',
     location: 'Nagpur',
     area: "3BHK",
     type: "Residential",
-    status: "Completed",
-    image:'https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Large-scale retail complex with entertainment zones and parking facilities.',
-    fullDescription: `This ambitious shopping mall project in Noida is currently under construction and represents 
-      one of our largest Residential undertakings. The mall will feature multiple retail zones, entertainment areas, 
-      food courts, and extensive parking facilities. The design focuses on creating an engaging shopping experience 
-      while maintaining high standards of safety and accessibility.`,
+    status: "Complete",
+    image: "/images/portfolio3.png",
+    description: 'An expansive retail complex designed with modern entertainment zones and hassle-free parking solutions.',
+    fullDescription: `Madhuprabha Constructions –
+A trusted name in real estate for over two decades, Madhuprabha Constructions has been delivering projects that stand as symbols of trust, quality, and innovation. Now, adding another proud chapter to its journey, we present “Prajakta Green Serenity” – a home with a modern touch, where comfort meets elegance. Designed with thoughtful planning and premium amenities, it is not just a place to live, but a lifestyle crafted to celebrate every moment.`,
     features: [
       "Duplex design with 3 bedrooms",
       "Open-plan ground floor",

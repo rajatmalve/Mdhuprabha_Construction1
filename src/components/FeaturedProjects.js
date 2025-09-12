@@ -7,32 +7,33 @@ import { object } from "zod";
 const currentProjectsData = [
   {
     id: 1,
-    title: "LAMASON",
+    title: "PRAJKTA LA MAISON",
     image: "/images/secondProject.jpg",
     status: "Ongoing",
-    location: "Nagpur, Maharashtra",
-    area: "1200 sq.ft",
-    type: "2 BHK",
+    location: "Panday layout",
+    area: "2050 sq.ft - 2600 sq.ft",
+    type: "3 / 4 BHK",
+    types: "4",
     description:
-      "Modern 2 BHK apartments with premium amenities, landscaped gardens, and easy access to city hubs.",
+      "Modern 3 - 4 BHK apartments with premium amenities, landscaped gardens, and easy access to city hubs.",
   },
   {
     id: 2,
-    title: "PRAJKTA CLASSIC",
-    image: "/images/park_img_page-0001.jpg",
-    status: "Booking Open",
+    title: "PRAJKTA PARK",
+    image: "/images/Prajktapark.png",
+    status: "Ongoing",
     location: "Abhyankar Nagar Nagpur, Maharashtra",
-    area: "950 sq.ft",
-    type: "1 & 2 BHK",
+    area: "1800 sq.ft",
+    type: "3 BHK",
     description:
       "Affordable yet stylish flats with contemporary architecture and spacious interiors.",
   },
   {
     id: 3,
-    title: "PRAJKTA PARK",
-    image: "/images/Prajktapark.png",
-    status: "New Launch",
-    location: "Indore, MP",
+    title: "PRAJKTA CLASSIC",
+    image: "/images/park_img_page-0001.jpg ",
+    status: "Complete",
+    location: "Abhyankar Nagar,NAGPUR",
     area: "1500 sq.ft",
     type: "3 BHK",
     description:
@@ -42,10 +43,10 @@ const currentProjectsData = [
     id: 4,
     title: "PRAJKTA GREEN SERENITY",
     image: "/images/PRAJAKTA-PINNACLE.jpg",
-    status: "Under Construction",
-    location: "Mumbai, Maharashtra",
+    status: "Complete",
+    location: "Madhav Nagar Near Nate Square, Nagpur",
     area: "1800 sq.ft",
-    type: "3 & 4 BHK",
+    type: "3 BHK",
     description:
       "Premium high-rise apartments with sea view, modern clubhouse, and world-class security.",
   },
@@ -68,7 +69,7 @@ const FeaturedProjects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-red-600 to-red-500">
-              Current Projects
+              AUR Projects
             </span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
