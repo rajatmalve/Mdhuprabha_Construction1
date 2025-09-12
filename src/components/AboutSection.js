@@ -14,7 +14,8 @@ const AboutSection = () => {
   const carouselImages = [
     "/images/about.jpg",
     "/images/vikashsir.jpeg",
-    "/i",
+    "/images/Prajktaproject.JPG",
+    "/images/certification.jpeg",
   ];
 
   // Auto-slide every 3 seconds
@@ -31,7 +32,7 @@ const AboutSection = () => {
       className="py-20 bg-gradient-to-br from-white via-red-50 to-red-100"
     >
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
@@ -71,28 +72,38 @@ const AboutSection = () => {
             </button>
           </div>
 
-          {/* Right Carousel */}
-          <div className="relative">
-            <div className="relative rounded-2xl shadow-2xl overflow-hidden">
-              <img
-                src={carouselImages[currentSlide]}
-                alt={`Slide ${currentSlide + 1}`}
-                className="w-full h-96 object-cover rounded-2xl transition-all duration-700"
-              />
+          {/* Right Carousel with Slide Effect */}
+          <div className="relative w-full">
+            <div className="relative w-full h-96 overflow-hidden rounded-2xl shadow-2xl">
+              <div
+                className="flex h-full transition-transform duration-1000"
+                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+              >
+                {carouselImages.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Slide ${index + 1}`}
+                    className="w-full flex-shrink-0 h-full object-cover"
+                  />
+                ))}
+              </div>
             </div>
 
-            {/* Floating Badge */}
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-red-600 mb-2">25+</div>
-                <div className="text-sm text-slate-600">Years of Excellence</div>
+            {/* Card below carousel, left side */}
+            <div className="relative mt-4 mr-5">
+              <div className="absolute -top-16 left-0 bg-white rounded-2xl p-6 shadow-xl w-44">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-red-600 mb-2">25+</div>
+                  <div className="text-sm text-slate-600">Years of Excellence</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mt-32 grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="text-center group">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 text-white rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
