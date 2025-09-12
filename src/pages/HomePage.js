@@ -3,8 +3,8 @@ import Hero from '../components/Hero';
 import FeaturedProjects from '../components/FeaturedProjects';
 import AboutSection from '../components/AboutSection';
 import ContactSection from '../components/ContactSection';
-import CompletedProjects from '../components/CompletedProjects';
-import AwardsSection from '../components/AwardsSection';
+
+
 import Footer from '../components/Footer';
 import { testimonials } from '../mockData';
 import { Star, Quote, ArrowRight } from 'lucide-react';
@@ -20,9 +20,7 @@ const HomePage = () => {
       </div>
 
       {/* Awards Section */}
-      <div className="bg-red-50">
-        <AwardsSection />
-      </div>
+     
 
       {/* Featured Projects Section with distinct gradient */}
       <div className="bg-gradient-to-br from-white via-red-50 to-red-100">
@@ -34,10 +32,7 @@ const HomePage = () => {
         <ContactSection />
       </div>
 
-      {/* Completed Projects Section */}
-      <div className="bg-gradient-to-br from-white via-red-50 to-red-100">
-        <CompletedProjects />
-      </div>
+      
 
       {/* Testimonials Section */}
       <section className="relative py-24 bg-gradient-to-br from-white via-red-50 to-white overflow-hidden">
