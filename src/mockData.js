@@ -8,7 +8,6 @@ export const projectsData = [
     area: "3BHK",
     type: "Residential",
     status: "Ongoing",
-    status:"ongoing",
     image: "/images/secondProject.jpg",
     description: "A Gold Certified Green Building!",
     fullDescription: "Introducing ‘PRAJAKTA PARK’, our 7 level 3BHK luxurious park view apartment located in the lap of nature. A peaceful location in the heart of the city where you can enjoy your mornings with blissful greenery.A Perfect Home with Modern Amenities at Abhyankar Nagar, Nagpur.",
