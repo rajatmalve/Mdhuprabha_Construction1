@@ -11,22 +11,22 @@ const Hero = () => {
       image: "/images/secondProject.jpg",
       gradient: "from-blue-400 via-indigo-500 to-purple-600",
     },
-    {
+     {
       id: 2,
-      title: "PRAJKTA CLASSIC",
-      image: "/images/park_img_page-0001.jpg",
-      gradient: "from-pink-500 via-red-400 to-yellow-400",
-    },
-    {
-      id: 3,
       title: "PRAJKTA PARK",
       image: "/images/HD PHOTO 1.jpg",
       gradient: "from-pink-500 via-red-400 to-yellow-400",
     },
     {
+      id: 3,
+      title: "PRAJKTA CLASSIC",
+      image: "/images/park_img_page-0001.jpg",
+      gradient: "from-pink-500 via-red-400 to-yellow-400",
+    },
+   {
       id: 4,
       title: "PRAJKTA GREEN SERENITY",
-      image: "/images/prajkta green serenity1.jpeg",
+      image: "images/prajakta Green serenity.png",
       gradient: "from-green-400 via-lime-300 to-emerald-500",
     },
   ];
