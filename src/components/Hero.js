@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -56,16 +57,14 @@ const Hero = () => {
         {carouselData.map((slide, index) => (
           <div key={slide.id} className="min-w-full h-full relative">
             <img
-  src={slide.image}
-  alt={slide.title}
-  className="w-full h-full object-fill"
-/>
-
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-full object-fill"
+            />
 
             {/* Image Title and Explore Button centered */}
             {index === currentSlide && (
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-30">
-                {/* Gradient Text Title with Playfair Display */}
                 <h2
                   style={{ fontFamily: 'Playfair Display, serif' }}
                   className={`text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wider drop-shadow-2xl 
@@ -74,16 +73,18 @@ const Hero = () => {
                   {slide.title}
                 </h2>
 
-                {/* Glassmorphism Stylish Button */}
-                <button
-                  style={{ fontFamily: 'Playfair Display, serif' }}
-                  className="mt-6 px-8 py-3 text-lg font-semibold rounded-full 
-                             bg-white/10 backdrop-blur-md border border-white/30 text-white 
-                             shadow-lg hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-500 
-                             hover:text-white transition-all duration-500"
-                >
-                  EXPLORE PROJECT
-                </button>
+                {/* Explore Project Button with Link (same as View btn) */}
+                <Link to={`/project/${slide.id}`}>
+                  <button
+                    style={{ fontFamily: 'Playfair Display, serif' }}
+                    className="mt-6 px-8 py-3 text-lg font-semibold rounded-full 
+                               bg-white/10 backdrop-blur-md border border-white/30 text-white 
+                               shadow-lg hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-500 
+                               hover:text-white transition-all duration-500"
+                  >
+                    EXPLORE PROJECT
+                  </button>
+                </Link>
               </div>
             )}
           </div>
@@ -103,26 +104,6 @@ const Hero = () => {
       >
         <ChevronRight className="w-8 h-8" />
       </button>
-
-      {/* Slide Indicators */}
-      <div className="absolute bottom-6 sm:bottom-8 md:bottom-10 lg:bottom-12 left-1/2 -translate-x-1/2 z-30 flex space-x-4">
-        {carouselData.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`relative transition-all duration-500 ${index === currentSlide ? 'scale-125' : 'hover:scale-110'
-              }`}
-          >
-            <div
-              className={`w-4 h-4 rounded-full transition-all duration-500 ${index === currentSlide ? 'bg-white shadow-lg' : 'bg-white/40 hover:bg-white/70'
-                }`}
-            ></div>
-            {index === currentSlide && (
-              <div className="absolute inset-0 bg-white rounded-full blur animate-pulse"></div>
-            )}
-          </button>
-        ))}
-      </div>
     </section>
   );
 };

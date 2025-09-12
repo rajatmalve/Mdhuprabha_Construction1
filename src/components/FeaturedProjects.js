@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Home, ExternalLink } from "lucide-react";
+import { object } from "zod";
 
 // अब यहीं data डाल रहे हैं
 const currentProjectsData = [
   {
     id: 1,
-    title: "Prajakta Park",
-    image: "/images/prajakta classic3.jpg",
+    title: "LAMASON",
+    image: "/images/secondProject.jpg",
     status: "Ongoing",
-    location: "Pune, Maharashtra",
+    location: "Nagpur, Maharashtra",
     area: "1200 sq.ft",
     type: "2 BHK",
     description:
@@ -17,10 +18,10 @@ const currentProjectsData = [
   },
   {
     id: 2,
-    title: "Madhuprabha Residency",
-    image: "/images/prajkta green serenity1.jpeg",
+    title: "PRAJKTA CLASSIC",
+    image: "/images/park_img_page-0001.jpg",
     status: "Booking Open",
-    location: "Nagpur, Maharashtra",
+    location: "Abhyankar Nagar Nagpur, Maharashtra",
     area: "950 sq.ft",
     type: "1 & 2 BHK",
     description:
@@ -28,8 +29,8 @@ const currentProjectsData = [
   },
   {
     id: 3,
-    title: "Green Valley Homes",
-    image: "/images/portfolio4.jpeg",
+    title: "PRAJKTA PARK",
+    image: "/images/Prajktapark.png",
     status: "New Launch",
     location: "Indore, MP",
     area: "1500 sq.ft",
@@ -39,7 +40,7 @@ const currentProjectsData = [
   },
   {
     id: 4,
-    title: "City Heights",
+    title: "PRAJKTA GREEN SERENITY",
     image: "/images/PRAJAKTA-PINNACLE.jpg",
     status: "Under Construction",
     location: "Mumbai, Maharashtra",
