@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, MessageCircle } from 'lucide-react';
+import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, MessageCircle, Award, Briefcase } from 'lucide-react';
 import { contactData } from '../mockData';
 
 const Footer = () => {
@@ -12,6 +12,8 @@ const Footer = () => {
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
     { name: 'Projects', path: '/projects' },
+    { name: 'Awards', path: '/awards', icon: Award },
+    { name: 'Career', path: '/career', icon: Briefcase },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' }
   ];

@@ -6,35 +6,31 @@ const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const carouselData = [
-  {
-    id: 1,
-    title: "LAMASON",
-    image: "/images/secondProject.jpg",
-    gradient: "from-purple-500 via-pink-400 to-orange-400",
-    link: "/projects#lamason",
-  },
-  {
-    id: 2,
-    title: "PRAJKTA CLASSIC",
-    image: "/images/park_img_page-0001.jpg",
-    gradient: "from-pink-500 via-red-400 to-yellow-400",
-    link: "/projects#prajkta-classic",
-  },
-  {
-    id: 3,
-    title: "PRAJKTA PARK",
-    image: "/images/HD PHOTO 1.jpg",
-    gradient: "from-pink-500 via-red-400 to-yellow-400",
-    link: "/projects#prajkta-park",
-  },
-  {
-    id: 4,
-    title: "PRAJKTA GREEN SERENITY",
-    image: "/images/prajkta green serenity1.jpeg",
-    gradient: "from-green-400 via-lime-300 to-emerald-500",
-    link: "/projects#prajkta-green-serenity",
-  },
-];
+    {
+      id: 1,
+      title: "LAMASON",
+      image: "/images/secondProject.jpg",
+      gradient: "from-blue-400 via-indigo-500 to-purple-600",
+    },
+     {
+      id: 2,
+      title: "PRAJKTA PARK",
+      image: "/images/HD PHOTO 1.jpg",
+      gradient: "from-pink-500 via-red-400 to-yellow-400",
+    },
+    {
+      id: 3,
+      title: "PRAJKTA CLASSIC",
+      image: "/images/park_img_page-0001.jpg",
+      gradient: "from-pink-500 via-red-400 to-yellow-400",
+    },
+   {
+      id: 4,
+      title: "PRAJKTA GREEN SERENITY",
+      image: "images/prajakta Green serenity.png",
+      gradient: "from-green-400 via-lime-300 to-emerald-500",
+    },
+  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
