@@ -14,6 +14,8 @@ const Footer = () => {
     { name: 'Projects', path: '/projects' },
     { name: 'Awards', path: '/awards', icon: Award },
     { name: 'Career', path: '/career', icon: Briefcase },
+    { name: 'Become Partner', path: '/becomePartner' },
+    { name: 'CSR Activity', path: '/csrActivity' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' }
   ];

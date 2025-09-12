@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Award, Users, Building2, CheckCircle, User, Mail, Phone, Briefcase, Upload } from 'lucide-react';
 import Footer from '../components/Footer';
 
-const CareerPage = () => {
+const BecomPatner = () => {
   
 
   
@@ -334,4 +334,4 @@ const CareerPage = () => {
   );
 };
 
-export default CareerPage;
+export default BecomPatner;
