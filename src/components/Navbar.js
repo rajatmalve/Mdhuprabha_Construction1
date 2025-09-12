@@ -25,7 +25,9 @@ const Navbar = () => {
   { name: 'About Us', path: '/about', icon: Users },
   { name: 'Projects', path: '/projects', icon: Building },
   { name: 'Awards', path: '/awards', icon: Award },   // ✅ Fixed
-  { name: 'Career', path: '/career', icon: Briefcase }, // ✅ Use any suitable icon
+  { name: 'Career', path: '/career', icon: Briefcase },
+  { name: 'BecomePartner', path: '/becomePartner', icon: Briefcase },
+  // { name: 'CSRActivity', path: '/csrActivity', icon: Users },
   { name: 'Gallery', path: '/gallery', icon: Image },
   { name: 'Contact', path: '/contact', icon: Phone }
 ];
@@ -77,7 +79,7 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden lg:block">
+          {/* <div className="hidden lg:block">
             <Link
               to="/contact"
               className={`px-5 py-2 font-semibold rounded-[50px] transition
@@ -86,7 +88,7 @@ const Navbar = () => {
             >
               Get Quote
             </Link>
-          </div>
+          </div> */}
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
