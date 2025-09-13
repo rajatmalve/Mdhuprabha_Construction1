@@ -59,13 +59,21 @@ const Hero = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full "
+              className="w-full h-full"
             />
 
             {index === currentSlide && (
               <>
-                {/* Title Bottom Left */}
+                {/* Logo + Title Bottom Left */}
                 <div className="absolute bottom-10 left-10 z-30 text-left">
+                  {/* Logo Above Title */}
+                  <img
+                    src="/images/WhatsApp Image 2025-09-13 at 16.54.10_b60a3e66.jpg"  
+                    alt="Credai Nagpur Metro"
+                    className="w-24 sm:w-28 md:w-32 lg:w-36 object-contain mb-3 drop-shadow-lg"
+                  />
+
+                  {/* Title */}
                   <h2
                     style={{ fontFamily: 'Playfair Display, serif' }}
                     className="inline-block px-4 py-2 rounded-lg 
