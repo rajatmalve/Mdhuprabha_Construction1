@@ -5,8 +5,8 @@ import Footer from '../components/Footer';
 
 const AboutPage = () => {
   const achievements = [
-    { icon: Award, number: "20+", label: "Years Experience", color: "from-red-500 to-red-600" },
-    { icon: Building2, number: "200+", label: "Projects Completed", color: "from-red-400 to-red-600" },
+    { icon: Award, number: "25+", label: "Years Experience", color: "from-red-500 to-red-600" },
+    { icon: Building2, number: "25+", label: "Projects Completed", color: "from-red-400 to-red-600" },
     { icon: Users, number: "150+", label: "Happy Clients", color: "from-red-500 to-red-700" },
     { icon: TrendingUp, number: "100%", label: "Success Rate", color: "from-red-600 to-red-700" }
   ];
@@ -38,13 +38,13 @@ const AboutPage = () => {
     {
       name: "Mr. Ashish Londhe",
       role: "Founder & Managing Director",
-      experience: "19+ Years Experience",
+      experience: "25+ Years Experience",
       image: "/images/vikashsir.jpeg",
     },
     {
       name: "Mr. Vikas Mishra",
       role: "Project Manager",
-      experience: "12+ Years Experience",
+      experience: "25+ Years Experience",
       image: "/images/project_manager.jpeg",
     },
   ];
