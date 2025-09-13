@@ -560,7 +560,7 @@ export const aboutUsData = {
                   
                   `,
   experience: "20 Glorious Years",
-  projectsCompleted: "200+",
+  projectsCompleted: "20+",
   happyClients: "150+",
   awards: "25+",
   location: "Nagpur, Maharashtra",
@@ -569,8 +569,8 @@ export const aboutUsData = {
 
 export const contactData = {
   address: "UMA Apartment, Behind Binzani Book Depot, Tilak Road, Mahal, Nagpur-2",
-  phone1: "+91 98224 74211",
-  phone2: "+91 95229 01659",
+  phone1: "+91 95229 01659",
+  phone2: "+91 98224 74211",
   email: "info@madhuprabhaconstructions.in",
   googleMapsUrl: "https://www.google.com/maps/place/UMA+Apartment,+Tilak+Road,+Mahal,+Nagpur",
   workingHours : "Mon - Sat: 9:00 AM - 6:00 PM",
