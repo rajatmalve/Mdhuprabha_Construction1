@@ -246,52 +246,70 @@ const ProjectDetailPage = () => {
                   Project Information
                 </h3>
 
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <MapPin className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
-                    <div>
-                      <div className="font-semibold text-slate-900">Location</div>
-                      <div className="text-slate-600">{project.location}</div>
-                    </div>
-                  </div>
+               <div className="space-y-6">
+  <div className="flex items-start space-x-4">
+    <MapPin className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
+    <div>
+      <div className="font-semibold text-slate-900">Location</div>
+      <div className="text-slate-600">{project.location}</div>
+    </div>
+  </div>
 
-                  <div className="flex items-start space-x-4">
-                    <Home className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
-                    <div>
-                      <div className="font-semibold text-slate-900">Type</div>
-                      <div className="text-slate-600">{project.type}</div>
-                    </div>
-                  </div>
+  <div className="flex items-start space-x-4">
+    <Home className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
+    <div>
+      <div className="font-semibold text-slate-900">Type</div>
+      <div className="text-slate-600">{project.type}</div>
+    </div>
+  </div>
 
-                  <div className="flex items-start space-x-4">
-                    <Calendar className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
-                    <div>
-                      <div className="font-semibold text-slate-900">
-                        {isCurrentProject ? "Ongoing" : "Completed"}
-                      </div>
-                      <div className="text-slate-600">
-                        {isCurrentProject
-                          ? project.expectedCompletion
-                          : project.completionDate}
-                      </div>
-                    </div>
-                  </div>
+  <div className="flex items-start space-x-4">
+    <Calendar className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
+    <div>
+      <div className="font-semibold text-slate-900">
+        {isCurrentProject ? "Ongoing" : "Completed"}
+      </div>
+      <div className="text-slate-600">
+        {isCurrentProject
+          ? project.expectedCompletion
+          : project.completionDate}
+      </div>
+    </div>
+  </div>
 
-                 
+  {isCurrentProject && (
+    <div className="flex items-start space-x-4">
+      <TrendingUp className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
+      <div>
+        <div className="font-semibold text-slate-900">Progress</div>
+        <div className="text-slate-600">{project.progress}</div>
+        <div className="mt-2 w-full bg-slate-200 rounded-full h-2"></div>
+      </div>
+    </div>
+  )}
 
-                  {isCurrentProject && (
-                    <div className="flex items-start space-x-4">
-                      <TrendingUp className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
-                      <div>
-                        <div className="font-semibold text-slate-900">
-                          Progress
-                        </div>
-                        <div className="text-slate-600">{project.progress}</div>
-                        <div className="mt-2 w-full bg-slate-200 rounded-full h-2"></div>
-                      </div>
-                    </div>
-                  )}
-                </div>
+  {/* Architecture */}
+  <div className="flex items-start space-x-4">
+    <Award className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
+    <div>
+      <div className="font-semibold text-slate-900">Architecture</div>
+      <div className="text-slate-600">Arjun Kamdi, Arya Vertex</div>
+    </div>
+  </div>
+
+  {/* Vastu Consultant */}
+  <div className="flex items-start space-x-4">
+    <User className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
+    <div>
+      <div className="font-semibold text-slate-900">Vastu Consultant</div>
+      <div className="text-slate-600">Kirti Bhai</div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
                 {/* CTA Button */}
                <div className="mt-8 pt-6 border-t border-slate-200">
