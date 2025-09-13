@@ -27,7 +27,7 @@ const Hero = () => {
    {
       id: 4,
       title: "PRAJAKTA GREEN SERENITY",
-      image: "images/3[1].png",
+      image: "/images/3 (1).png",
       gradient: "from-green-400 via-lime-300 to-emerald-500",
     },
   ];
@@ -59,7 +59,7 @@ const Hero = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-fill"
+              className="w-full h-full "
             />
 
             {/* Image Title and Explore Button centered */}
