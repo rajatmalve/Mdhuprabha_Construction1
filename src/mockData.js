@@ -495,7 +495,7 @@ export const galleryImages = [
   },
   {
     id: 6,
-    url: "https://madhuprabhaconstructions.in/images/PRAJAKTAproject.JPG",
+    url: "https://madhuprabhaconstructions.in/images/Prajktaproject.JPG",
     title: "Prajakta Project",
     category: "image"
   },
@@ -507,7 +507,7 @@ export const galleryImages = [
   },
   {
     id: 8,
-    url: "https://madhuprabhaconstructions.in/images/PRAJAKTAclassic.png",
+    url: "https://madhuprabhaconstructions.in/images/prajktaclassic.png",
     title: "Prajakta Classic",
     category: "image"
   },
@@ -535,7 +535,7 @@ export const galleryVideos = [
   {
     id: 1,
     title: "Construction Phase 1",
-    thumbnail: "/thumbnails/video1.jpg",
+    thumbnail: "https://madhuprabhaconstructions.in/images/Ashish-Construction-09-13-2025_07_43_PM.png",
     duration: "3:42",
     url: "https://www.youtube.com/embed/UpdIzsq1G6w"
   },
