@@ -38,7 +38,7 @@ const AboutSection = () => {
   const carouselImages = [
     "/images/about.jpg",
     "/images/vikashsir.jpeg",
-    "/images/PRAJAKTAproject.JPG",
+    // "/images/prajaktaproject.JPG",
     "/images/certification.jpeg",
   ];
 

@@ -12,7 +12,7 @@ const currentProjectsData = [
     status: "Ongoing",
     location: "Panday layout",
     area: "2050 sq.ft - 2600 sq.ft",
-    type: "3 / 4 BHK",
+    type: "3 / 4 BHK - 7 floor",
     types: "4",
     description:
       "Modern 3 - 4 BHK apartments with premium amenities, landscaped gardens, and easy access to city hubs.",
@@ -20,11 +20,11 @@ const currentProjectsData = [
   {
     id: 2,
     title: "PRAJAKTA PARK",
-    image: "/images/PRAJAKTApark.png",
+    image: "/images/prajktapark.png",
     status: "Ongoing",
     location: "Abhyankar Nagar Nagpur, Maharashtra",
     area: "1800 sq.ft",
-    type: "3 BHK",
+    type: "3 BHK - 5 floor",
     description:
       "Affordable yet stylish flats with contemporary architecture and spacious interiors.",
   },

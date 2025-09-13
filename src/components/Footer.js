@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, MessageCircle, Award, Briefcase } from 'lucide-react';
+import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, MessageCircle, Award, Briefcase, } from 'lucide-react';
 import { contactData } from '../mockData';
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -157,15 +159,18 @@ const Footer = () => {
         </button>
 
         {/* WhatsApp Floating Button */}
-        <a
-          href="https://wa.me/9822474211?text=Hello"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed bottom-28 right-8 group w-14 h-14 bg-green-500 text-white border border-green-600 rounded-full shadow-lg 
-                     hover:bg-green-600 transform hover:scale-110 transition-all duration-500 flex items-center justify-center z-50 animate-spin-slow"
-        >
-          <MessageCircle className="w-7 h-7" />
-        </a>
+       
+
+<a
+  href="https://wa.me/9822474211?text=Hello"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-28 right-8 group w-14 h-14 bg-green-500 text-white border border-green-600 rounded-full shadow-lg 
+             hover:bg-green-600 transform hover:scale-110 transition-all duration-500 flex items-center justify-center z-50 animate-spin-slow"
+>
+  <FaWhatsapp className="w-7 h-7" />
+</a>
+
       </div>
     </footer>
   );

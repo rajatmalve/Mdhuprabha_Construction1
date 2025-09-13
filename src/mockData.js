@@ -4,8 +4,8 @@ export const projectsData = [
   {
     id: 1,
     title: "PRAJAKTA LA-MAISON",
-    location: "Nagpur, Maharashtrar",
-    area: "3BHK",
+    location: "Panday Layout",
+    area: "3BHK - 7 floor",
     type: "Residential",
     status: "Ongoing",
     image: "/images/secondProject.jpg",
@@ -31,11 +31,11 @@ export const projectsData = [
   {
     id: 2,
     title: "PRAJAKTA PARK",
-    location: "Telecom Nagar, Nagpur",
-    area: "3BHK",
+    location: "Abhyankar nagar, Nagpur",
+    area: "3BHK - 5 floor",
     type: "Residential",
     status: "Ongoing",
-    image: "/images/PRAJAKTApark.png",
+    image: "/images/prajktapark.png",
     description: "Prajakta Park – A perfect harmony of nature, comfort, and modern living..",
     fullDescription: "PRAJAKTA PARK – A thoughtfully designed residential project that blends nature with modern living. Prajakta Park offers spacious homes surrounded by greenery, ensuring peace and comfort in every corner. With premium amenities, excellent connectivity, and a vibrant community, it is the perfect place to create memories and celebrate life every day.",
     features: [
@@ -49,17 +49,19 @@ export const projectsData = [
       "High-speed elevator access"
     ],
     gallery: [
-      "https://ashishconstruction.in/wp-content/uploads/2021/08/4-min-3.jpg",
-      "https://ashishconstruction.in/wp-content/uploads/2021/08/3-min-3.jpg",
-      "https://ashishconstruction.in/wp-content/uploads/2021/08/2-min-4.jpg",
-      "https://ashishconstruction.in/wp-content/uploads/2021/08/1-min-3.jpg",
-      "https://ashishconstruction.in/wp-content/uploads/2021/08/7-min-4.jpg"
+      "/images/Prajakta-Classic-E-Brochure-09-13-2025_07_46_AM (1).png",
+      "/images/Prajakta-Classic-E-Brochure-09-13-2025_07_46_AM.png",
+      "/images/Prajakta-Classic-E-Brochure-09-13-2025_07_47_AM.png",
+      "/images/Prajakta-Classic-E-Brochure-09-13-2025_07_48_AM (1).png",
+      "/images/Prajakta-Classic-E-Brochure-09-13-2025_07_48_AM.png",
+      "/images/Prajakta-Classic-E-Brochure-09-13-2025_07_49_AM (1).png",
+      "/images/Prajakta-Classic-E-Brochure-09-13-2025_07_49_AM.png"
     ]
   },
   {
     id: 3,
     title: "PRAJAKTA CLASSIC ",
-    location: "Madhav Nagar, Nagpur",
+    location: "Abhyankar Nagar, Nagpur",
     area: "3BHK",
     type: "Residential",
     status: "Complete",
@@ -91,8 +93,7 @@ export const projectsData = [
     status: "Complete",
     image: "/images/portfolio3.png",
     description: 'An expansive retail complex designed with modern entertainment zones and hassle-free parking solutions.',
-    fullDescription: `Madhuprabha Constructions –
-A trusted name in real estate for over two decades, Madhuprabha Constructions has been delivering projects that stand as symbols of trust, quality, and innovation. Now, adding another proud chapter to its journey, we present “Prajakta Green Serenity” – a home with a modern touch, where comfort meets elegance. Designed with thoughtful planning and premium amenities, it is not just a place to live, but a lifestyle crafted to celebrate every moment.`,
+    fullDescription: `Madhuprabha Constructions – A trusted name in real estate for over two decades, Madhuprabha Constructions has been delivering projects that stand as symbols of trust, quality, and innovation. Now, adding another proud chapter to its journey, we present “Prajakta Green Serenity” – a home with a modern touch, where comfort meets elegance. Designed with thoughtful planning and premium amenities, it is not just a place to live, but a lifestyle crafted to celebrate every moment.`,
     features: [
       "Duplex design with 3 bedrooms",
       "Open-plan ground floor",
