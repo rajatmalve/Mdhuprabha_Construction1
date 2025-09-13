@@ -35,7 +35,7 @@ export const projectsData = [
     area: "3BHK - 5 floor",
     type: "Residential",
     status: "Ongoing",
-    image: "/images/prajktapark.png",
+    image: "/images/HD PHOTO 1.jpg",
     description: "Prajakta Park – A perfect harmony of nature, comfort, and modern living..",
     fullDescription: "PRAJAKTA PARK – A thoughtfully designed residential project that blends nature with modern living. Prajakta Park offers spacious homes surrounded by greenery, ensuring peace and comfort in every corner. With premium amenities, excellent connectivity, and a vibrant community, it is the perfect place to create memories and celebrate life every day.",
     features: [
@@ -87,7 +87,7 @@ export const projectsData = [
   {
     id: 4,
     title: 'Prajakta Green Serenity',
-    location: 'Nagpur',
+    location: 'Madhav Nagar Near Nate Square,Nagpur',
     area: "3BHK",
     type: "Residential",
     status: "Complete",

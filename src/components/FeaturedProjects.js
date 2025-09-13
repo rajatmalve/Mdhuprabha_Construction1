@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Home, ExternalLink } from "lucide-react";
 import { object } from "zod";
 
-// अब यहीं data डाल रहे हैं
+
 const currentProjectsData = [
   {
     id: 1,
-    title: "PRAJAKTA LA MAISON",
+    title: "PRAJAKTA LA-MAISON",
     image: "/images/secondProject.jpg",
     status: "Ongoing",
     location: "Panday layout",
@@ -20,7 +20,7 @@ const currentProjectsData = [
   {
     id: 2,
     title: "PRAJAKTA PARK",
-    image: "/images/prajktapark.png",
+    image: "/images/HD PHOTO 1.jpg",
     status: "Ongoing",
     location: "Abhyankar Nagar Nagpur, Maharashtra",
     area: "1800 sq.ft",
@@ -34,7 +34,7 @@ const currentProjectsData = [
     image: "/images/park_img_page-0001.jpg ",
     status: "Complete",
     location: "Abhyankar Nagar,NAGPUR",
-    area: "1500 sq.ft",
+    area: "2800 sq.ft",
     type: "3 BHK",
     description:
       "Luxurious 3 BHK apartments with eco-friendly design, solar power, and smart home features.",
@@ -53,7 +53,7 @@ const currentProjectsData = [
 ];
 
 const FeaturedProjects = () => {
-  // अब 4 cards दिखेंगे
+ 
   const featuredProjects = currentProjectsData.slice(0, 4);
 
   return (
