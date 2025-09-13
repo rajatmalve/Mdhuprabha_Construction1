@@ -16,6 +16,8 @@ const currentProjectsData = [
     types: "4",
     description:
       "Modern 3 - 4 BHK apartments with premium amenities, landscaped gardens, and easy access to city hubs.",
+      brouchure:"Prajakta La Maison_Brochure(4) (2).pdf",
+
   },
   {
     id: 2,
@@ -27,6 +29,7 @@ const currentProjectsData = [
     type: "3 BHK - 5 floor",
     description:
       "Affordable yet stylish flats with contemporary architecture and spacious interiors.",
+      brouchure:"Prajakta-Park-E-Brochure-New-1_compressed (1)(final).pdf",
   },
   {
     id: 3,
@@ -38,6 +41,7 @@ const currentProjectsData = [
     type: "3 BHK",
     description:
       "Luxurious 3 BHK apartments with eco-friendly design, solar power, and smart home features.",
+      brouchure:"Prajakta-Park-E-Brochure-New-1_compressed.pdf",
   },
   {
     id: 4,
@@ -49,6 +53,8 @@ const currentProjectsData = [
     type: "3 BHK",
     description:
       "Premium high-rise apartments with sea view, modern clubhouse, and world-class security.",
+      brouchure:"Green Serenity E-brochure..pdf",
+
   },
 ];
 
@@ -140,7 +146,7 @@ const FeaturedProjects = () => {
                   </Link>
 
                   <a
-                    href="/images/Prajakta-Park-E-Brochure-New-1_compressed.pdf"
+                    href={`/images/${project.brouchure}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group py-2 px-4 text-xs font-semibold rounded-xl border border-red-300 bg-white hover:bg-red-50 transition-all duration-300"
