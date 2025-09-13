@@ -69,7 +69,7 @@ const FeaturedProjects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-red-600 to-red-500">
-              OUR Projects
+              Our Projects
             </span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">

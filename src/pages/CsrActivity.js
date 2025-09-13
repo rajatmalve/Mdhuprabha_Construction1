@@ -27,7 +27,7 @@ const CsrActivity = () => {
   title: "Accountant", 
   type: "Contract", 
   location: "Remote", 
-  tags: ["Design", "AutoCAD"] 
+  tags: ["Tally prime", "MS Excel"] 
 }
 
     
@@ -113,7 +113,7 @@ const CsrActivity = () => {
       <section
         className="relative pt-24 sm:pt-28 pb-16 sm:pb-20   text-white overflow-hidden"
         style={{
-  backgroundImage: "url('/images/career 1.jpg')",
+  backgroundImage: "url('images/240_F_1604536884_NC6A6R4xLL4e9KJW2vciOx5QJFGhX4Yj.jpg')",
   backgroundSize: "100% 100%",   // pura div fill karega
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -326,9 +326,6 @@ const CsrActivity = () => {
           </div>
         </div>
       </section>
-
-      
-      
       <Footer />
     </div>
   );

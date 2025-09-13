@@ -27,7 +27,7 @@ const CareerPage = () => {
   title: "Accountant", 
   type: "Contract", 
   location: "Remote", 
-  tags: ["Design", "AutoCAD"] 
+  tags: ["Tally prime", "MS Excel"] 
 }
 
     

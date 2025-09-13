@@ -117,7 +117,7 @@ export const projectsData = [
     area: "3BHK",
     type: "Residential",
     status: "Completed",
-    image: 'https://ashishconstruction.in/wp-content/uploads/2021/09/keshav-enclave-nandanwan.jpg',
+    image: '/images/WhatsApp-Image-2021-09-20-at-4.55.37-PM.jpeg',
     description: 'Residential facility with advanced infrastructure and safety systems.',
     fullDescription: "This elegant duplex home combines traditional charm with modern conveniences across 2800 sq ft of thoughtfully designed space. The ground floor features an open living area, modern kitchen, and guest bedroom, while the upper level houses the master suite and additional bedrooms. The property includes a private garden, covered parking, and premium finishes throughout.",
     features: [
@@ -140,10 +140,10 @@ export const projectsData = [
     id: 6,
     title: 'Prajakta cross Winds',
     location: "Hingana Road, Nagpur",
-    area: "3BHK",
+    area: "2-3BHK",
     type: "Residential",
     status: "Completed",
-    image: '	https://ashishconstruction.in/wp-content/uploads/2021/08/PRAJAKTA-CROSSWIND-HINGANA-ROAD.jpg',
+    image: '/images/PRAJAKTA-CROSSWIND-HINGANA-ROAD.jpg',
     description: "Spacious duplex with garden and parking facility.",
     fullDescription: "This elegant duplex home combines traditional charm with modern conveniences across 2800 sq ft of thoughtfully designed space. The ground floor features an open living area, modern kitchen, and guest bedroom, while the upper level houses the master suite and additional bedrooms. The property includes a private garden, covered parking, and premium finishes throughout.",
     features: [
@@ -172,7 +172,7 @@ export const projectsData = [
     area: "3BHK",
     type: "Residential",
     status: "Completed",
-    image: 'https://ashishconstruction.in/wp-content/uploads/2021/08/IMG-20160212-WA0009.jpg',
+    image: '/images/IMG-20160212-WA0009.jpg',
     description: "Spacious duplex with garden and parking facility.",
     fullDescription: "This elegant duplex home combines traditional charm with modern conveniences across 2800 sq ft of thoughtfully designed space. The ground floor features an open living area, modern kitchen, and guest bedroom, while the upper level houses the master suite and additional bedrooms. The property includes a private garden, covered parking, and premium finishes throughout.",
     features: [
@@ -201,7 +201,7 @@ export const projectsData = [
     area: "3BHK",
     type: "Residential",
     status: "Completed",
-    image:'https://ashishconstruction.in/wp-content/uploads/2021/08/PRAJAKTA-ORCHID-PANDEY-LAYOUT.jpg',
+    image:'/images/PRAJAKTA-ORCHID-PANDEY-LAYOUT.jpg',
     description: "Spacious duplex with garden and parking facility.",
     fullDescription: "This elegant duplex home combines traditional charm with modern conveniences across 2800 sq ft of thoughtfully designed space. The ground floor features an open living area, modern kitchen, and guest bedroom, while the upper level houses the master suite and additional bedrooms. The property includes a private garden, covered parking, and premium finishes throughout.",
     features: [
@@ -222,10 +222,37 @@ export const projectsData = [
   },
 
   
-
 {
     id: 9,
-    title: 'Uttam Apartment',
+    title: 'Keshav Enclave',
+    location: "Nandanwan, Nagpur",
+    area: "3BHK",
+    type: "Residential",
+    status: "Completed",
+    image: '/images/keshav-enclave-nandanwan.jpg',
+    description: "Spacious duplex with garden and parking facility.",
+    fullDescription: "This elegant duplex home combines traditional charm with modern conveniences across 2800 sq ft of thoughtfully designed space. The ground floor features an open living area, modern kitchen, and guest bedroom, while the upper level houses the master suite and additional bedrooms. The property includes a private garden, covered parking, and premium finishes throughout.",
+    features: [
+      "Duplex design with 3 bedrooms",
+      "Open-plan ground floor",
+      "Private garden and terrace",
+      "Modern kitchen with breakfast counter",
+      "Master suite with walk-in closet",
+      "Covered parking for 2 cars",
+      "Premium wood flooring",
+      "Energy-efficient lighting"
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&h=600&fit=crop"
+    ]
+  },
+
+
+{
+    id: 10,
+    title: 'Honey Archana Complex',
     location: "Nandanwan, Nagpur",
     area: "3BHK",
     type: "Residential",
@@ -249,8 +276,6 @@ export const projectsData = [
       "https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&h=600&fit=crop"
     ]
   },
-
-  
 
 {
     id: 10,

@@ -56,7 +56,7 @@ const Footer = () => {
             </Link>
 
             <p className="text-white-400 leading-relaxed">
-              Building dreams into reality with 25+ years of experience in premium residential construction.
+              Building dreams into reality with 20  + years of experience in premium residential construction.
               Quality craftsmanship and customer satisfaction is our priority.
             </p>
 
@@ -99,8 +99,10 @@ const Footer = () => {
             <ul className="space-y-4">
               {services.map((service, index) => (
                 <li key={index}>
-                  <span className="group flex items-center text-white-400 cursor-pointer hover:text-red-500 transition-all duration-300">
-                    <span className="transform group-hover:translate-x-2 transition-transform duration-300">{service}</span>
+                  <span className="group flex items-center text-white-400 cursor-pointer  transition-all duration-300">
+                    {/* hover:text-red-500 */}
+                    <span className="transform  transition-transform duration-300">{service}</span>
+                       {/* group-hover:translate-x-2 */}
                   </span>
                 </li>
               ))}

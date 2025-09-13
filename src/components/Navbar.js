@@ -27,7 +27,7 @@ const Navbar = () => {
   { name: 'Awards', path: '/awards', icon: Award },   // ✅ Fixed
   { name: 'Career', path: '/career', icon: Briefcase },
   { name: 'BecomePartner', path: '/becomePartner', icon: Briefcase },
-  // { name: 'CSRActivity', path: '/csrActivity', icon: Users },
+  { name: 'CSRActivity', path: '/csrActivity', icon: Users },
   { name: 'Gallery', path: '/gallery', icon: Image },
   { name: 'Contact', path: '/contact', icon: Phone }
 ];

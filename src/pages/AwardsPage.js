@@ -35,12 +35,7 @@ const AwardsPage = () => {
       experience: "19+ Years Experience",
       image: "/images/vikashsir.jpeg",
     },
-    {
-      name: "Mr. Vikas Mishra",
-      role: "Project Manager",
-      experience: "12+ Years Experience",
-      image: "/images/project_manager.jpeg",
-    },
+    
   ];
 
   const awards = [
