@@ -1,57 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Newspaper, Calendar, ExternalLink } from 'lucide-react';
 import Footer from '../components/Footer';
 
 const PressPage = () => {
+  const [previewImage, setPreviewImage] = useState(null);
+
   const pressReleases = [
     {
       id: 1,
-      title: "Madhuprabha Construction Wins Excellence Award 2024",
-      date: "2024-01-15",
-      summary: "Company recognized for outstanding project delivery and quality construction practices.",
-      image: "/images/Awards image.jpg",
-      link: "#"
+      title: "CREDAI Nagpur Metro Urges Citizens to Avail PMAY Subsidy",
+      date: "2022-03-31",
+      summary: "CREDAI Nagpur Metro is encouraging citizens, especially those in the Lower Income Group (LIG), to use the Pradhan Mantri Awas Yojana (PMAY) Credit Linked Subsidy Scheme. The scheme provides a subsidy of up to ₹2.67 lakh on home loans",
+      image: "/images/press-note-1.jpg",
     },
     {
       id: 2,
-      title: "New Residential Project Launch in Nagpur",
+      title: "CREDAI Nagpur Metro Urges Citizens to Avail PMAY Subsidy",
       date: "2024-01-10",
-      summary: "Prajakta Green Serenity project officially launched with modern amenities and eco-friendly design.",
-      image: "/images/prajkta green serenity1.jpeg",
-      link: "#"
+      summary: "CREDAI Nagpur Metro is urging citizens to take advantage of the PMAY Credit Linked Subsidy Scheme before the March 31, 2022 deadline. According to the article, the scheme offers a ₹2.67 lakh subsidy on home loans for households with an annual income of up to ₹6 lakh",
+      image: "/images/press-note-2.jpg",
     },
     {
       id: 3,
-      title: "Partnership with Leading Material Suppliers",
+      title: "CREDAI Nagpur Metro Urges Citizens to Avail PMAY Subsidy",
       date: "2024-01-05",
-      summary: "Strategic partnerships established to ensure quality materials and timely project completion.",
-      image: "/images/project.jpg",
-      link: "#"
+      summary: "CREDAI Nagpur Metro is urging citizens to take advantage of the PMAY Credit Linked Subsidy Scheme before the March 31, 2022 deadline. According to the article, the scheme offers a ₹2.67 lakh subsidy on home loans for households with an annual income of up to ₹6 lakh",
+      image: "/images/press-note-3.jpg",
     },
-    {
-      id: 4,
-      title: "CSR Initiative: Building Schools in Rural Areas",
-      date: "2023-12-20",
-      summary: "Company's commitment to social responsibility through educational infrastructure development.",
-      image: "/images/career 1.jpg",
-      link: "#"
-    },
-    {
-      id: 5,
-      title: "Technology Integration in Construction",
-      date: "2023-12-15",
-      summary: "Adopting modern construction technologies for improved efficiency and quality.",
-      image: "/images/projectdone.jpg",
-      link: "#"
-    },
-    {
-      id: 6,
-      title: "Award for Best Construction Company 2023",
-      date: "2023-12-10",
-      summary: "Recognition for consistent quality and customer satisfaction in construction industry.",
-      image: "/images/Awards image 3.jpg",
-      link: "#"
-    }
   ];
 
   const mediaCoverage = [
@@ -102,14 +77,9 @@ const PressPage = () => {
                   <img
                     src={release.image}
                     alt={release.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    onClick={() => setPreviewImage(release.image)}
                   />
-                  <div className="absolute top-4 left-4">
-                    <div className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-red-600">
-                      <Newspaper className="w-4 h-4" />
-                      <span className="text-xs font-semibold">Press Release</span>
-                    </div>
-                  </div>
                 </div>
                 
                 <div className="p-6">
@@ -129,14 +99,6 @@ const PressPage = () => {
                   <p className="text-gray-600 text-sm mb-4 line-clamp-3">
                     {release.summary}
                   </p>
-                  
-                  <a
-                    href={release.link}
-                    className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 font-medium text-sm transition-colors"
-                  >
-                    Read More
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
                 </div>
               </div>
             ))}
@@ -195,6 +157,25 @@ const PressPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Image Preview Modal */}
+      {previewImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+          <div className="relative max-w-3xl w-full mx-4">
+            <button
+              onClick={() => setPreviewImage(null)}
+              className="absolute top-3 right-3 bg-white text-black rounded-full p-2 shadow-lg hover:bg-gray-200"
+            >
+              ✕
+            </button>
+            <img
+              src={previewImage}
+              alt="Preview"
+              className="w-full h-auto max-h-[80vh] rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>
