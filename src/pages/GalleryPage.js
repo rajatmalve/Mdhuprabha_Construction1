@@ -89,28 +89,7 @@ const GalleryPage = () => {
             </div>
 
             {/* View Toggle */}
-            <div className="flex space-x-3">
-              <button
-                onClick={() => setViewMode('grid')}
-                className={`p-3 rounded-lg ${
-                  viewMode === 'grid'
-                    ? 'bg-red-600 text-white'
-                    : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-                }`}
-              >
-                <Grid className="w-5 h-5" />
-              </button>
-              <button
-                onClick={() => setViewMode('list')}
-                className={`p-3 rounded-lg ${
-                  viewMode === 'list'
-                    ? 'bg-red-600 text-white'
-                    : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
-                }`}
-              >
-                <List className="w-5 h-5" />
-              </button>
-            </div>
+            
           </div>
         </div>
       </section>
