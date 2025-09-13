@@ -56,7 +56,7 @@ const Footer = () => {
             </Link>
 
             <p className="text-white-400 leading-relaxed">
-              Building dreams into reality with 20+ years of experience in premium residential construction.
+              Building dreams into reality with 25+ years of experience in premium residential construction.
               Quality craftsmanship and customer satisfaction is our priority.
             </p>
 
@@ -162,7 +162,7 @@ const Footer = () => {
        
 
 <a
-  href="https://wa.me/9822474211?text=Hello"
+  href="https://wa.me/9522901659?text=Hello"
   target="_blank"
   rel="noopener noreferrer"
   className="fixed bottom-28 right-8 group w-14 h-14 bg-green-500 text-white border border-green-600 rounded-full shadow-lg 
