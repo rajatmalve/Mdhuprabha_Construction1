@@ -14,7 +14,7 @@ const AboutSection = () => {
     },
     {
       icon: <Clock className="w-8 h-8" />,
-      number: "25+",
+      number: "20+",
       label: "Years Experience",
       gradient: "from-yellow-400 to-orange-500",
       bg: "bg-yellow-50"
@@ -39,7 +39,7 @@ const AboutSection = () => {
     "/images/about.jpg",
     "/images/vikashsir.jpeg",
     // "/images/prajaktaproject.JPG",
-    "/images/certification.jpeg",
+    // "/images/certification.jpeg",
   ];
 
   // Auto-slide every 3 seconds
@@ -63,7 +63,7 @@ const AboutSection = () => {
               About <span className="text-red-600">Madhuprabha</span>
             </h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              Madhu Prabha Constructions began its journey in 2000 as Ashish Construction, founded with a simple yet powerful vision: to build structures that not only meet but exceed expectations. Over the years, we have evolved from a small construction company to one of Maharashtra's most trusted construction partners.
+              Madhu Prabha Constructions began its journey in 2005 as Ashish Construction, founded with a simple yet powerful vision: to build structures that not only meet but exceed expectations. Over the years, we have evolved from a small construction company to one of Maharashtra's most trusted construction partners.
             </p>
 
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
@@ -123,7 +123,7 @@ const AboutSection = () => {
             {/* Floating Card Centered */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md rounded-2xl px-6 py-4 shadow-lg">
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-bold text-red-600">25+</span>
+                <span className="text-2xl font-bold text-red-600">20+</span>
                 <span className="text-sm text-slate-700">Years of Excellence</span>
               </div>
             </div>
