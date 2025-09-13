@@ -57,56 +57,19 @@ const AwardsPage = () => {
   ];
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section
-        className="relative pt-24 sm:pt-28 pb-16 sm:pb-20   text-white overflow-hidden"
-        style={{
-  backgroundImage: "url('/images/Awards image 4.jpg')",
-  backgroundSize: "100% 100%",   // pura div fill karega
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat"
-}}
-      >
-        {/* White blur lights */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
-          <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
-        </div>
-
-        {/* Overlay to darken image */}
-        <div className="absolute inset-0 "></div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-              <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
-                Celebrating Excellence
-              </span>
-              <br />
-              <span className="text-white">Recognized for Our Achievements</span>
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl text-red-100 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
-              
-            </p>
-          </div>
-
-          {/* Achievements */}
-          
-        </div>
-      </section>
-
+    <div className="min-h-screen bg-white">
       {/* Awards Gallery */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Awards &{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">recognitions</span>
-            </h2>
+              <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
+                Recognitions
+              </span>
+            </h1>
             <p className="text-base sm:text-xl text-gray-600 max-w-2xl sm:max-w-3xl mx-auto">
-              A glimpse of recognitions that celebrate our dedication and craftsmanship.
+              Celebrating our achievements and recognition in the construction industry.
             </p>
           </div>
 
