@@ -278,34 +278,35 @@ const ProjectDetailPage = () => {
                 </div>
 
                 {/* CTA Button */}
-                <div className="mt-8 pt-6 border-t border-slate-200">
-                  <Link
-                    to="/images/Prajakta-Park-E-Brochure-New-1_compressed.pdf"
-                    className={`group relative w-full py-4 px-6 font-bold rounded-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 flex items-center justify-center space-x-2`}
-                  >
-                    <div
-                      className={`absolute inset-0 bg-gradient-to-r ${
-                        isCurrentProject
-                          ? "from-emerald-500 via-green-500 to-teal-500 group-hover:from-green-400 group-hover:via-emerald-500 group-hover:to-teal-600"
-                          : "from-amber-500 via-yellow-500 to-orange-500 group-hover:from-yellow-400 group-hover:via-amber-500 group-hover:to-orange-600"
-                      } transition-all duration-500`}
-                    ></div>
+               <div className="mt-8 pt-6 border-t border-slate-200">
+  <a
+    href="/images/Prajakta-Park-E-Brochure-New-1_compressed.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`group relative w-full py-4 px-6 font-bold rounded-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 flex items-center justify-center space-x-2`}
+  >
+    <div
+      className={`absolute inset-0 bg-gradient-to-r ${
+        isCurrentProject
+          ? "from-emerald-500 via-green-500 to-teal-500 group-hover:from-green-400 group-hover:via-emerald-500 group-hover:to-teal-600"
+          : "from-amber-500 via-yellow-500 to-orange-500 group-hover:from-yellow-400 group-hover:via-amber-500 group-hover:to-orange-600"
+      } transition-all duration-500`}
+    ></div>
 
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
 
-                    <div
-                      className={`absolute -inset-1 bg-gradient-to-r ${
-                        isCurrentProject
-                          ? "from-emerald-400 to-green-500"
-                          : "from-amber-400 to-yellow-500"
-                      } rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity duration-500`}
-                    ></div>
+    <div
+      className={`absolute -inset-1 bg-gradient-to-r ${
+        isCurrentProject ? "from-emerald-400 to-green-500" : "from-amber-400 to-yellow-500"
+      } rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity duration-500`}
+    ></div>
 
-                    <span className="relative z-10 text-white">
-                      Download E-Brochure
-                    </span>
-                  </Link>
-                </div>
+    <span className="relative z-10 text-white">
+      Download E-Brochure
+    </span>
+  </a>
+</div>
+
               </div>
             </div>
           </div>

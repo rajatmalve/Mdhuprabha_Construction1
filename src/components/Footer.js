@@ -143,7 +143,7 @@ const Footer = () => {
           <p>© 2025 Madhuprabha Construction. All rights reserved.</p>
           <div className="flex items-center space-x-4 mt-2 sm:mt-0">
             <a href="https://www.rsinfotechsys.com/" className="hover:text-red-500 transition-colors duration-300">
-              © RIGHT SERVE INFOTECH SYSTEMS PVT. LTD. 2022
+           Design and developed by  RIGHT SERVE INFOTECH SYSTEMS PVT. LTD.
             </a>
           </div>
         </div>

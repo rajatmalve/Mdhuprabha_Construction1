@@ -8,25 +8,25 @@ const Hero = () => {
   const carouselData = [
     {
       id: 1,
-      title: "PRAJKTA LA MAISON",
+      title: "PRAJAKTA LA-MAISON",
       image: "/images/secondProject.jpg",
       gradient: "from-blue-400 via-indigo-500 to-purple-600",
     },
      {
       id: 2,
-      title: "PRAJKTA PARK",
+      title: "PRAJAKTA PARK",
       image: "/images/HD PHOTO 1.jpg",
       gradient: "from-pink-500 via-red-400 to-yellow-400",
     },
     {
       id: 3,
-      title: "PRAJKTA CLASSIC",
+      title: "PRAJAKTA CLASSIC",
       image: "/images/park_img_page-0001.jpg",
       gradient: "from-pink-500 via-red-400 to-yellow-400",
     },
    {
       id: 4,
-      title: "PRAJKTA GREEN SERENITY",
+      title: "PRAJAKTA GREEN SERENITY",
       image: "images/3[1].png",
       gradient: "from-green-400 via-lime-300 to-emerald-500",
     },

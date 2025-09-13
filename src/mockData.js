@@ -3,22 +3,22 @@
 export const projectsData = [
   {
     id: 1,
-    title: "PRAJKTA LAMASON",
+    title: "PRAJAKTA LA-MAISON",
     location: "Nagpur, Maharashtrar",
     area: "3BHK",
     type: "Residential",
     status: "Ongoing",
     image: "/images/secondProject.jpg",
     description: "A Gold Certified Green Building!",
-    fullDescription: "Introducing ‘PRAJAKTA PARK’, our 7 level 3BHK luxurious park view apartment located in the lap of nature. A peaceful location in the heart of the city where you can enjoy your mornings with blissful greenery.A Perfect Home with Modern Amenities at Abhyankar Nagar, Nagpur.",
+    fullDescription: "Introducing ‘PRAJAKTA La-Masion’, our 7 level 3BHK luxurious view apartment located in the lap of nature. A peaceful location in the heart of the city where you can enjoy your mornings with blissful greenery.A Perfect Home with Modern Amenities at Nagpur.",
     features: [
-      "4 Bedrooms with en-suite bathrooms",
-      "Open-plan living and dining area", 
-      "Modern kitchen with premium appliances",
-      "Private swimming pool and garden",
-      "Smart home automation system",
-      "Italian marble flooring",
-      "Floor-to-ceiling windows",
+      "Seamless Connectivity - Only a 5-minute drive to the airport",
+      "Unbeatable Location - Just steps away from the city's most vibrant hotspot (Radisson Blue Square, Wardha Road), surrounded by malls, pubs, theaters, and metro stations.", 
+      "Luxury at Your Doorstep - Walk to 5-star hotels like Radisson and the upcoming Taj in just 5 minutes.",
+      "Shop with Ease - Enjoy walking-distance access to Westside, Pantaloons, Trends, Sketchers, and more.",
+      "Lifestyle & Leisure - Fine-dine restaurants and lush gardens, all within a 5-minute walk.",
+      "Architectural Elegance - A modern European/Frenchthemed project with a majestic grand lobby on the ground floor.",
+     
       "2-car covered parking"
     ],
     gallery: [
@@ -30,14 +30,14 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "PRAJKTA PARK",
+    title: "PRAJAKTA PARK",
     location: "Telecom Nagar, Nagpur",
     area: "3BHK",
     type: "Residential",
     status: "Ongoing",
-    image: "/images/Prajktapark.png",
+    image: "/images/PRAJAKTApark.png",
     description: "Prajakta Park – A perfect harmony of nature, comfort, and modern living..",
-    fullDescription: "PRAJKTA PARK – A thoughtfully designed residential project that blends nature with modern living. Prajakta Park offers spacious homes surrounded by greenery, ensuring peace and comfort in every corner. With premium amenities, excellent connectivity, and a vibrant community, it is the perfect place to create memories and celebrate life every day.",
+    fullDescription: "PRAJAKTA PARK – A thoughtfully designed residential project that blends nature with modern living. Prajakta Park offers spacious homes surrounded by greenery, ensuring peace and comfort in every corner. With premium amenities, excellent connectivity, and a vibrant community, it is the perfect place to create memories and celebrate life every day.",
     features: [
       "25 premium apartments",
       "2-3 BHK configurations",
@@ -58,7 +58,7 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "PRAJKTA CLASSIC ",
+    title: "PRAJAKTA CLASSIC ",
     location: "Madhav Nagar, Nagpur",
     area: "3BHK",
     type: "Residential",
@@ -397,7 +397,7 @@ export const currentProjectsData = [
     type: "Residential",
     status: "In Progress",
     
-    image: "/images/Prajktapark.png",
+    image: "/images/PRAJAKTApark.png",
     description: "A 5 level 3BHK luxurious park view apartment located in the lap of nature. A peaceful location in the heart of the city where you can enjoy your mornings with blissful greenery. A Perfect Home with Modern Amenities at Abhyankar Nagar, Nagpur.",    
     fullDescription: "Currently under construction, this prestigious 5-floor luxury apartment complex will feature 40 premium units with breathtaking city views. The project includes a sky lounge, infinity pool, fitness center, and landscaped gardens. Each apartment is designed with premium finishes and smart home features.",
     features: [
@@ -469,7 +469,7 @@ export const galleryImages = [
   },
   {
     id: 6,
-    url: "https://madhuprabhaconstructions.in/images/Prajktaproject.JPG",
+    url: "https://madhuprabhaconstructions.in/images/PRAJAKTAproject.JPG",
     title: "Prajakta Project",
     category: "image"
   },
@@ -481,7 +481,7 @@ export const galleryImages = [
   },
   {
     id: 8,
-    url: "https://madhuprabhaconstructions.in/images/prajktaclassic.png",
+    url: "https://madhuprabhaconstructions.in/images/PRAJAKTAclassic.png",
     title: "Prajakta Classic",
     category: "image"
   },
