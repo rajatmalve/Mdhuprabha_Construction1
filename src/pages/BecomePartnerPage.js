@@ -187,11 +187,7 @@ const BecomePartnerPage = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            <div className="inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-4 sm:mb-6">
-              <span className="text-white font-semibold text-xs sm:text-sm uppercase tracking-wider">
-                Partnership Program
-              </span>
-            </div>
+           
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
               <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
                 Become Our
