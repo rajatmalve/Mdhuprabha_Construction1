@@ -8,7 +8,6 @@ export const projectsData = [
     area: "3BHK",
     type: "Residential",
     status: "Ongoing",
-    status:"ongoing",
     image: "/images/secondProject.jpg",
     description: "A Gold Certified Green Building!",
     fullDescription: "Introducing ‘PRAJAKTA La-Masion’, our 7 level 3BHK luxurious view apartment located in the lap of nature. A peaceful location in the heart of the city where you can enjoy your mornings with blissful greenery.A Perfect Home with Modern Amenities at Nagpur.",
