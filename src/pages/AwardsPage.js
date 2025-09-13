@@ -50,7 +50,7 @@ const AwardsPage = () => {
     { image: "/images/PrajactaTai Award-6.jpeg", title: "Celebrating Achievement", caption: "Recognized for outstanding contribution at Times Property Awards 2022" },
     { image: "/images/PrajactaTai Award-4.jpeg", title: "Pride of Achievement", caption: "Recognized with 1st Rank in Apartment Building – MP Birla Cement Awards 2024" },
     { image: "/images/carazol5.JPG", title: " A Moment of Recognition", caption: "Honored with 1st Rank in Apartment Building at MP Birla Cement Awards 2024" },
-    { image: "/images/Prajktaproject.JPG", title: " Celebrating Success", caption: "Our team being recognized for the 'Prajakta' project" },
+    { image: "/images/PRAJAKTAproject.JPG", title: " Celebrating Success", caption: "Our team being recognized for the 'Prajakta' project" },
     { image: "/images/PrajctaTai Award-3.jpeg", title: " Recognized for Quality and Excellence", caption: "We are honored to be recognized by the residents of Prajakta Green Serenity" },
     { image: "/images/all member .JPG", title: "Customer Satisfaction Award", caption: "Client-first approach in every decision" },
     

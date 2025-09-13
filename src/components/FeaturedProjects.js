@@ -7,7 +7,7 @@ import { object } from "zod";
 const currentProjectsData = [
   {
     id: 1,
-    title: "PRAJKTA LA MAISON",
+    title: "PRAJAKTA LA MAISON",
     image: "/images/secondProject.jpg",
     status: "Ongoing",
     location: "Panday layout",
@@ -19,8 +19,8 @@ const currentProjectsData = [
   },
   {
     id: 2,
-    title: "PRAJKTA PARK",
-    image: "/images/Prajktapark.png",
+    title: "PRAJAKTA PARK",
+    image: "/images/PRAJAKTApark.png",
     status: "Ongoing",
     location: "Abhyankar Nagar Nagpur, Maharashtra",
     area: "1800 sq.ft",
@@ -30,7 +30,7 @@ const currentProjectsData = [
   },
   {
     id: 3,
-    title: "PRAJKTA CLASSIC",
+    title: "PRAJAKTA CLASSIC",
     image: "/images/park_img_page-0001.jpg ",
     status: "Complete",
     location: "Abhyankar Nagar,NAGPUR",
@@ -41,7 +41,7 @@ const currentProjectsData = [
   },
   {
     id: 4,
-    title: "PRAJKTA GREEN SERENITY",
+    title: "PRAJAKTA GREEN SERENITY",
     image: "/images/PRAJAKTA-PINNACLE.jpg",
     status: "Complete",
     location: "Madhav Nagar Near Nate Square, Nagpur",
@@ -69,7 +69,7 @@ const FeaturedProjects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-red-600 to-red-500">
-              AUR Projects
+              OUR Projects
             </span>
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">

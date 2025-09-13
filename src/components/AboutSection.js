@@ -1,34 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import { Users, Award, Clock, CheckCircle } from 'lucide-react';
-
+import { Link } from "react-router-dom";
 const AboutSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const stats = [
-    { 
-      icon: <Award className="w-8 h-8" />, 
-      number: "150000+", 
+    {
+      icon: <Award className="w-8 h-8" />,
+      number: "150000+",
       label: "Sq.Ft Area Delivered",
       gradient: "from-pink-500 to-red-500",
       bg: "bg-pink-50"
     },
-    { 
-      icon: <Clock className="w-8 h-8" />, 
-      number: "25+", 
+    {
+      icon: <Clock className="w-8 h-8" />,
+      number: "25+",
       label: "Years Experience",
       gradient: "from-yellow-400 to-orange-500",
       bg: "bg-yellow-50"
     },
-    { 
-      icon: <Users className="w-8 h-8" />, 
-      number: "150+", 
+    {
+      icon: <Users className="w-8 h-8" />,
+      number: "150+",
       label: "Happy Clients",
       gradient: "from-green-400 to-emerald-500",
       bg: "bg-green-50"
     },
-    { 
-      icon: <CheckCircle className="w-8 h-8" />, 
-      number: "20+", 
+    {
+      icon: <CheckCircle className="w-8 h-8" />,
+      number: "20+",
       label: "Projects done",
       gradient: "from-blue-500 to-indigo-600",
       bg: "bg-blue-50"
@@ -38,7 +38,7 @@ const AboutSection = () => {
   const carouselImages = [
     "/images/about.jpg",
     "/images/vikashsir.jpeg",
-    "/images/Prajktaproject.JPG",
+    "/images/PRAJAKTAproject.JPG",
     "/images/certification.jpeg",
   ];
 
@@ -88,9 +88,15 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <button className="mt-8 bg-gradient-to-r from-red-500 to-red-700 text-white px-8 py-3 rounded-full font-medium hover:from-red-600 hover:to-red-800 transition-all duration-300 transform hover:scale-105">
+            <Link
+          
+              to="/about"
+              className="mt-8 bg-gradient-to-r from-red-500 to-red-700 text-white px-8 py-3 rounded-full font-medium hover:from-red-600 hover:to-red-800 transition-all duration-300 transform hover:scale-105 inline-block"
+            ><button>
               Learn More About Us
-            </button>
+              </button>
+            </Link>
+
           </div>
 
           {/* Right Carousel with Stylish Design */}
