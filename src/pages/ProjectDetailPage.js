@@ -57,6 +57,22 @@ const ProjectDetailPage = () => {
 
   const isCurrentProject = project.status === "Ongoing";
 
+  // Function to get the appropriate PDF brochure for each project
+  const getProjectBrochure = (projectTitle) => {
+    const brochureMap = {
+      "PRAJAKTA LA-MAISON": "/images/Prajakta La Maison_Brochure(4) (2).pdf",
+      "PRAJAKTA PARK": "/images/Prajakta-Park-E-Brochure-New-1_compressed (1)(final).pdf",
+      "PRAJAKTA CLASSIC": "/images/Prajakta-Park-E-Brochure-New-1_compressed.pdf",
+      "Prajakta Green Serenity": "/images/Green Serenity E-brochure..pdf",
+      "keshav enclave nandanwan": "/images/Keshav-Enclave-Brochure.pdf",
+      "Prajakta cross Winds": "/images/Prajakta-Crosswinds-Brochure.pdf",
+      "Prajakta Prabhakamal": "/images/Prajakta-Prabhakamal-Brochure.pdf",
+      "Prajakta Orchid": "/images/Prajakta-Orchid-Brochure.pdf"
+    };
+    
+    return brochureMap[projectTitle] || "/images/Prajakta-Park-E-Brochure-New-1_compressed.pdf";
+  };
+
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
     setLightboxOpen(true);
@@ -280,7 +296,7 @@ const ProjectDetailPage = () => {
                 {/* CTA Button */}
                <div className="mt-8 pt-6 border-t border-slate-200">
   <a
-    href="/images/Prajakta-Park-E-Brochure-New-1_compressed.pdf"
+    href={getProjectBrochure(project.title)}
     target="_blank"
     rel="noopener noreferrer"
     className={`group relative w-full py-4 px-6 font-bold rounded-2xl overflow-hidden transition-all duration-500 transform hover:scale-105 flex items-center justify-center space-x-2`}
