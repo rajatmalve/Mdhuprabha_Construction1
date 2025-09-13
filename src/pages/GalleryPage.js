@@ -56,7 +56,7 @@ const GalleryPage = () => {
       <section 
         className="relative pt-28 pb-20 text-white overflow-hidden"
         style={{
-          backgroundImage: "url('/images/3609.jpg')",
+          backgroundImage: "url('/images/gellary image.jpg')",
           backgroundSize: "100% 100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -76,9 +76,10 @@ const GalleryPage = () => {
             </span>
             <span className="text-white"> Gallery</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-red-100 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
-            Explore our achievements, press coverage, and social impact through our comprehensive media collection.
-          </p>
+          <p className="text-base sm:text-lg md:text-xl max-w-3xl sm:max-w-4xl mx-auto leading-relaxed font-bold">
+  Explore our achievements, press coverage, and social impact through our comprehensive media collection.
+</p>
+
         </div>
       </section>
 

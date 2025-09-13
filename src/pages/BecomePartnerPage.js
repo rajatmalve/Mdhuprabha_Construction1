@@ -207,87 +207,10 @@ const BecomePartnerPage = () => {
       </section>
 
       {/* Partnership Types */}
-      <section className="py-16 sm:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-              Partnership{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">Types</span>
-            </h2>
-            <p className="text-base sm:text-xl text-gray-600 max-w-2xl sm:max-w-3xl mx-auto">
-              Choose the partnership model that best fits your business and expertise.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {partnershipTypes.map((partner, idx) => (
-              <div
-                key={idx}
-                className="group relative overflow-hidden rounded-2xl border border-red-100 bg-white shadow-md hover:shadow-2xl transform-gpu transition-all duration-300 hover:-translate-y-1"
-              >
-                <div className="absolute -z-10 inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="inline-flex items-center gap-2 rounded-full bg-red-50 px-3 py-1 text-red-600">
-                      <Handshake className="w-4 h-4" />
-                      <span className="text-xs font-semibold tracking-wide">{partner.type}</span>
-                    </div>
-                    <div className="text-xs text-gray-500">{partner.location}</div>
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">{partner.title}</h3>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {partner.tags.map((t, i) => (
-                      <span key={i} className="text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700">{t}</span>
-                    ))}
-                  </div>
-                  <button 
-                    onClick={() => {
-                      setFormData((prev) => ({ ...prev, partnershipType: partner.title }));
-                      const el = document.getElementById('partner-form');
-                      if (el && el.scrollIntoView) {
-                        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                      }
-                    }}
-                    className="mt-auto inline-flex items-center justify-center rounded-lg bg-red-600 px-4 py-2 text-white text-sm font-semibold shadow hover:bg-red-700 transition-colors"
-                  >
-                    Apply Now
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Benefits Section */}
-      <section className="py-16 sm:py-20 bg-gradient-to-br from-white to-red-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-              Why{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">Partner With Us</span>
-            </h2>
-            <p className="text-base sm:text-xl text-gray-600 max-w-2xl sm:max-w-3xl mx-auto">
-              Experience mutual growth and success through our comprehensive partnership program.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {benefits.map((benefit, index) => {
-              const Icon = benefit.icon;
-              return (
-                <div key={index} className="group p-6 sm:p-8 bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-red-100 hover:border-red-300 transform hover:-translate-y-2">
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r from-red-500 to-red-600 rounded-lg sm:rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
-                  </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-4">{benefit.title}</h3>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed text-justify">{benefit.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+     
 
       {/* Application Form */}
       <section id="partner-form" className="py-16 sm:py-20 bg-white">
