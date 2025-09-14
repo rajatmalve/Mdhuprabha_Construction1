@@ -71,17 +71,23 @@ const CsrActivity = () => {
           </div>
 
           {/* Extra Image below cards */}
-          <div className="mt-12">
-          <h2 className="text-bold text-black">  “PYAU” Facilities:</h2>
-<p>In every project, we install “PYAU”, which provides drinking water facilities to the workers on the construction site and also for all the other people who pass by.</p>
+          <div className="mt-12 text-center">
+            <h2 className="text-xl font-bold text-black mb-2">“PYAU” Facilities:</h2>
+            <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
+              In every project, we install “PYAU”, which provides drinking water
+              facilities to the workers on the construction site and also for all the
+              other people who pass by.
+            </p>
 
-
-            <img
-              src="/images/crs-1200x675.jpeg" // <-- yaha apni image ka path daalna
-              alt="CSR Extra"
-              className="w-full h-auto rounded-2xl shadow-lg cursor-pointer"
-              onClick={() => setPreviewImage("/images/crs-1200x675.jpeg")}
-            />
+            {/* Image container */}
+            <div className="max-w-lg mx-auto">
+              <img
+                src="/images/crs-1200x675.jpeg"
+                alt="CSR Extra"
+                className="w-full h-auto rounded-2xl shadow-lg cursor-pointer"
+                onClick={() => setPreviewImage("/images/crs-1200x675.jpeg")}
+              />
+            </div>
           </div>
         </div>
       </div>
