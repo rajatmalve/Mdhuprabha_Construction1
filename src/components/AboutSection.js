@@ -108,8 +108,8 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
-              About <span className="text-red-600">Madhuprabha</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#011321] mb-6">
+              About <span className="text-[#011321]">Madhuprabha</span>
             </h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
             Madhuprabha Construction was started in the year 2005. The business start was modest with the regular clients in Nagpur. Over the period, in last 20 years, now we are the leading company in the construction group. Our projects not only deal in Nagpur but also in and around Central India. The journey of hard work, dedication, and trust of our clients has brought us this long way. We deal in the commercials and housing society. With the experience in designing and building these, our company has higher standards in terms of quality and at the same time, it remains affordable to everyone. We are also very well known for the perfect carvings and core commitment for every project.</p>
@@ -123,14 +123,14 @@ const AboutSection = () => {
             {/* Mission & Values */}
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-red-600 rounded-full mt-3 flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[#011321] rounded-full mt-3 flex-shrink-0"></div>
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-2">Our Mission</h4>
                   <p className="text-slate-600">Our mission is to maintain the relationship with the clients of trust and loyalty. Also to deliver a good quality of services at affordable prices by our qualified personnel for different types of projects to the customers. We aim at giving our best to deliver what exactly clients have in mind.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-red-600 rounded-full mt-3 flex-shrink-0"></div>
+                <div className="w-2 h-2 bg-[#011321] rounded-full mt-3 flex-shrink-0"></div>
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-2">Our Vision</h4>
                   <p className="text-slate-600">Our vision is to be one of the top construction industry and organizations which are excellent in quality, and deliver the services in a better way so our clients are satisfied.</p>
@@ -140,7 +140,7 @@ const AboutSection = () => {
 
             <Link
               to="/about"
-              className="mt-8 bg-gradient-to-r from-red-500 to-red-700 text-white px-8 py-3 rounded-full font-medium hover:from-red-600 hover:to-red-800 transition-all duration-300 transform hover:scale-105 inline-block"
+              className="mt-8 bg-[#011321] text-white px-8 py-3 rounded-full font-medium hover:from-red-600 hover:to-red-800 transition-all duration-300 transform hover:scale-105 inline-block"
             >
               <button>
                 Learn More About Us

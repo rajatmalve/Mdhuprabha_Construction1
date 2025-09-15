@@ -43,11 +43,28 @@ const ProjectsPage = () => {
   {/* Overlay for readability */}
   <div className="absolute inset-0 bg-black/40"></div>
 
-        <div className="absolute inset-0 opacity-20 z-0">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-64 h-64 bg-gray-200 rounded-full blur-2xl"></div>
-        </div>
+  {/* Decorative blobs */}
+  <div className="absolute inset-0 opacity-20 z-0">
+    <div className="absolute top-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+    <div className="absolute bottom-20 left-20 w-64 h-64 bg-gray-200 rounded-full blur-2xl"></div>
+  </div>
 
+  {/* Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+      <span className="bg-white bg-clip-text text-transparent drop-shadow-lg">
+        Completed
+      </span>
+      <br />
+      <span className="text-white">Projects</span>
+    </h1>
+    <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
+      Explore our portfolio of successfully completed residential construction projects that showcase our commitment to quality, innovation, and customer satisfaction.
+    </p>
+  </div>
+</section>
+
+{/* 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
             <span className="bg-white bg-clip-text text-transparent drop-shadow-lg">
@@ -60,7 +77,7 @@ const ProjectsPage = () => {
             Explore our portfolio of successfully completed residential construction projects that showcase our commitment to quality, innovation, and customer satisfaction.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Projects Grid */}
       <section className="py-20 bg-white">

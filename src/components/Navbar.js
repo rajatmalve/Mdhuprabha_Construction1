@@ -52,9 +52,9 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-        ${location.pathname === '/'
-          ? (scrolled ? 'bg-white shadow-md' : 'bg-transparent')
-          : 'bg-white shadow-md'
+        ${location.pathname === '/' 
+          ? (scrolled ? 'bg-[#011321] shadow-md' : 'bg-transparent')
+          : 'bg-[#011321 shadow-md'
         }
       `}
     >
@@ -122,16 +122,16 @@ const Navbar = () => {
                   to={item.path}
                   className={`relative px-2 py-1 font-medium transition focus:outline-none focus:ring-0
                     ${isActive(item.path)
-                      ? 'text-red-600 font-semibold'
+                      ? 'text-white font-semibold'
                       : location.pathname === '/'
-                        ? (scrolled ? 'text-red-500 hover:text-red-600' : 'text-white hover:text-red-200')
-                        : 'text-red-500 hover:text-red-600'
+                      ? (scrolled ? 'text-white hover:text-red-600' : 'text-white hover:text-white')
+                      : 'text-white hover:text-white'
                     }
                   `}
                 >
                   <span>{item.name}</span>
                   {isActive(item.path) && (
-                    <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-red-600 rounded-full"></span>
+                    <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-white rounded-full"></span>
                   )}
                 </Link>
               );
