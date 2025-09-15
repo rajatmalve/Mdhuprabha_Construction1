@@ -32,12 +32,12 @@ const ProjectsPage = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-  className="relative pt-24 pb-20 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
+  className="relative flex items-center justify-center text-white overflow-hidden"
   style={{
-    backgroundImage: "url(/images/architects-collaborating-blueprints-construction-site.jpg)", // यहाँ अपनी image का path दो
+    backgroundImage: "url(/images/architects-collaborating-blueprints-construction-site.jpg)", 
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height:"90vh"
+    height: "90vh",
   }}
 >
   {/* Overlay for readability */}
@@ -49,20 +49,21 @@ const ProjectsPage = () => {
     <div className="absolute bottom-20 left-20 w-64 h-64 bg-gray-200 rounded-full blur-2xl"></div>
   </div>
 
-  {/* Content */}
-  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+  {/* Centered Content */}
+  <div className="relative z-10 max-w-5xl px-4 text-center">
+    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6">
       <span className="bg-white bg-clip-text text-transparent drop-shadow-lg">
-        Completed
+        Completed Projects
       </span>
-      <br />
-      <span className="text-white">Projects</span>
+      
+      {/* <span className="text-white">Projects</span> */}
     </h1>
-    <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
+    <p className="text-lg sm:text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
       Explore our portfolio of successfully completed residential construction projects that showcase our commitment to quality, innovation, and customer satisfaction.
     </p>
   </div>
 </section>
+
 
 {/* 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

@@ -168,39 +168,39 @@ const BecomePartnerPage = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-        className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
-        style={{
-          backgroundImage: "url('/images/handshake-businessmen.jpg')",
-          backgroundSize: "100% 100%",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          height: '90vh',
-        }}
-      >
-        {/* White blur lights */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
-          <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
-        </div>
+  className="relative flex items-center justify-center text-white overflow-hidden"
+  style={{
+    backgroundImage: "url('/images/handshake-businessmen.jpg')",
+    backgroundSize: "100% 100%",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: '90vh',
+  }}
+>
+  {/* White blur lights */}
+  <div className="absolute inset-0 opacity-20">
+    <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
+    <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
+  </div>
 
-        <div className="absolute inset-0"></div>
+  {/* Overlay for readability (optional, agar dark karna ho) */}
+  <div className="absolute inset-0"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-           
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-              <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
-                Become Our
-              </span>
-              <br />
-              <span className="text-white">Trusted Partner</span>
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl text-red-100 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
-              Join hands with Madhuprabha Construction and grow your business while contributing to our vision of building excellence.
-            </p>
-          </div>
-        </div>
-      </section>
+  {/* Centered Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
+      <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
+        Become Our
+      </span>
+      <br />
+      <span className="text-white">Trusted Partner</span>
+    </h1>
+    <p className="text-base sm:text-lg md:text-xl text-red-100 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
+      Join hands with Madhuprabha Construction and grow your business while contributing to our vision of building excellence.
+    </p>
+  </div>
+</section>
+
 
       {/* Partnership Types */}
      
