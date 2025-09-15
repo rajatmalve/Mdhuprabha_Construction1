@@ -95,8 +95,8 @@ const GalleryPage = () => {
                   onClick={() => setActiveGalleryTab(tab.id)}
                   className={`flex items-center space-x-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
                     activeGalleryTab === tab.id
-                      ? 'bg-red-600 text-white shadow-lg scale-105'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-red-600'
+                      ? 'bg-[#011321] text-white shadow-lg scale-105'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-[#011321]'
                   }`}
                 >
                   <Icon className="w-5 h-5" />
@@ -118,7 +118,7 @@ const GalleryPage = () => {
                 {filteredItems.map((item) => (
                   <div
                     key={item.id}
-                    className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-red-600/40 transition-all duration-500 transform hover:-translate-y-2"
+                    className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-[#011321]/40 transition-all duration-500 transform hover:-translate-y-2"
                   >
                     <div className="relative aspect-square overflow-hidden">
                       <img
@@ -133,7 +133,7 @@ const GalleryPage = () => {
                       <div className="absolute top-4 left-4">
                         <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                           item.category === 'video' 
-                            ? 'bg-red-600 text-white' 
+                            ? 'bg-[#011321] text-white' 
                             : 'bg-white text-black'
                         }`}>
                           {item.category === 'video' ? 'Video' : 'Image'}
@@ -157,7 +157,7 @@ const GalleryPage = () => {
                                 galleryImages.findIndex(image => image.id === item.id)
                               )
                             }
-                            className="p-3 bg-red-600/80 backdrop-blur-sm text-white rounded-full hover:bg-red-700 transform hover:scale-110 transition-all duration-300">
+                            className="p-3 bg-[#011321]/80 backdrop-blur-sm text-white rounded-full hover:bg-red-700 transform hover:scale-110 transition-all duration-300">
                             <ExternalLink className="w-6 h-6" />
                           </button>
                         </div>
@@ -176,7 +176,7 @@ const GalleryPage = () => {
                 {filteredItems.map((item) => (
                   <div
                     key={item.id}
-                    className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-red-600/40 transition-all duration-500 transform hover:-translate-y-2 break-inside-avoid"
+                    className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-[#011321]/40 transition-all duration-500 transform hover:-translate-y-2 break-inside-avoid"
                   >
                     <div className="relative h-full overflow-hidden">
                       <img
@@ -191,7 +191,7 @@ const GalleryPage = () => {
                       <div className="absolute top-4 left-4">
                         <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                           item.category === 'video' 
-                            ? 'bg-red-600 text-white' 
+                            ? 'bg-[#011321] text-white' 
                             : 'bg-white text-black'
                         }`}>
                           {item.category === 'video' ? 'Video' : 'Image'}
@@ -215,7 +215,7 @@ const GalleryPage = () => {
                                 galleryImages.findIndex(image => image.id === item.id)
                               )
                             }
-                            className="p-2 bg-red-600/80 text-white rounded-full hover:bg-red-700 transform hover:scale-110 transition-all duration-300">
+                            className="p-2 bg-[#011321]/80 text-white rounded-full hover:bg-red-700 transform hover:scale-110 transition-all duration-300">
                             <ExternalLink className="w-5 h-5" />
                           </button>
                         </div>

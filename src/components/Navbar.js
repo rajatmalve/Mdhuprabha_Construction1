@@ -54,7 +54,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
         ${location.pathname === '/' 
           ? (scrolled ? 'bg-[#011321] shadow-md' : 'bg-transparent')
-          : 'bg-[#011321 shadow-md'
+          : 'bg-[#011321] shadow-md'
         }
       `}
     >
