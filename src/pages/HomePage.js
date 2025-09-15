@@ -35,7 +35,7 @@ const HomePage = () => {
       
 
       {/* Testimonials Section */}
-      <section className="relative py-24 bg-gradient-to-br from-white via-red-50 to-white overflow-hidden">
+      {/* <section className="relative py-24 bg-gradient-to-br from-white via-red-50 to-white overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <div className="inline-flex items-center space-x-2 px-6 py-2 rounded-full bg-gray-100 border border-gray-200 shadow-sm mb-6">
@@ -83,7 +83,7 @@ const HomePage = () => {
             ))}
           </div>
 
-          {/* CTA */}
+         
           <div className="text-center mt-14">
             <a
               href="/contact"
@@ -94,7 +94,7 @@ const HomePage = () => {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
