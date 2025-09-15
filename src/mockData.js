@@ -380,8 +380,8 @@ export const projectsData = [
       "Energy-efficient lighting"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop",
+      "/images/IMG_20210930_133628-min.jpg",
+      "/images/IMG_20210930_133549-min.jpg",
       "https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&h=600&fit=crop"
     ]
   },
@@ -570,7 +570,7 @@ export const testimonials = [
 
 export const aboutUsData = {
   title: "About Madhu Prabha Construction",
-  shortDescription: "Leading residential construction company with 20 Glorious Years of experience in creating quality construction.",
+  shortDescription: "Leading residential construction company with 25 Glorious Years of experience in creating quality construction.",
   fullDescription: ` Madhu Prabha Constructions began its journey in 2005 as Ashish Construction,
                  founded with a simple yet powerful vision: to build structures that not only
                   meet but exceed expectations. Over the years, we have evolved from a small 
@@ -579,14 +579,14 @@ export const aboutUsData = {
                the core values that have guided us from the beginning. We believe that construction is
                 not just about building structures; it's about creating spaces where lives unfold, businesses 
                 thrive, and communities flourish.
-                  Today, with over 500 completed projects and more than 1000 satisfied clients, we continue 
+                  Today, with over 25+ completed projects and more than 200+ satisfied clients, we continue 
                to set new standards in construction excellence, always staying true to our founding principles 
                of quality, integrity, and customer satisfaction.                
                   
                   `,
-  experience: "20 Glorious Years",
-  projectsCompleted: "20+",
-  happyClients: "150+",
+  experience: "25 Glorious Years",
+  projectsCompleted: "25+",
+  happyClients: "200+",
   awards: "25+",
   location: "Nagpur, Maharashtra",
   image: "https://madhuprabhaconstructions.in/images/about.jpg"

@@ -9,7 +9,7 @@ const AboutSection = () => {
   const stats = [
     {
       icon: <Award className="w-8 h-8" />,
-      number: 150000,
+      number: 200000,
       suffix: "+",
       label: "Sq.Ft Area Delivered",
       gradient: "from-pink-500 to-red-500",
@@ -17,7 +17,7 @@ const AboutSection = () => {
     },
     {
       icon: <Clock className="w-8 h-8" />,
-      number: 20,
+      number: 25,
       suffix: "+",
       label: "Years Experience",
       gradient: "from-yellow-400 to-orange-500",
@@ -25,7 +25,7 @@ const AboutSection = () => {
     },
     {
       icon: <Users className="w-8 h-8" />,
-      number: 150,
+      number: 200,
       suffix: "+",
       label: "Happy Clients",
       gradient: "from-green-400 to-emerald-500",
@@ -33,7 +33,7 @@ const AboutSection = () => {
     },
     {
       icon: <CheckCircle className="w-8 h-8" />,
-      number: 20,
+      number: 25,
       suffix: "+",
       label: "Projects done",
       gradient: "from-blue-500 to-indigo-600",
@@ -43,6 +43,7 @@ const AboutSection = () => {
 
   const carouselImages = [
     "/images/about.jpg",
+    // "/images/WhatsApp Image 2025-09-13 at 16.54.10_5316750b.jpg",
     "/images/vikashsir.jpeg",
   ];
 
@@ -115,7 +116,9 @@ const AboutSection = () => {
             </p>
 
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              Our transformation to Madhu Prabha Constructions reflects our growth while maintaining the core values that have guided us from the beginning. We believe that construction is not just about building structures; it's about creating spaces where lives unfold, businesses thrive, and communities flourish. Today, with over 500 completed projects and more than 1000 satisfied clients, we continue to set new standards in construction excellence, always staying true to our founding principles of quality, integrity, and customer satisfaction.
+              Our transformation to Madhu Prabha Constructions reflects our growth while maintaining the core values that have guided us from the beginning. We believe that construction is not just about building structures; it's about creating spaces where lives unfold, businesses thrive, and communities flourish. 
+
+              {/* Today, with over 500 completed projects and more than 1000 satisfied clients, we continue to set new standards in construction excellence, always staying true to our founding principles of quality, integrity, and customer satisfaction. */}
             </p>
 
             {/* Mission & Values */}
@@ -169,7 +172,7 @@ const AboutSection = () => {
             {/* Floating Card */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md rounded-2xl px-6 py-4 shadow-lg">
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-bold text-red-600">20+</span>
+                <span className="text-2xl font-bold text-red-600">25+</span>
                 <span className="text-sm text-slate-700">Years of Excellence</span>
               </div>
             </div>
