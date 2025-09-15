@@ -52,8 +52,8 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
         ${location.pathname === '/' 
-          ? (scrolled ? 'bg-white shadow-md' : 'bg-transparent')
-          : 'bg-white shadow-md'
+          ? (scrolled ? 'bg-[#011321] shadow-md' : 'bg-transparent')
+          : 'bg-[#011321 shadow-md'
         }
       `}
     >
@@ -90,8 +90,8 @@ const Navbar = () => {
                           ${careerDropdownItems.some(dropdownItem => isActive(dropdownItem.path))
                             ? 'text-red-600 font-semibold'
                             : location.pathname === '/'
-                            ? (scrolled ? 'text-red-500 hover:text-red-600' : 'text-white hover:text-red-200')
-                            : 'text-red-500 hover:text-red-600'
+                            ? (scrolled ? 'text-white hover:text-red-600' : 'text-white hover:text-white')
+                            : 'text-white hover:text-white'
                           }
                         `}>
                         <Icon className="w-4 h-4" />
@@ -126,8 +126,8 @@ const Navbar = () => {
                               onClick={() => setCareerDropdownOpen(false)}
                               className={`flex items-center space-x-3 px-4 py-2 text-sm transition focus:outline-none focus:ring-0
                                 ${isActive(dropdownItem.path)
-                                  ? 'bg-red-50 text-red-600 font-semibold'
-                                  : 'text-gray-700 hover:bg-gray-50 hover:text-red-600'}
+                                  ? 'bg-white text-white font-semibold'
+                                  : 'text-gray-700 hover:bg-gray-50 hover:text-white'}
                               `}
                             >
                               <DropdownIcon className="w-4 h-4" />
@@ -147,17 +147,17 @@ const Navbar = () => {
                   to={item.path}
                   className={`relative px-2 py-1 flex items-center space-x-2 font-medium transition focus:outline-none focus:ring-0
                     ${isActive(item.path)
-                      ? 'text-red-600 font-semibold'
+                      ? 'text-white font-semibold'
                       : location.pathname === '/'
-                      ? (scrolled ? 'text-red-500 hover:text-red-600' : 'text-white hover:text-red-200')
-                      : 'text-red-500 hover:text-red-600'
+                      ? (scrolled ? 'text-white hover:text-red-600' : 'text-white hover:text-white')
+                      : 'text-white hover:text-white'
                     }
                   `}
                 >
                   <Icon className="w-4 h-4" />
                   <span>{item.name}</span>
                   {isActive(item.path) && (
-                    <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-red-600 rounded-full"></span>
+                    <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-white rounded-full"></span>
                   )}
                 </Link>
               );
