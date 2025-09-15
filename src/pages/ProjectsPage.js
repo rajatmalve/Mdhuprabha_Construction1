@@ -29,7 +29,7 @@ const ProjectsPage = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section
-  className="relative pt-28 pb-20 bg-gradient-to-br  from-red-700 via-red-600 to-red-500 text-white overflow-hidden"
+  className="relative pt-24 pb-20 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
   style={{
     backgroundImage: "url(/images/architects-collaborating-blueprints-construction-site.jpg)", // यहाँ अपनी image का path दो
     backgroundSize: "cover",
