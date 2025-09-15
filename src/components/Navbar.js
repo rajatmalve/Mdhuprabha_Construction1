@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Building, Users, Phone, Image, Briefcase, ChevronDown, Handshake } from 'lucide-react';
+import { Menu, X, Home, Building, Users, Phone, Image, Briefcase, ChevronDown, Handshake, Award } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,14 +36,17 @@ const Navbar = () => {
     { name: 'Home', path: '/', icon: Home },
     { name: 'About Us', path: '/about', icon: Users },
     { name: 'Projects', path: '/projects', icon: Building },
-    { name: 'Career', path: '/career', icon: Briefcase, hasDropdown: true },
+    // { name: 'Career', path: '/career', icon: Briefcase, hasDropdown: true },
+    { name: 'Become Partner', path: '/becomePartner', icon: Handshake },
+    { name: 'Awards', path: '/awards', icon: Award },
+     { name: 'CSR Activity', path: '/csrActivity', icon: Handshake },
     { name: 'Gallery', path: '/gallery', icon: Image },
     { name: 'Contact', path: '/contact', icon: Phone }
   ];
 
   const careerDropdownItems = [
     { name: 'Career', path: '/career', icon: Briefcase },
-    { name: 'Become Partner', path: '/becomePartner', icon: Handshake }
+    
   ];
 
   const isActive = (path) => location.pathname === path;
