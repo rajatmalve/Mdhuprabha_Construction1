@@ -60,19 +60,16 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-         {/* Logo */}
-<Link to="/" className="flex items-center focus:outline-none focus:ring-0">
-  <div className="h-32 w-auto flex items-center">
-    <img
-      src="/images/about (4).png"
-      alt="Madhuprabha Construction Logo"
-      className="h-full w-auto object-contain"
-    />
-  </div>
-</Link>
-
-
-
+          {/* Logo */}
+          <Link to="/" className="flex items-center focus:outline-none focus:ring-0">
+            <div className="h-32 w-auto flex items-center">
+              <img
+                src="/images/about (4).png"
+                alt="Madhuprabha Construction Logo"
+                className="h-full w-auto object-contain"
+              />
+            </div>
+          </Link>
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => {
