@@ -74,7 +74,7 @@ const FeaturedProjects = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-red-600 to-red-500">
+            <span className="bg-clip-text text-transparent bg-[#011321]">
               Our Projects
             </span>
           </h2>
@@ -100,7 +100,7 @@ const FeaturedProjects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-red-100/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute top-3 right-3">
-                  <div className="px-2 py-1 bg-red-600 text-white text-xs font-semibold rounded-full shadow-md border border-red-200">
+                  <div className="px-2 py-1 bg-[#011321] text-white text-xs font-semibold rounded-full shadow-md border border-red-200">
                     {project.status}
                   </div>
                 </div>
@@ -137,9 +137,9 @@ const FeaturedProjects = () => {
                 <div className="flex flex-col gap-2">
                   <Link
                     to={`/project/${project.id}`}
-                    className="group py-2 px-4 text-xs font-semibold rounded-xl border border-red-300 bg-white hover:bg-red-50 transition-all duration-300"
+                    className="group py-2 px-4 text-xs font-semibold rounded-xl border border-[#011321] bg-white hover:bg-red-50 transition-all duration-300"
                   >
-                    <div className="flex items-center justify-center space-x-1 text-red-700 group-hover:text-red-800">
+                    <div className="flex items-center justify-center space-x-1 text-[#011321] group-hover:text-[#011321]">
                       <span>View</span>
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
@@ -149,9 +149,9 @@ const FeaturedProjects = () => {
                     href={`/images/${project.brouchure}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group py-2 px-4 text-xs font-semibold rounded-xl border border-red-300 bg-white hover:bg-red-50 transition-all duration-300"
+                    className="group py-2 px-4 text-xs font-semibold rounded-xl border border-[#011321] bg-white hover:bg-red-50 transition-all duration-300"
                   >
-                    <div className="flex items-center justify-center space-x-1 text-red-700 group-hover:text-red-800">
+                    <div className="flex items-center justify-center space-x-1 text-[#011321] group-hover:text-[#011321]">
                       <span>Brochure</span>
                       <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                     </div>
@@ -166,12 +166,12 @@ const FeaturedProjects = () => {
         <div className="text-center">
           <Link
             to="/projects"
-            className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-red-300 bg-white hover:bg-red-50 transition-all duration-300"
+            className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-white hover:bg-red-50 transition-all duration-300"
           >
-            <span className="text-red-700 group-hover:text-red-800">
+            <span className="text-[#011321] group-hover:text-[#011321]">
               View All Projects
             </span>
-            <ArrowRight className="w-5 h-5 text-red-700 group-hover:translate-x-2 transition-transform duration-300" />
+            <ArrowRight className="w-5 h-5 text-[#011321] group-hover:translate-x-2 transition-transform duration-300" />
           </Link>
         </div>
       </div>

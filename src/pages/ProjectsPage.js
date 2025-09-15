@@ -99,7 +99,7 @@ const ProjectsPage = () => {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute top-2 right-2">
-                        <span className="px-2 py-1 bg-red-600 text-white text-[10px] font-semibold rounded-full shadow">
+                        <span className="px-2 py-1 bg-[#011321] text-white text-[10px] font-semibold rounded-full shadow">
                           {project.status}
                         </span>
                       </div>
@@ -107,11 +107,11 @@ const ProjectsPage = () => {
 
                     {/* Project Content */}
                     <div className="p-4">
-                      <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors duration-300">
+                      <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#011321] transition-colors duration-300">
                         {project.title}
                       </h3>
                       <div className="flex items-center text-gray-600 text-xs mb-2">
-                        <MapPin className="w-3 h-3 mr-1 text-red-600 flex-shrink-0" />
+                        <MapPin className="w-3 h-3 mr-1 text-[#011321] flex-shrink-0" />
                         <span>{project.location}</span>
                       </div>
                       <p className="text-gray-700 text-xs leading-snug mb-4 line-clamp-2">
@@ -119,7 +119,7 @@ const ProjectsPage = () => {
                       </p>
                       <Link
                         to={`/project/${project.id}`}
-                        className="w-full inline-block text-center py-2 px-3 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
+                        className="w-full inline-block text-center py-2 px-3 bg-[#011321] text-white text-sm font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
                       >
                         View
                       </Link>
@@ -133,7 +133,7 @@ const ProjectsPage = () => {
                 <div className="text-left mt-10">
                   <button
                     onClick={() => setShowAll(!showAll)}
-                    className="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
+                    className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
                   >
                     {showAll ? "Show Less" : "Read More"}
                   </button>
@@ -156,7 +156,7 @@ const ProjectsPage = () => {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 bg-red-600 text-white text-xs font-semibold rounded-full shadow-lg">
+                        <span className="px-3 py-1 bg-[#011321] text-white text-xs font-semibold rounded-full shadow-lg">
                           {project.status}
                         </span>
                       </div>
@@ -165,21 +165,21 @@ const ProjectsPage = () => {
                     {/* Content */}
                     <div className="lg:w-2/3 p-8 flex flex-col justify-between">
                       <div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300">
+                        <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#011321] transition-colors duration-300">
                           {project.title}
                         </h3>
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
                           <div className="flex items-center text-gray-600 text-sm">
-                            <MapPin className="w-4 h-4 mr-2 text-red-600" />
+                            <MapPin className="w-4 h-4 mr-2 text-[#011321]" />
                             <span>{project.location}</span>
                           </div>
                           <div className="flex items-center text-gray-600 text-sm">
-                            <Home className="w-4 h-4 mr-2 text-red-600" />
+                            <Home className="w-4 h-4 mr-2 text-[#011321]" />
                             <span>{project.area}</span>
                           </div>
                           <div className="flex items-center text-gray-600 text-sm">
-                            <Calendar className="w-4 h-4 mr-2 text-red-600" />
+                            <Calendar className="w-4 h-4 mr-2 text-[#011321]" />
                             <span>{project.completionDate}</span>
                           </div>
                         </div>
@@ -196,7 +196,7 @@ const ProjectsPage = () => {
                       <div className="flex justify-end mt-6">
                         <Link
                           to={`/project/${project.id}`}
-                          className="px-6 py-3 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center space-x-2"
+                          className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-xl hover:bg-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center space-x-2"
                         >
                           <span>View Details</span>
                           <ExternalLink className="w-4 h-4" />
@@ -212,7 +212,7 @@ const ProjectsPage = () => {
                 <div className="text-left mt-10">
                   <button
                     onClick={() => setShowAll(!showAll)}
-                    className="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
+                    className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
                   >
                     {showAll ? "Show Less" : "Read More"}
                   </button>

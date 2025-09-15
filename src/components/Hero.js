@@ -9,14 +9,14 @@ const Hero = () => {
     {
       id: 1,
       title: "PRAJAKTA LA-MAISON",
-      tagline: " The Saul of france now In Nagpur",
+      tagline: " The Soul of france now in your city",
       image: "/images/secondProject.jpg",
       gradient: "from-blue-400 via-indigo-500 to-purple-600",
     },
     {
       id: 2,
       title: "PRAJAKTA PARK",
-      tagline: " 3BHCD park facing premium flats in abhayankar nagar",
+      tagline: " 3BHKD park facing premium flats in abhayankar nagar",
       image: "/images/HD PHOTO 1.jpg",
       gradient: "from-pink-500 via-red-400 to-yellow-400",
     },

@@ -92,7 +92,7 @@ const AwardsPage = () => {
           <div className="text-center mb-12 sm:mb-16">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Awards &{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
+              <span className="bg-[#011321] bg-clip-text text-transparent">
                 Recognitions
               </span>
             </h1>
@@ -109,7 +109,7 @@ const AwardsPage = () => {
               >
                 {/* Badge */}
                 <div className="absolute top-3 left-3 z-20">
-                  <div className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-red-600 shadow">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-[#011321] shadow">
                     <Award className="w-4 h-4" />
                     <span className="text-xs font-semibold tracking-wide">Award</span>
                   </div>
