@@ -215,7 +215,7 @@ const BecomePartnerPage = () => {
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Apply{' '}
-                <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">Now</span>
+                <span className="bg-[#011321] bg-clip-text text-transparent">Now</span>
               </h2>
               <p className="text-base sm:text-lg text-gray-600 mb-6">
                 Fill the partnership application form and our business development team will contact you within 24 hours.

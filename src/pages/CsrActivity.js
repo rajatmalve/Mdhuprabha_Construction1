@@ -62,7 +62,7 @@ const CsrActivity = () => {
           <div className="text-center mb-12 sm:mb-16">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               CSR{" "}
-              <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
+              <span className="bg-[#011321] bg-clip-text text-transparent">
                 Activity
               </span>
             </h1>

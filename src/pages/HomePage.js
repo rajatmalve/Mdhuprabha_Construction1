@@ -87,10 +87,10 @@ const HomePage = () => {
           <div className="text-center mt-14">
             <a
               href="/contact"
-              className="group relative inline-flex items-center space-x-3 px-10 py-4 font-bold rounded-full overflow-hidden transition-all duration-500 hover:scale-105 bg-white text-red-600 border border-red-600 hover:bg-red-600 hover:text-white"
+              className="group relative inline-flex items-center space-x-3 px-10 py-4 font-bold rounded-full overflow-hidden transition-all duration-500 hover:scale-105 bg-white text-[#011321] border border-[#011321] hover:bg-[#011321] hover:text-white"
             >
               <span className="relative z-10">Start Your Project With Us</span>
-              <ArrowRight className="w-5 h-5 text-red-600 relative z-10 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-white" />
+              <ArrowRight className="w-5 h-5 text-[#011321] relative z-10 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-white" />
             </a>
           </div>
         </div>

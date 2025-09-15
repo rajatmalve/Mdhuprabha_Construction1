@@ -92,7 +92,7 @@ const ContactPage = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Get In{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">Touch</span>
+              <span className=" text-[#011321]">Touch</span>
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Choose your preferred way to contact us. We're here to help with all your construction needs.
@@ -108,9 +108,9 @@ const ContactPage = () => {
                     <Icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{method.title}</h3>
-                  {method.title === "Call Us" && <a href={`tel:${method.detail}`} className="text-gray-700 font-medium mb-2 hover:text-red-600 transition-colors duration-300">{method.detail}</a>}
-                  {method.title === "Email Us" && <a href={`mailto:${method.detail}`} className="text-gray-700 font-medium mb-2 hover:text-red-600 transition-colors duration-300 break-words text-sm">{method.detail}</a>}
-                  {method.title === "Visit Our Office" && <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(method.detail)}`} target="_blank" rel="noopener noreferrer" className="text-gray-700 font-medium mb-2 hover:text-red-600 transition-colors duration-300">{method.detail}</a>}
+                  {method.title === "Call Us" && <a href={`tel:${method.detail}`} className="text-gray-700 font-medium mb-2 hover:text-[#011321] transition-colors duration-300">{method.detail}</a>}
+                  {method.title === "Email Us" && <a href={`mailto:${method.detail}`} className="text-gray-700 font-medium mb-2 hover:text-[#011321] transition-colors duration-300 break-words text-sm">{method.detail}</a>}
+                  {method.title === "Visit Our Office" && <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(method.detail)}`} target="_blank" rel="noopener noreferrer" className="text-gray-700 font-medium mb-2 hover:text-[#011321] transition-colors duration-300">{method.detail}</a>}
                   {method.title === "Working Hours" && <p className="text-gray-700 font-medium mb-2">{method.detail}</p>}
                   <p className="text-sm text-gray-500">{method.description}</p>
                 </div>
@@ -125,10 +125,10 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
            {/* Contact Form */}
-<div className="bg-white border border-red-200 rounded-2xl shadow-lg p-8 sm:p-10">
+<div className="bg-white text-[#011321] border border-red-200 rounded-2xl shadow-lg p-8 sm:p-10">
   <h3 className="text-3xl font-bold text-gray-900 mb-8">
     Send Us a{" "}
-    <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent">
+    <span className="text-[#011321]">
       Message
     </span>
   </h3>
@@ -148,7 +148,7 @@ const ContactPage = () => {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full pl-12 pr-4 py-3 border border-red-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+            className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
             placeholder="Your Name"
           />
         </div>
@@ -167,7 +167,7 @@ const ContactPage = () => {
             required
             value={formData.phone}
             onChange={handleChange}
-            className="w-full pl-12 pr-4 py-3 border border-red-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+            className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
             placeholder="+91 98765 43210"
           />
         </div>
@@ -187,7 +187,7 @@ const ContactPage = () => {
           required
           value={formData.email}
           onChange={handleChange}
-          className="w-full pl-12 pr-4 py-3 border border-red-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+          className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
           placeholder="your@email.com"
         />
       </div>
@@ -203,7 +203,7 @@ const ContactPage = () => {
           name="projectType"
           value={formData.projectType}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-red-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+          className="w-full px-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
         >
           <option value="">Select Project Type</option>
           {projectTypes.map((type) => (
@@ -223,7 +223,7 @@ const ContactPage = () => {
           name="budget"
           value={formData.budget}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-red-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+          className="w-full px-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
         >
           <option value="">Select Budget Range</option>
           {budgetRanges.map((range) => (
@@ -247,7 +247,7 @@ const ContactPage = () => {
           name="location"
           value={formData.location}
           onChange={handleChange}
-          className="w-full pl-12 pr-4 py-3 border border-red-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+          className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
           placeholder="e.g., Andheri West, Mumbai"
         />
       </div>
@@ -266,7 +266,7 @@ const ContactPage = () => {
           rows={4}
           value={formData.message}
           onChange={handleChange}
-          className="w-full pl-12 pr-4 py-3 border border-red-300 rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300 resize-none"
+          className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300 resize-none"
           placeholder="Tell us about your project requirements, timeline, and any specific needs..."
         ></textarea>
       </div>
@@ -275,10 +275,10 @@ const ContactPage = () => {
     <button
       type="submit"
       className="group w-full flex items-center justify-center space-x-3 py-4 px-6 
-      bg-white text-red-600 font-semibold rounded-xl 
-      border border-red-500 hover:bg-red-50"
+      bg-white text-[#011321] font-semibold rounded-xl 
+      border border-[#011321] hover:bg-red-50"
     >
-      <Send className="w-5 h-5 text-red-600 group-hover:translate-x-1 transition-transform duration-300" />
+      <Send className="w-5 h-5 text-[#011321] group-hover:translate-x-1 transition-transform duration-300" />
       <span>Send Message</span>
     </button>
   </form>
@@ -306,37 +306,37 @@ const ContactPage = () => {
               </div>
 
               {/* Office Details Card */}
-              <div className="bg-white text-red-700 rounded-2xl p-8 shadow-xl border border-red-100">
+              <div className="bg-white text-[#011321] rounded-2xl p-8 shadow-xl border border-red-100">
                 <h4 className="text-2xl font-bold mb-6">Visit Our Office</h4>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <MapPin className="w-6 h-6 mt-1 text-red-400 flex-shrink-0" />
+                    <MapPin className="w-6 h-6 mt-1 text-[#011321] flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-red-500">Address</p>
+                      <p className="font-medium text-[#011321]">Address</p>
                       <a
                         href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contactData.address)}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-red-700/90 hover:text-red-500 transition-colors duration-300"
+                        className="text-sm text-[#011321] hover:text-[#011321] transition-colors duration-300"
                       >
                         {contactData.address}
                       </a>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Clock className="w-6 h-6 mt-1 text-red-400 flex-shrink-0" />
+                    <Clock className="w-6 h-6 mt-1 text-[#011321] flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-red-500">Office Hours</p>
-                      <p className="text-sm text-red-700/90">{contactData.workingHours}</p>
+                      <p className="font-medium text-[#011321]">Office Hours</p>
+                      <p className="text-sm text-[#011321]">{contactData.workingHours}</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <Phone className="w-6 h-6 mt-1 text-red-400 flex-shrink-0" />
+                    <Phone className="w-6 h-6 mt-1 text-[#011321] flex-shrink-0" />
                     <div>
-                      <p className="font-medium text-red-500">Phone</p>
+                      <p className="font-medium text-[#011321]">Phone</p>
                       <a
                         href={`tel:${contactData.phone}`}
-                        className="text-sm text-red-700/90 hover:text-red-500 transition-colors duration-300"
+                        className="text-sm text-[#011321] hover:text-[#011321] transition-colors duration-300"
                       >
                         {contactData.phone}
                       </a>
@@ -344,8 +344,8 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                <div className="mt-6 pt-6 border-t border-red-200/50">
-                  <p className="text-sm text-red-500">
+                <div className="mt-6 pt-6 border-t border-[#011321]">
+                  <p className="text-sm text-[#011321]">
                     <strong>Note:</strong> We recommend scheduling an appointment for personalized consultation and site visit discussions.
                   </p>
                 </div>
