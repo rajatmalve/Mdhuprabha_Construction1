@@ -31,7 +31,7 @@ const AboutPage = () => {
     {
       name: "Mr. Ashish Londhe",
       role: "Founder & Managing Director",
-      experience: "25+ Years Experience",
+      experience: "20+ Years Experience",
       image: "/images/vikashsir.jpeg",
     },
     
@@ -135,7 +135,7 @@ const AboutPage = () => {
               {/* Floating Badge */}
               <div className="absolute -top-4 sm:-top-6 -right-4 sm:-right-6 bg-gradient-to-r from-red-500 to-red-700 text-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl">
                 <div className="text-center">
-                  <div className="text-lg sm:text-2xl font-bold">25+</div>
+                  <div className="text-lg sm:text-2xl font-bold">20+</div>
                   <div className="text-xs sm:text-sm opacity-90">Years</div>
                 </div>
               </div>
@@ -166,14 +166,14 @@ const AboutPage = () => {
           Experienced Leadership
         </h3>
         <p className="text-gray-600 text-lg leading-relaxed mb-4">
-          Ashish Construction was started in the year 2005. The business start was modest with the regular clients in Nagpur. Over the period, in last 20 years, now we are the leading company in the construction group. 
+         Mr.Ashish Londhe (B.E, M.B.A) is the sole proprietor of the company. He has served as JOINT SECRETARY in CREDAI (Confederation of Real Estate Developers Association of India) from 2015 - 2019. 
         </p>
         <p className="text-gray-600 text-lg leading-relaxed mb-4">
-          Our projects not only deal in Nagpur but also in and around Central India. The journey of hard work, dedication, and trust of our clients has brought us this long way.
+         Presently is serving as a VICE PRESIDENT for the year 2019-2023 in CREDAI. CREDAI is an association that has more than 13000 Members Nation Wide, it has 25 State chapters, 180 city chapters. Nagpur has got nearly 350 Members. Confederation is known for the best construction quality and Transparency.
         </p>
-        <p className="text-gray-600 text-lg leading-relaxed">
+        {/* <p className="text-gray-600 text-lg leading-relaxed">
           We deal in the commercials and housing society. With the experience in designing and building these, our company has higher standards in terms of quality and at the same time, it remains affordable to everyone. We are also very well known for the perfect carvings and core commitment for every project.
-        </p>
+        </p> */}
       </div>
 
       {/* Right: Image with Info */}
@@ -189,7 +189,7 @@ const AboutPage = () => {
         <p className="text-red-600 font-semibold">
           Founder & Managing Director
         </p>
-        <p className="text-gray-600">25+ Years Experience</p>
+        <p className="text-gray-600">20+ Years Experience</p>
       </div>
     </div>
   </div>
