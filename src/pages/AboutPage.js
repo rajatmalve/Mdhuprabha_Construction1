@@ -43,9 +43,10 @@ const AboutPage = () => {
       <section
         className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
         style={{
-          backgroundImage: "url('/images/construction-site-sunset.jpg')",
+          backgroundImage: "url('/images/About image.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          height: "90vh",
         }}
       >
         {/* White blur lights */}
@@ -57,7 +58,7 @@ const AboutPage = () => {
         {/* Overlay to darken image */}
         <div className="absolute inset-0"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <div className="inline-flex items-center px-3 sm:px-4 py-1.5 sm:py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full mb-4 sm:mb-6">
               <span className="text-white font-semibold text-xs sm:text-sm uppercase tracking-wider">
@@ -75,7 +76,7 @@ const AboutPage = () => {
               {aboutUsData.shortDescription}
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Journey Section */}

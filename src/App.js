@@ -16,6 +16,7 @@ import CsrActivity from "./pages/CsrActivity";
 
 import { Award } from "lucide-react";
 import BecomePartnerPage from "./pages/BecomePartnerPage";
+import TestimonialPage from "./pages/TestiminalPage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/career" element={<CareerPage />} />
           <Route path="/becomePartner" element={<BecomePartnerPage />} />
           <Route path="/csrActivity" element={<CsrActivity />} />
+          <Route path="/testimonials" element={<TestimonialPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/project/:id" element={<ProjectDetailPage />} />
         </Routes>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Award, Users, Target, CheckCircle } from 'lucide-react';
 import Footer from '../components/Footer';
 
-const AwardsPage = () => {
+const TestimonialPage = () => {
   
 
   const values = [
@@ -53,7 +53,7 @@ const AwardsPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Awards Gallery */}
+      
       <section
               className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
               style={{
@@ -63,7 +63,7 @@ const AwardsPage = () => {
                 height: "90vh",
               }}
             >
-              {/* White blur lights */}
+             
               <div className="absolute inset-0 opacity-20">
                 <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
                 <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
@@ -82,9 +82,7 @@ const AwardsPage = () => {
                     <br />
                     <span className="text-white">Since 2005</span>
                   </h1>
-                  {/* <p className="text-base sm:text-lg md:text-xl text-red-100 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
-                    {aboutUsData.shortDescription}
-                  </p> */}
+                 
                 </div>
               </div>
             </section>
@@ -108,7 +106,7 @@ const AwardsPage = () => {
                 key={index}
                 className="group relative overflow-hidden rounded-2xl border border-red-100 bg-white shadow-md hover:shadow-2xl transform-gpu transition-all duration-300 hover:-translate-y-1"
               >
-                {/* Badge */}
+               
                 <div className="absolute top-3 left-3 z-20">
                   <div className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-red-600 shadow">
                     <Award className="w-4 h-4" />
@@ -116,7 +114,7 @@ const AwardsPage = () => {
                   </div>
                 </div>
 
-                {/* Image */}
+                
                 <img
                   src={item.image}
                   alt={item.title}
@@ -124,15 +122,15 @@ const AwardsPage = () => {
                   loading="lazy"
                 />
 
-                {/* Overlay gradient */}
+                
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-70 group-hover:opacity-80 transition-opacity duration-300" />
 
-                {/* Shine effect */}
+               
                 <div className="pointer-events-none absolute -inset-1 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 -translate-x-1/2 group-hover:translate-x-1/2 transition-transform duration-700" />
                 </div>
 
-                {/* Content */}
+                
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 z-10">
                   <h3 className="text-lg sm:text-xl font-bold text-white">{item.title}</h3>
                   <p className="mt-1 text-xs sm:text-sm text-red-100">{item.caption}</p>
@@ -153,4 +151,4 @@ const AwardsPage = () => {
   );
 };
 
-export default AwardsPage;
+export default TestimonialPage;

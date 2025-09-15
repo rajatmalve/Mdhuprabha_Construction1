@@ -26,14 +26,15 @@ const ProjectsPage = () => {
   });
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section
   className="relative pt-24 pb-20 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
   style={{
     backgroundImage: "url(/images/architects-collaborating-blueprints-construction-site.jpg)", // यहाँ अपनी image का path दो
     backgroundSize: "cover",
-    backgroundPosition: "bg-center",
+    backgroundPosition: "center",
+    height:"90vh"
   }}
 >
   {/* Overlay for readability */}
