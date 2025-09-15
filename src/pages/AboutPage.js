@@ -31,7 +31,7 @@ const AboutPage = () => {
     {
       name: "Mr. Ashish Londhe",
       role: "Founder & Managing Director",
-      experience: "20+ Years Experience",
+      experience: "25+ Years Experience",
       image: "/images/vikashsir.jpeg",
     },
     
@@ -135,7 +135,7 @@ const AboutPage = () => {
               {/* Floating Badge */}
               <div className="absolute -top-4 sm:-top-6 -right-4 sm:-right-6 bg-gradient-to-r from-red-500 to-red-700 text-white p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-xl">
                 <div className="text-center">
-                  <div className="text-lg sm:text-2xl font-bold">20+</div>
+                  <div className="text-lg sm:text-2xl font-bold">25+</div>
                   <div className="text-xs sm:text-sm opacity-90">Years</div>
                 </div>
               </div>
@@ -189,7 +189,7 @@ const AboutPage = () => {
         <p className="text-red-600 font-semibold">
           Founder & Managing Director
         </p>
-        <p className="text-gray-600">20+ Years Experience</p>
+        <p className="text-gray-600">25+ Years Experience</p>
       </div>
     </div>
   </div>
