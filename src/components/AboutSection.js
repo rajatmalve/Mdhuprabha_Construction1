@@ -9,7 +9,7 @@ const AboutSection = () => {
   const stats = [
     {
       icon: <Award className="w-8 h-8" />,
-      number: 150000,
+      number: 200000,
       suffix: "+",
       label: "Sq.Ft Area Delivered",
       gradient: "from-pink-500 to-red-500",
@@ -25,7 +25,7 @@ const AboutSection = () => {
     },
     {
       icon: <Users className="w-8 h-8" />,
-      number: 150,
+      number: 200,
       suffix: "+",
       label: "Happy Clients",
       gradient: "from-green-400 to-emerald-500",
@@ -33,7 +33,7 @@ const AboutSection = () => {
     },
     {
       icon: <CheckCircle className="w-8 h-8" />,
-      number: 20,
+      number: 25,
       suffix: "+",
       label: "Projects done",
       gradient: "from-blue-500 to-indigo-600",
@@ -43,6 +43,7 @@ const AboutSection = () => {
 
   const carouselImages = [
     "/images/about.jpg",
+    // "/images/WhatsApp Image 2025-09-13 at 16.54.10_5316750b.jpg",
     "/images/vikashsir.jpeg",
   ];
 
@@ -111,12 +112,13 @@ const AboutSection = () => {
               About <span className="text-red-600">Madhuprabha</span>
             </h2>
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              Madhu Prabha Constructions began its journey in 2005 as Ashish Construction, founded with a simple yet powerful vision: to build structures that not only meet but exceed expectations. Over the years, we have evolved from a small construction company to one of Maharashtra's most trusted construction partners.
-            </p>
+            Madhuprabha Construction was started in the year 2005. The business start was modest with the regular clients in Nagpur. Over the period, in last 20 years, now we are the leading company in the construction group. Our projects not only deal in Nagpur but also in and around Central India. The journey of hard work, dedication, and trust of our clients has brought us this long way. We deal in the commercials and housing society. With the experience in designing and building these, our company has higher standards in terms of quality and at the same time, it remains affordable to everyone. We are also very well known for the perfect carvings and core commitment for every project.</p>
 
-            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              Our transformation to Madhu Prabha Constructions reflects our growth while maintaining the core values that have guided us from the beginning. We believe that construction is not just about building structures; it's about creating spaces where lives unfold, businesses thrive, and communities flourish. Today, with over 500 completed projects and more than 1000 satisfied clients, we continue to set new standards in construction excellence, always staying true to our founding principles of quality, integrity, and customer satisfaction.
-            </p>
+            {/* <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+              Our transformation to Madhu Prabha Constructions reflects our growth while maintaining the core values that have guided us from the beginning. We believe that construction is not just about building structures; it's about creating spaces where lives unfold, businesses thrive, and communities flourish.  */}
+
+              {/* Today, with over 500 completed projects and more than 1000 satisfied clients, we continue to set new standards in construction excellence, always staying true to our founding principles of quality, integrity, and customer satisfaction. */}
+            {/* </p> */}
 
             {/* Mission & Values */}
             <div className="space-y-4">
@@ -124,14 +126,14 @@ const AboutSection = () => {
                 <div className="w-2 h-2 bg-red-600 rounded-full mt-3 flex-shrink-0"></div>
                 <div>
                   <h4 className="font-semibold text-slate-800 mb-2">Our Mission</h4>
-                  <p className="text-slate-600">To create sustainable, innovative structures that enhance communities and exceed expectations.</p>
+                  <p className="text-slate-600">Our mission is to maintain the relationship with the clients of trust and loyalty. Also to deliver a good quality of services at affordable prices by our qualified personnel for different types of projects to the customers. We aim at giving our best to deliver what exactly clients have in mind.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-red-600 rounded-full mt-3 flex-shrink-0"></div>
                 <div>
-                  <h4 className="font-semibold text-slate-800 mb-2">Our Values</h4>
-                  <p className="text-slate-600">Integrity, Quality, Innovation, and Customer Satisfaction guide every decision we make.</p>
+                  <h4 className="font-semibold text-slate-800 mb-2">Our Vision</h4>
+                  <p className="text-slate-600">Our vision is to be one of the top construction industry and organizations which are excellent in quality, and deliver the services in a better way so our clients are satisfied.</p>
                 </div>
               </div>
             </div>

@@ -56,7 +56,7 @@ const Footer = () => {
             </Link>
 
             <p className="text-white-400 leading-relaxed">
-              Building dreams into reality with 20  + years of experience in premium residential construction.
+              Building dreams into reality with 20+ years of experience in premium residential construction.
               Quality craftsmanship and customer satisfaction is our priority.
             </p>
 

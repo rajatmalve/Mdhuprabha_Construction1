@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-        ${location.pathname === '/' 
+        ${location.pathname === '/'
           ? (scrolled ? 'bg-white shadow-md' : 'bg-transparent')
           : 'bg-white shadow-md'
         }
@@ -61,23 +61,23 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
+          {/* Logo */}
           <Link to="/" className="flex items-center focus:outline-none focus:ring-0">
-            <div className="w-50 h-10 rounded-lg overflow-hidden">
+            <div className="h-32 w-auto flex items-center">
               <img
-                src="/images/Madhuprabhalogo.jpg"
+                src="/images/about (4).png"
                 alt="Madhuprabha Construction Logo"
-                className="w-full h-full object-fill"
+                className="h-full w-auto object-contain"
               />
             </div>
           </Link>
-
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => {
               if (item.hasDropdown) {
                 return (
-                  <div 
-                    key={item.name} 
+                  <div
+                    key={item.name}
                     className="relative career-dropdown"
                   >
                     <div 
@@ -124,8 +124,8 @@ const Navbar = () => {
                     ${isActive(item.path)
                       ? 'text-red-600 font-semibold'
                       : location.pathname === '/'
-                      ? (scrolled ? 'text-red-500 hover:text-red-600' : 'text-white hover:text-red-200')
-                      : 'text-red-500 hover:text-red-600'
+                        ? (scrolled ? 'text-red-500 hover:text-red-600' : 'text-white hover:text-red-200')
+                        : 'text-red-500 hover:text-red-600'
                     }
                   `}
                 >
@@ -143,7 +143,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`p-3 rounded-xl transition-colors focus:outline-none focus:ring-0
-                ${location.pathname === '/' 
+                ${location.pathname === '/'
                   ? (scrolled ? 'bg-slate-800 text-red-500' : 'bg-white/10 backdrop-blur-sm text-white border border-white/20')
                   : 'bg-slate-800 text-red-500'
                 }
