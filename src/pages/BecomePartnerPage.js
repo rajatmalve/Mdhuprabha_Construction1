@@ -174,7 +174,7 @@ const BecomePartnerPage = () => {
           backgroundSize: "100% 100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          height: '60vh',
+          height: '90vh',
         }}
       >
         {/* White blur lights */}

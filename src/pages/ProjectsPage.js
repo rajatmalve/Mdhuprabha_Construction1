@@ -29,15 +29,15 @@ const ProjectsPage = () => {
   const visibleProjects = showAll ? sortedProjects : sortedProjects.slice(0, 12);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <section
-
   className="relative pt-24 pb-20 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
   style={{
     backgroundImage: "url(/images/architects-collaborating-blueprints-construction-site.jpg)", // यहाँ अपनी image का path दो
     backgroundSize: "cover",
-    backgroundPosition: "bg-center",
+    backgroundPosition: "center",
+    height:"90vh"
   }}
 >
   {/* Overlay for readability */}
@@ -64,7 +64,7 @@ const ProjectsPage = () => {
   </div>
 </section>
 
-
+{/* 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
             <span className="bg-white bg-clip-text text-transparent drop-shadow-lg">
@@ -77,7 +77,7 @@ const ProjectsPage = () => {
             Explore our portfolio of successfully completed residential construction projects that showcase our commitment to quality, innovation, and customer satisfaction.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Projects Grid */}
       <section className="py-20 bg-white">
