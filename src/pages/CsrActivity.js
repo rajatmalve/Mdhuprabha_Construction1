@@ -28,6 +28,35 @@ const CsrActivity = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* CSR Activity Header */}
+       <section 
+        className="relative pt-28 pb-20 text-white overflow-hidden"
+        style={{
+          backgroundImage: "url('/images/CSR IMAGES.jpg')",
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          height: '90vh',
+        }}
+      >
+        {/* White blur lights */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
+        </div>
+
+        {/* <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
+            <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
+              Media
+            </span>
+            <span className="text-white"> Gallery</span>
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl max-w-3xl sm:max-w-4xl mx-auto leading-relaxed font-bold">
+  Explore our achievements, press coverage, and social impact through our comprehensive media collection.
+</p>
+
+        </div> */}
+      </section>
       <div className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">

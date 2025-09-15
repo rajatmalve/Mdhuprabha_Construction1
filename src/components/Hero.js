@@ -9,24 +9,28 @@ const Hero = () => {
     {
       id: 1,
       title: "PRAJAKTA LA-MAISON",
+      tagline: " The Saul of france now In Nagpur",
       image: "/images/secondProject.jpg",
       gradient: "from-blue-400 via-indigo-500 to-purple-600",
     },
     {
       id: 2,
       title: "PRAJAKTA PARK",
+      tagline: " 3BHCD park facing premium flats in abhayankar nagar",
       image: "/images/HD PHOTO 1.jpg",
       gradient: "from-pink-500 via-red-400 to-yellow-400",
     },
     {
       id: 3,
       title: "PRAJAKTA CLASSIC",
+      tagline: "spacious duplex with garden and parking facility",
       image: "/images/park_img_page-0001.jpg",
       gradient: "from-pink-500 via-red-400 to-yellow-400",
     },
     {
       id: 4,
       title: "PRAJAKTA GREEN SERENITY",
+      tagline: "Luxury with Quality and Tranquility...",
       image: "/images/3 (1).png",
       gradient: "from-green-400 via-lime-300 to-emerald-500",
     },
@@ -68,7 +72,7 @@ const Hero = () => {
                 <div className="absolute bottom-10 left-10 z-30 text-left">
                   {/* Logo Above Title */}
                   <img
-                    src="/images/WhatsApp Image 2025-09-13 at 16.54.10_b60a3e66.jpg"  
+                    src="/images/WhatsApp Image 2025-09-13 at 16.54.10_b60a3e66.jpg"
                     alt="Credai Nagpur Metro"
                     className="w-24 sm:w-28 md:w-32 lg:w-36 object-contain mb-3 drop-shadow-lg"
                   />
@@ -77,11 +81,17 @@ const Hero = () => {
                   <h2
                     style={{ fontFamily: 'Playfair Display, serif' }}
                     className="inline-block px-4 py-2 rounded-lg 
-                               text-xl sm:text-2xl md:text-4xl lg:text-5xl 
-                               font-extrabold uppercase tracking-wider drop-shadow-2xl 
-                               bg-black/60 text-white"
+             text-xl sm:text-2xl md:text-4xl lg:text-5xl 
+             font-extrabold uppercase tracking-wider drop-shadow-2xl 
+             bg-black/60 text-white text-center"
                   >
                     {slide.title}
+                    <span
+                      style={{ fontFamily: 'Julee, cursive' }}
+                      className="block mt-2 text-sm sm:text-base md:text-lg lg:text-xl font-normal tracking-normal"
+                    >
+                      {slide.tagline}
+                    </span>
                   </h2>
                 </div>
 

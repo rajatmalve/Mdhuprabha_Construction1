@@ -174,7 +174,7 @@ const BecomePartnerPage = () => {
           backgroundSize: "100% 100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          height: '60vh',
+          height: '90vh',
         }}
       >
         {/* White blur lights */}
@@ -346,7 +346,7 @@ const BecomePartnerPage = () => {
             <div className="relative hidden lg:block">
               <div className="absolute -inset-6 bg-gradient-to-br from-red-100 to-transparent rounded-3xl -z-10" />
               <div className="h-full w-full rounded-3xl overflow-hidden shadow-xl border border-red-100">
-                <img src="/images/project.jpg" alt="Partnership with Madhuprabha Construction" className="h-full w-full object-cover" />
+                <img src="/images/vecteezy_business-people-view_12110410.jpg" alt="Partnership with Madhuprabha Construction" className="h-full w-full object-cover" />
               </div>
             </div>
           </div>
