@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-        ${location.pathname === '/' 
+        ${location.pathname === '/'
           ? (scrolled ? 'bg-white shadow-md' : 'bg-transparent')
           : 'bg-white shadow-md'
         }
@@ -63,38 +63,38 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
+          {/* Logo */}
           <Link to="/" className="flex items-center focus:outline-none focus:ring-0">
-            <div className="w-50 h-10 rounded-lg overflow-hidden">
+            <div className="h-32 w-auto flex items-center">
               <img
-                src="/images/Madhuprabhalogo.jpg"
+                src="/images/about (4).png"
                 alt="Madhuprabha Construction Logo"
-                className="w-full h-full object-fill"
+                className="h-full w-auto object-contain"
               />
             </div>
           </Link>
-
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => {
               const Icon = item.icon;
-              
+
               if (item.hasDropdown) {
                 return (
-                  <div 
-                    key={item.name} 
+                  <div
+                    key={item.name}
                     className="relative career-dropdown"
                     onMouseEnter={() => setCareerDropdownOpen(true)}
                     onMouseLeave={() => setCareerDropdownOpen(true)}
                   >
                     <div className="flex items-center">
-                      <div 
+                      <div
                         onClick={() => setCareerDropdownOpen(!careerDropdownOpen)}
                         className={`relative px-2 py-1 flex items-center space-x-2 font-medium transition cursor-pointer focus:outline-none focus:ring-0
                           ${careerDropdownItems.some(dropdownItem => isActive(dropdownItem.path))
                             ? 'text-red-600 font-semibold'
                             : location.pathname === '/'
-                            ? (scrolled ? 'text-red-500 hover:text-red-600' : 'text-white hover:text-red-200')
-                            : 'text-red-500 hover:text-red-600'
+                              ? (scrolled ? 'text-red-500 hover:text-red-600' : 'text-white hover:text-red-200')
+                              : 'text-red-500 hover:text-red-600'
                           }
                         `}>
                         <Icon className="w-4 h-4" />
@@ -103,7 +103,7 @@ const Navbar = () => {
                           <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-red-600 rounded-full"></span>
                         )}
                       </div>
-                      
+
                       <button
                         onClick={() => setCareerDropdownOpen(!careerDropdownOpen)}
                         className={`px-1 py-1 transition focus:outline-none
@@ -116,7 +116,7 @@ const Navbar = () => {
                         <ChevronDown className={`w-3 h-3 transition-transform ${careerDropdownOpen ? 'rotate-180' : ''}`} />
                       </button>
                     </div>
-                    
+
                     {/* Dropdown Menu */}
                     {careerDropdownOpen && (
                       <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
@@ -143,7 +143,7 @@ const Navbar = () => {
                   </div>
                 );
               }
-              
+
               return (
                 <Link
                   key={item.name}
@@ -152,8 +152,8 @@ const Navbar = () => {
                     ${isActive(item.path)
                       ? 'text-red-600 font-semibold'
                       : location.pathname === '/'
-                      ? (scrolled ? 'text-red-500 hover:text-red-600' : 'text-white hover:text-red-200')
-                      : 'text-red-500 hover:text-red-600'
+                        ? (scrolled ? 'text-red-500 hover:text-red-600' : 'text-white hover:text-red-200')
+                        : 'text-red-500 hover:text-red-600'
                     }
                   `}
                 >
@@ -172,7 +172,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`p-3 rounded-xl transition-colors focus:outline-none focus:ring-0
-                ${location.pathname === '/' 
+                ${location.pathname === '/'
                   ? (scrolled ? 'bg-slate-800 text-red-500' : 'bg-white/10 backdrop-blur-sm text-white border border-white/20')
                   : 'bg-slate-800 text-red-500'
                 }
@@ -188,7 +188,7 @@ const Navbar = () => {
           <div className="lg:hidden mt-4 bg-white rounded-3xl shadow">
             {navItems.map((item) => {
               const Icon = item.icon;
-              
+
               if (item.hasDropdown) {
                 return (
                   <div key={item.name}>
@@ -200,7 +200,7 @@ const Navbar = () => {
                         <Icon className="w-5 h-5" />
                         <span className="font-medium">{item.name}</span>
                       </div>
-                      
+
                       <button
                         onClick={() => setCareerDropdownOpen(!careerDropdownOpen)}
                         className="px-3 py-4 text-gray-400 hover:text-gray-600 transition focus:outline-none focus:ring-0"
@@ -208,7 +208,7 @@ const Navbar = () => {
                         <ChevronDown className={`w-4 h-4 transition-transform ${careerDropdownOpen ? 'rotate-180' : ''}`} />
                       </button>
                     </div>
-                    
+
                     {/* Mobile Dropdown */}
                     {careerDropdownOpen && (
                       <div className="ml-6 mr-3 mt-2 space-y-2">
@@ -238,7 +238,7 @@ const Navbar = () => {
                   </div>
                 );
               }
-              
+
               return (
                 <Link
                   key={item.name}

@@ -32,7 +32,7 @@ const AwardsPage = () => {
     {
       name: "Mr. Ashish Londhe",
       role: "Founder & Managing Director",
-      experience: "19+ Years Experience",
+      experience: "20+ Years Experience",
       image: "/images/vikashsir.jpeg",
     },
     

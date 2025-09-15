@@ -380,8 +380,8 @@ export const projectsData = [
       "Energy-efficient lighting"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&h=600&fit=crop",
+      "/images/IMG_20210930_133628-min.jpg",
+      "/images/IMG_20210930_133549-min.jpg",
       "https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&h=600&fit=crop"
     ]
   },
@@ -571,22 +571,14 @@ export const testimonials = [
 export const aboutUsData = {
   title: "About Madhu Prabha Construction",
   shortDescription: "Leading residential construction company with 20 Glorious Years of experience in creating quality construction.",
-  fullDescription: ` Madhu Prabha Constructions began its journey in 2005 as Ashish Construction,
-                 founded with a simple yet powerful vision: to build structures that not only
-                  meet but exceed expectations. Over the years, we have evolved from a small 
-                  construction company to one of Maharashtra's most trusted construction partners.
-                  Our transformation to Madhu Prabha Constructions reflects our growth while maintaining 
-               the core values that have guided us from the beginning. We believe that construction is
-                not just about building structures; it's about creating spaces where lives unfold, businesses 
-                thrive, and communities flourish.
-                  Today, with over 500 completed projects and more than 1000 satisfied clients, we continue 
-               to set new standards in construction excellence, always staying true to our founding principles 
-               of quality, integrity, and customer satisfaction.                
+  fullDescription: ` Madhuprabha Construction was started in the year 2005. The business start was modest with the regular clients in Nagpur. Over the period, in last 25 years, now we are the leading company in the construction group. Our projects not only deal in Nagpur but also in and around Central India. The journey of hard work, dedication, and trust of our clients has brought us this long way. We deal in the commercials and housing society. With the experience in designing and building these, our company has higher standards in terms of quality and at the same time, it remains affordable to everyone. We are also very well known for the perfect carvings and core commitment for every project. With this, we believe to have a futuristic approach so that our work completion is on time for every project undertaken. We also commit the designing a housing society and commercial complex for a progressive India and we adhere to our traditional values which make a place better to live in, with positivity and peace. Quality and transparency are our main criteria. Ashish Constructions is known for its quality factor and service. We do firmly believe that a house is made of walls and beams, but a home is built with love and dreams.
+
+Success is a state of mind. Anything you want, you can have! You just need to have dreams; believe that you deserve those dreams, and work hard to acquire them! This is a motivational factor for our company.              
                   
                   `,
   experience: "20 Glorious Years",
-  projectsCompleted: "20+",
-  happyClients: "150+",
+  projectsCompleted: "25+",
+  happyClients: "200+",
   awards: "25+",
   location: "Nagpur, Maharashtra",
   image: "https://madhuprabhaconstructions.in/images/about.jpg"
