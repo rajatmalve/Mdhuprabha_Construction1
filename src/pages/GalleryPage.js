@@ -113,7 +113,7 @@ const GalleryPage = () => {
 
       {/* Gallery Content */}
       {['gallery', 'image', 'video'].includes(activeGalleryTab) && (
-        <section className="py-20 bg-gray-950">
+        <section className="py-20 ">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {viewMode === 'grid' ? (
               // GRID VIEW

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Home, ExternalLink } from "lucide-react";
-import { object } from "zod";
-
 
 const currentProjectsData = [
   {
@@ -13,11 +11,9 @@ const currentProjectsData = [
     location: "Pandey layout",
     area: "2050 sq.ft - 2600 sq.ft",
     type: "3 / 4 BHK - 7 floor",
-    types: "4",
     description:
       "Modern 3 - 4 BHK apartments with premium amenities, landscaped gardens, and easy access to city hubs.",
-      brouchure:"Prajakta La Maison_Brochure(4) (2).pdf",
-
+    brouchure: "Prajakta La Maison_Brochure(4) (2).pdf",
   },
   {
     id: 2,
@@ -29,42 +25,28 @@ const currentProjectsData = [
     type: "3 BHK - 5 floor",
     description:
       "Affordable yet stylish flats with contemporary architecture and spacious interiors.",
-      brouchure:"Prajakta-Park-E-Brochure-New-1_compressed (1)(final).pdf",
+    brouchure: "Prajakta-Park-E-Brochure-New-1_compressed (1)(final).pdf",
   },
   {
     id: 3,
     title: "PRAJAKTA CLASSIC",
-    image: "/images/park_img_page-0001.jpg ",
+    image: "/images/park_img_page-0001.jpg",
     status: "Complete",
     location: "Abhyankar Nagar,NAGPUR",
     area: "2800 sq.ft",
     type: "3 BHK",
     description:
       "Luxurious 3 BHK apartments with eco-friendly design, solar power, and smart home features.",
-      brouchure:"Prajakta-Park-E-Brochure-New-1_compressed.pdf",
-  },
-  {
-    id: 4,
-    title: "PRAJAKTA GREEN SERENITY",
-    image: "/images/PRAJAKTA-PINNACLE.jpg",
-    status: "Complete",
-    location: "Madhav Nagar Near Nate Square, Nagpur",
-    area: "1800 sq.ft",
-    type: "3 BHK",
-    description:
-      "Premium high-rise apartments with sea view, modern clubhouse, and world-class security.",
-      brouchure:"Green Serenity E-brochure..pdf",
-
+    brouchure: "Prajakta-Park-E-Brochure-New-1_compressed.pdf",
   },
 ];
 
 const FeaturedProjects = () => {
- 
-  const featuredProjects = currentProjectsData.slice(0, 4);
-
   return (
+
     <section className="py-16 bg-[#01132152] relative overflow-hidden">
       {/* Subtle Red Background Glow */}
+
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-32 left-10 w-60 h-60 bg-[#011321] rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 right-16 w-48 h-48 bg-[#011321] rounded-full blur-2xl animate-pulse delay-2000" />
@@ -85,18 +67,20 @@ const FeaturedProjects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {featuredProjects.map((project) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 justify-center">
+          {currentProjectsData.map((project) => (
             <div
               key={project.id}
+
               className="group relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 border border-[#011321]"
+
             >
               {/* Image */}
-              <div className="relative h-40 sm:h-44 overflow-hidden rounded-t-2xl">
+              <div className="relative h-64 overflow-hidden rounded-t-2xl">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-fill group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-red-100/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute top-3 right-3">
@@ -107,8 +91,10 @@ const FeaturedProjects = () => {
               </div>
 
               {/* Content */}
+
               <div className="p-4">
                 <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-[#011321] transition-colors duration-500 line-clamp-2">
+
                   {project.title}
                 </h3>
 
