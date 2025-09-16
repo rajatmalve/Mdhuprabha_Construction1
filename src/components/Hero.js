@@ -37,7 +37,8 @@ const Hero = () => {
       title: "PRAJAKTA GREEN SERENITY",
       tagline: "Luxury with Quality and Tranquility...",
       status: "Completed",
-      image: "/images/3 (1).png",
+      // image: "/images/3 (1).png",
+      image: "/images/greenSerenity.jpg",
     },
   ];
 
@@ -71,7 +72,7 @@ const Hero = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-fill"
             />
 
             {index === currentSlide && (
