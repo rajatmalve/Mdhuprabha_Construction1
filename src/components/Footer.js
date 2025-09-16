@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, Award, Briefcase } from 'lucide-react';
+
+import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, MessageCircle, Award, Briefcase } from 'lucide-react';
+
 import { contactData } from '../mockData';
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -68,11 +70,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1 space-y-8">
             <Link to="/" className="group flex items-center space-x-4">
-              <div className="relative w-50 h-10 rounded-lg overflow-hidden transform group-hover:scale-105 transition-all duration-500 shadow-md">
+              {/* Updated Logo */}
+              <div className="relative h-32 w-auto rounded-lg overflow-hidden transform group-hover:scale-105 transition-all duration-500 shadow-md">
                 <img
-                  src="/images/Madhuprabhalogo.jpg"
+                  src="/images/about (4).png"
                   alt="Madhuprabha Construction Logo"
-                  className="w-full h-full object-fill"
+                  className="h-full w-auto object-contain"
                 />
               </div>
             </Link>
