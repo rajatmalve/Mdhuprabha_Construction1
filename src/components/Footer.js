@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, MessageCircle, Award, Briefcase, } from 'lucide-react';
+import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, MessageCircle, Award, Briefcase } from 'lucide-react';
 import { contactData } from '../mockData';
 import { FaWhatsapp } from "react-icons/fa";
-
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -46,11 +45,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1 space-y-8">
             <Link to="/" className="group flex items-center space-x-4">
-              <div className="relative w-50 h-10 rounded-lg overflow-hidden transform group-hover:scale-105 transition-all duration-500 shadow-md">
+              {/* Updated Logo */}
+              <div className="relative h-32 w-auto rounded-lg overflow-hidden transform group-hover:scale-105 transition-all duration-500 shadow-md">
                 <img
-                  src="/images/Madhuprabhalogo.jpg"
+                  src="/images/about (4).png"
                   alt="Madhuprabha Construction Logo"
-                  className="w-full h-full object-fill"
+                  className="h-full w-auto object-contain"
                 />
               </div>
             </Link>
@@ -99,10 +99,8 @@ const Footer = () => {
             <ul className="space-y-4">
               {services.map((service, index) => (
                 <li key={index}>
-                  <span className="group flex items-center text-white-400 cursor-pointer  transition-all duration-300">
-                    {/* hover:text-red-500 */}
-                    <span className="transform  transition-transform duration-300">{service}</span>
-                       {/* group-hover:translate-x-2 */}
+                  <span className="group flex items-center text-white-400 cursor-pointer transition-all duration-300">
+                    <span className="transform transition-transform duration-300">{service}</span>
                   </span>
                 </li>
               ))}
@@ -147,7 +145,7 @@ const Footer = () => {
           <p>© 2025 Madhuprabha Construction. All rights reserved.</p>
           <div className="flex items-center space-x-4 mt-2 sm:mt-0">
             <a href="https://www.rsinfotechsys.com/" className="hover:text-red-500 transition-colors duration-300">
-           Design and developed by  RIGHT SERVE INFOTECH SYSTEMS PVT. LTD.
+              Design and developed by RIGHT SERVE INFOTECH SYSTEMS PVT. LTD.
             </a>
           </div>
         </div>
@@ -155,23 +153,21 @@ const Footer = () => {
         {/* Scroll to Top Button */}
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 group w-14 h-14 bg-gray-800 text-red-500 border border-red-500 rounded-full shadow-lg hover:bg-red-500 hover:text-white transform hover:scale-110 transition-all duration-500 flex items-center justify-center z-50"
+          className="fixed bottom-8 right-8 group w-14 h-14 bg-gray-800 text-white-500 border border-white-500 rounded-full shadow-lg hover:bg-white-500 hover:text-white transform hover:scale-110 transition-all duration-500 flex items-center justify-center z-50"
         >
           <ArrowUp className="w-6 h-6 transition-transform duration-300 group-hover:-translate-y-1" />
         </button>
 
         {/* WhatsApp Floating Button */}
-       
-
-<a
-  href="https://wa.me/9522901659?text=Hello"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="fixed bottom-28 right-8 group w-14 h-14 bg-green-500 text-white border border-green-600 rounded-full shadow-lg 
-             hover:bg-green-600 transform hover:scale-110 transition-all duration-500 flex items-center justify-center z-50 animate-spin-slow"
->
-  <FaWhatsapp className="w-7 h-7" />
-</a>
+        <a
+          href="https://wa.me/9522901659?text=Hello"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-28 right-8 group w-14 h-14 bg-green-500 text-white border border-green-600 rounded-full shadow-lg 
+                     hover:bg-green-600 transform hover:scale-110 transition-all duration-500 flex items-center justify-center z-50 animate-spin-slow"
+        >
+          <FaWhatsapp className="w-7 h-7" />
+        </a>
 
       </div>
     </footer>
