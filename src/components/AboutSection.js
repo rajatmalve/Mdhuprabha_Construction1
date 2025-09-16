@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Users, Award, Clock, CheckCircle } from 'lucide-react';
+import { Users, Award, Clock, CheckCircle,ArrowRight } from 'lucide-react';
 import { Link } from "react-router-dom";
 
 const AboutSection = () => {
@@ -126,11 +126,12 @@ const AboutSection = () => {
 
             <Link
               to="/about"
-              className=" bg-[#011321] text-white px-8 py-3 rounded-full font-medium hover:from-red-600 hover:to-red-800 transition-all duration-300 transform hover:scale-105 inline-block"
+              className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300"
             >
-              <button>
-                More About Us
-              </button>
+              <span className="text-white group-hover:text-white">
+                            More About Us
+                 </span>
+                          <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
             </Link>
           </div>
 
@@ -164,113 +165,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <section className="bg-gray-50 py-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#011321] text-center mb-12">
-              Current Projects
-            </h2>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                
-            {/* Left Image */}
-            <div className="flex justify-center">
-              <img
-                src="/images/secondProject.jpg"
-                alt="Mission Vision"
-                className="rounded-2xl shadow-lg object-fill"
-              />
-            </div>
-
-            {/* Right Cards */}
-            <div className="space-y-8">
-              <div className="bg-white rounded-2xl shadow-lg p-6 relative border-t-4 border-[#011321]">
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-[#011321] flex items-center justify-center shadow-md">
-                  🚀
-                </div>
-                <h3 className="mt-10 text-xl font-bold text-[#011321] text-center">Prajakta  Park </h3>
-                <ul className="mt-4 text-[#011321] text-sm leading-relaxed list-disc list-inside space-y-1">
-                  <li>
-                    PRAJAKTA PARK – A thoughtfully designed residential project that blends nature with modern living. Prajakta Park
-                    offers spacious homes surrounded by greenery, ensuring peace and comfort in every corner.
-                  </li>
-                  <li>Abhyankar nagar, Nagpur</li>
-                  <li>Residential</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-            {/* Left Image */}
-            <div className="flex justify-center">
-              <div className="bg-white rounded-2xl shadow-lg p-6  relative border-t-4 border-[#011321]">
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-[#011321] flex items-center justify-center shadow-md">
-                  👁️
-                </div>
-                <h3 className="mt-10 text-xl font-bold text-[#011321] text-center">Prajakta La Maison</h3>
-                <ul className="mt-4 text-[#011321] text-sm leading-relaxed list-disc list-inside space-y-1">
-                  <li>
-                    Introducing ‘PRAJAKTA La-Masion’, our 7 level 3BHK luxurious view apartment
-                    located in the lap of nature. A peaceful location in the heart of the city
-                    where you can enjoy your mornings with blissful greenery.
-                  </li>
-                  <li>Panday Layout</li>
-                  <li>Residential</li>
-                </ul>
-              </div>
-
-            </div>
-
-            {/* Right Cards */}
-            <div className="space-y-8">
-              <img
-                src="/images/secondProject.jpg"
-                alt="Mission Vision"
-                className="rounded-2xl shadow-lg"
-              />
-            </div>
-          </div>
-        </section>
-
-
-      <section className="bg-white py-16" ref={statsRef}>
-  <div className="max-w-7xl mx-auto px-6 lg:px-8">
-    {/* Heading */}
-    <h2 className="text-4xl md:text-5xl font-bold text-[#011321] text-center mb-12">
-     Statistics 
-    </h2>
-
-    {/* Counter Grid */}
-   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
-  {stats.map((counter, index) => {
-    const count = useCounter(counter.number, 2000, startCounter); 
-    return (
-      <div
-        key={index}
-        className="flex flex-col items-center border-4 border-[#011321] rounded-2xl p-6 shadow-md hover:shadow-lg transition"
-      >
-        {/* Icon */}
-        <div className="text-5xl mb-4">{counter.icon}</div>
-
-        {/* Animated Number */}
-        <span className="text-3xl md:text-4xl font-extrabold text-[#011321]">
-          {count}
-          {counter.suffix}
-        </span>
-
-        {/* Label */}
-        <p className="mt-2 text-sm text-gray-600 max-w-[200px]">
-          {counter.label}
-        </p>
-      </div>
-    );
-  })}
-</div>
-
-  </div>
-</section>
-
-
-
+        
       </div>
     </section>
   );

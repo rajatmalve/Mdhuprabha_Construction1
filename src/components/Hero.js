@@ -99,7 +99,7 @@ const Hero = () => {
     <span
       style={{ fontFamily: 'Julee, cursive' }}
       className={`absolute -top-4 right-4 px-4 py-1 rounded-full text-sm sm:text-base font-semibold shadow-lg 
-        ${slide.status === "Completed" ? "bg-green-500 text-white" : "bg-yellow-400 text-black"}`}
+        ${slide.status === "Completed" ? "bg-[#011321] text-white" : "bg-yellow-400 text-black"}`}
     >
       {slide.status}
     </span>
@@ -127,7 +127,7 @@ const Hero = () => {
                       style={{ fontFamily: "Playfair Display, serif" }}
                       className="px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-semibold rounded-full 
                                  bg-white/10 backdrop-blur-md border border-white/30 text-white 
-                                 shadow-lg hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-500 
+                                 shadow-lg hover:bg-[#011321]
                                  hover:text-white transition-all duration-500"
                     >
                       EXPLORE PROJECT
