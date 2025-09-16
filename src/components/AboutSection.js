@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Users, Award, Clock, CheckCircle } from 'lucide-react';
+import { Users, Award, Clock, CheckCircle,ArrowRight } from 'lucide-react';
 import { Link } from "react-router-dom";
 
 const AboutSection = () => {
@@ -126,11 +126,12 @@ const AboutSection = () => {
 
             <Link
               to="/about"
-              className=" bg-[#011321] text-white px-8 py-3 rounded-full font-medium hover:from-red-600 hover:to-red-800 transition-all duration-300 transform hover:scale-105 inline-block"
+              className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300"
             >
-              <button>
-                More About Us
-              </button>
+              <span className="text-white group-hover:text-white">
+                            More About Us
+                 </span>
+                          <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
             </Link>
           </div>
 
@@ -164,70 +165,92 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <section className="bg-gray-50 py-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#011321] text-center mb-12">
+        <section className="bg-[#01132152] py-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#011321] text-center mb-2">
               Current Projects
             </h2>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                
+              <p className="text-lg text-slate-600 max-w-2xl text-center mx-auto  mb-12 leading-relaxed">
+           Building your vision with precision and care.
+From concept to creation, we deliver structures that stand the test of time.
+          </p>
+
+
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">               
             {/* Left Image */}
-            <div className="flex justify-center">
-              <img
-                src="/images/secondProject.jpg"
-                alt="Mission Vision"
-                className="rounded-2xl shadow-lg object-fill"
-              />
-            </div>
+           <div className="space-y-8">
+
+  <div className="bg-white text-slate-600 rounded-t-2xl shadow-lg p-6 relative 
+                  border-t-4  border-[#011321]">
+    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-[#011321] flex items-center justify-center shadow-md">
+      🏢
+    </div>
+    <h3 className="mt-10 text-xl font-bold text-[#011321] text-center">Prajakta La Maison</h3>
+    <div className="mt-4 text-slate-600 leading-relaxed list-disc list-inside space-y-1 mb-2">
+      <p>
+        Introducing ‘PRAJAKTA La-Masion’, our 7 level 3BHK luxurious view apartment
+        located in the lap of nature. A peaceful location in the heart of the city
+        where you can enjoy your mornings with blissful greenery.
+      </p>
+      <p className="flex items-center gap-2">
+    <span className="text-[#011321]"> Location:</span> Panday Layout
+  </p>
+  <p className="flex items-center gap-2">
+    <span className="text-[#011321]">Type: </span> Residential
+  </p>
+    </div>
+  </div>
+
+</div>
+
 
             {/* Right Cards */}
-            <div className="space-y-8">
-              <div className="bg-white rounded-2xl shadow-lg p-6 relative border-t-4 border-[#011321]">
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-[#011321] flex items-center justify-center shadow-md">
-                  🚀
-                </div>
-                <h3 className="mt-10 text-xl font-bold text-[#011321] text-center">Prajakta  Park </h3>
-                <ul className="mt-4 text-[#011321] text-sm leading-relaxed list-disc list-inside space-y-1">
-                  <li>
-                    PRAJAKTA PARK – A thoughtfully designed residential project that blends nature with modern living. Prajakta Park
-                    offers spacious homes surrounded by greenery, ensuring peace and comfort in every corner.
-                  </li>
-                  <li>Abhyankar nagar, Nagpur</li>
-                  <li>Residential</li>
-                </ul>
-              </div>
-            </div>
+          <div className="space-y-8">
+
+  <div className="bg-white text-slate-600 rounded-t-2xl shadow-lg p-6 relative 
+                  border-t-4  border-[#011321]">
+    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-[#011321] flex items-center justify-center shadow-md">
+      🏢
+    </div>
+    <h3 className="mt-10 text-xl font-bold text-[#011321] text-center">Prajakta La Maison</h3>
+    <div className="mt-4 text-slate-600 leading-relaxed list-disc list-inside space-y-1 mb-2">
+      <p>
+        Introducing ‘PRAJAKTA La-Masion’, our 7 level 3BHK luxurious view apartment
+        located in the lap of nature. A peaceful location in the heart of the city
+        where you can enjoy your mornings with blissful greenery.
+      </p>
+       <p className="flex items-center gap-2">
+    <span className="text-[#011321]"> Location:</span> Panday Layout
+  </p>
+  <p className="flex items-center gap-2">
+    <span className="text-[#011321]">Type: </span> Residential
+  </p>
+    </div>
+  </div>
+
+</div>
+
           </div>
 
           <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
             {/* Left Image */}
-            <div className="flex justify-center">
-              <div className="bg-white rounded-2xl shadow-lg p-6  relative border-t-4 border-[#011321]">
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-[#011321] flex items-center justify-center shadow-md">
-                  👁️
-                </div>
-                <h3 className="mt-10 text-xl font-bold text-[#011321] text-center">Prajakta La Maison</h3>
-                <ul className="mt-4 text-[#011321] text-sm leading-relaxed list-disc list-inside space-y-1">
-                  <li>
-                    Introducing ‘PRAJAKTA La-Masion’, our 7 level 3BHK luxurious view apartment
-                    located in the lap of nature. A peaceful location in the heart of the city
-                    where you can enjoy your mornings with blissful greenery.
-                  </li>
-                  <li>Panday Layout</li>
-                  <li>Residential</li>
-                </ul>
-              </div>
+            <div className="space-y-8">
+  <img
+    src="/images/secondProject.jpg"
+    alt="Mission Vision"
+    className="rounded-b-2xl shadow-lg"
+  />
+</div>
 
-            </div>
 
             {/* Right Cards */}
-            <div className="space-y-8">
-              <img
-                src="/images/secondProject.jpg"
-                alt="Mission Vision"
-                className="rounded-2xl shadow-lg"
-              />
-            </div>
+          <div className="space-y-8">
+  <img
+    src="/images/secondProject.jpg"
+    alt="Mission Vision"
+    className="rounded-b-2xl shadow-lg"
+  />
+</div>
           </div>
         </section>
 
@@ -235,9 +258,13 @@ const AboutSection = () => {
       <section className="bg-white py-16" ref={statsRef}>
   <div className="max-w-7xl mx-auto px-6 lg:px-8">
     {/* Heading */}
-    <h2 className="text-4xl md:text-5xl font-bold text-[#011321] text-center mb-12">
+    <h2 className="text-4xl md:text-5xl font-bold text-[#011321] text-center mb-2">
      Statistics 
     </h2>
+    <p className="text-lg text-slate-600 max-w-2xl text-center mx-auto  mb-12 leading-relaxed">
+          Strength, Quality, and Trust in Every Structure."
+(Perfect for “Years of Experience” or “Satisfied Clients” counter)
+          </p>
 
     {/* Counter Grid */}
    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
@@ -250,7 +277,7 @@ const AboutSection = () => {
       >
         {/* Icon */}
         <div className="text-5xl mb-4">{counter.icon}</div>
-
+    
         {/* Animated Number */}
         <span className="text-3xl md:text-4xl font-extrabold text-[#011321]">
           {count}
@@ -268,9 +295,6 @@ const AboutSection = () => {
 
   </div>
 </section>
-
-
-
       </div>
     </section>
   );
