@@ -12,6 +12,7 @@ const Hero = () => {
 
       tagline: " The Soul of france now in your city",
 
+
       image: "/images/secondProject.jpg",
       status: "Ongoing",
       gradient: "from-blue-400 via-indigo-500 to-purple-600",
