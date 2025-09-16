@@ -11,11 +11,11 @@ import { Star, Quote, ArrowRight } from 'lucide-react';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-red-50 to-white text-gray-900">
+    <div className="min-h-screen  text-gray-900">
       <Hero />
       
       {/* About Section with subtle gradient */}
-      <div className="bg-gradient-to-br from-white via-red-50 to-red-100">
+      <div>
         <AboutSection />
       </div>
 
@@ -23,12 +23,12 @@ const HomePage = () => {
      
 
       {/* Featured Projects Section with distinct gradient */}
-      <div className="bg-gradient-to-br from-white via-red-50 to-red-100">
+      <div>
         <FeaturedProjects />
       </div>
 
       {/* Contact Section */}
-      <div className="bg-red-50">
+      <div>
         <ContactSection />
       </div>
 

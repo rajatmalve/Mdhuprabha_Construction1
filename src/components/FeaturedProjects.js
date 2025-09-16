@@ -63,7 +63,7 @@ const FeaturedProjects = () => {
   const featuredProjects = currentProjectsData.slice(0, 4);
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-white via-red-50 to-red-100 relative overflow-hidden">
+    <section className="py-16 lg:py-24 relative overflow-hidden">
       {/* Subtle Red Background Glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-32 left-10 w-60 h-60 bg-red-100/40 rounded-full blur-3xl animate-pulse" />
@@ -108,20 +108,20 @@ const FeaturedProjects = () => {
 
               {/* Content */}
               <div className="p-4">
-                <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-red-600 transition-colors duration-500 line-clamp-2">
+                <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-[#011321] transition-colors duration-500 line-clamp-2">
                   {project.title}
                 </h3>
 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-slate-600 text-xs">
                     <div className="w-6 h-6 bg-red-50 rounded-full flex items-center justify-center mr-2">
-                      <MapPin className="w-3 h-3 text-red-600" />
+                      <MapPin className="w-3 h-3 text-[#011321]" />
                     </div>
                     <span className="line-clamp-1">{project.location}</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-xs">
                     <div className="w-6 h-6 bg-red-50 rounded-full flex items-center justify-center mr-2">
-                      <Home className="w-3 h-3 text-red-600" />
+                      <Home className="w-3 h-3 text-[#011321]" />
                     </div>
                     <span className="line-clamp-1">
                       {project.area} • {project.type}
