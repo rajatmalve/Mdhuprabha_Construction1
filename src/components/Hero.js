@@ -99,7 +99,7 @@ const Hero = () => {
     <span
       style={{ fontFamily: 'Julee, cursive' }}
       className={`absolute -top-4 right-4 px-4 py-1 rounded-full text-sm sm:text-base font-semibold shadow-lg 
-        ${slide.status === "Completed" ? "bg-green-500 text-white" : "bg-yellow-400 text-black"}`}
+        ${slide.status === "Completed" ? "bg-[#011321] text-white" : "bg-yellow-400 text-black"}`}
     >
       {slide.status}
     </span>
