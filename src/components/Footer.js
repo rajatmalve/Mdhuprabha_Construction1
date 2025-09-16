@@ -28,20 +28,20 @@ const Footer = () => {
   const quickLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-
+    
     { name: 'Projects', path: '/projects' },
     { name: 'Become Partner', path: '/becomePartner' },
     { name: 'Awards', path: '/awards', icon: Award },
     { name: 'CSR Activity', path: '/csrActivity' },
-    { name: 'Testimonials', path: '/testimonials' },
-    { name: 'Gallery', path: '/gallery' },
-    { name: 'Contact', path: '/contact' },
+{ name: 'Testimonials', path: '/testimonials' },
+{ name: 'Gallery', path: '/gallery' },
+{ name: 'Contact', path: '/contact' },
     { name: 'Career', path: '/career', icon: Briefcase }
-
-
-
-
-
+    
+    
+    
+    
+    
   ];
 
   const services = [
@@ -63,11 +63,11 @@ const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-gray-900 text-gray-300"
       style={{
-        backgroundImage: "url('/images/Footer-image-bg.png')",
-        backgroundSize: "fill",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+  backgroundImage: "url('/images/Footer-image-bg.png')",
+  backgroundSize: "fill",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+}}
 
     >
       <div className="absolute inset-0 bg-gray/50"></div>
@@ -109,34 +109,34 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          {/* Quick Links */}
-          {/* Quick Links */}
-          <div className="space-y-6">
-            <h4 className="text-xl font-bold text-white">Quick Links</h4>
-            <ul className="grid grid-cols-2 gap-x-8 gap-y-4">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.path}
-                    className="group flex items-center text-white-400 hover:text-white-500 transition-all duration-300"
-                  >
-                    {/* SVG Arrow */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4 mr-2 text-white-500 group-hover:translate-x-1 transition-transform duration-300"
-                      fill="currentColor"
-                      viewBox="0 0 320 512"
-                    >
-                      <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
-                    </svg>
-                    <span className="transform group-hover:translate-x-2 transition-transform duration-300">
-                      {link.name}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+         {/* Quick Links */}
+{/* Quick Links */}
+<div className="space-y-6">
+  <h4 className="text-xl font-bold text-white">Quick Links</h4>
+  <ul className="grid grid-cols-2 gap-x-8 gap-y-4">
+    {quickLinks.map((link) => (
+      <li key={link.name}>
+        <Link
+          to={link.path}
+          className="group flex items-center text-white-400 hover:text-white-500 transition-all duration-300"
+        >
+          {/* SVG Arrow */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-4 h-4 mr-2 text-white-500 group-hover:translate-x-1 transition-transform duration-300"
+            fill="currentColor"
+            viewBox="0 0 320 512"
+          >
+            <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+          </svg>
+          <span className="transform group-hover:translate-x-2 transition-transform duration-300">
+            {link.name}
+          </span>
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
 
 
 
@@ -189,53 +189,56 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="w-full mt-12 border-t border-gray-700 pt-6 
-                flex flex-col lg:flex-row lg:justify-between lg:items-center 
-                gap-4 text-gray-800 text-sm 
-                bg-yellow-400 px-4 py-4">
+   <div className="w-full mt-12 border-t border-gray-700 pt-4 
+                flex flex-col lg:flex-row 
+                gap-2 text-gray-800 bg-yellow-400 px-4 py-2">
 
-        {/* Left: Copyright */}
-        <p className="font-bold text-base sm:text-lg text-gray-800 text-center lg:text-left">
-          © 2025 Madhuprabha Construction. All rights reserved.
-        </p>
+  {/* Left */}
+  <div className="w-full lg:w-[35%] flex justify-center lg:justify-start">
+    <p className="font-bold text-[15px] text-gray-800">
+      © 2025 Madhuprabha Construction.
+    </p>
+  </div>
 
-        {/* Middle: Visitor Counter */}
-        <div className="flex items-center justify-center lg:justify-start space-x-2">
-          <span className="text-gray-800 font-bold text-base sm:text-lg">Visitors:</span>
-          <div className="flex space-x-1">
-            {visitorCount
-              .toString()
-              .padStart(6, "0")
-              .split("")
-              .map((digit, index) => (
-                <span
-                  key={index}
-                  className="bg-gray-800 text-white font-mono 
-                       text-base sm:text-lg md:text-xl 
-                       px-2 py-1 rounded-md shadow-inner border border-gray-700"
-                >
-                  {digit}
-                </span>
-              ))}
-          </div>
-        </div>
-
-        {/* Right: Developer Credit */}
-        <div className="text-center lg:text-right">
-          <a
-            href="https://www.rsinfotechsys.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cursor-pointer font-bold text-base sm:text-lg text-gray-800 text-center lg:text-left hover:text-blue-600 transition-colors"
+  {/* Middle */}
+  <div className="w-full lg:w-[10%] flex items-center justify-center space-x-1">
+    <span className="text-gray-800 font-bold text-[15px]">Visitors:</span>
+    <div className="flex space-x-1">
+      {visitorCount
+        .toString()
+        .padStart(4, "0")
+        .split("")
+        .map((digit, index) => (
+          <span
+            key={index}
+            className="bg-gray-800 text-white font-mono text-[15px] px-1 rounded-md shadow-inner border border-gray-700"
           >
-            Design & Developed by RIGHT SERVE INFOTECH SYSTEMS PVT. LTD.
-          </a>
-        </div>
+            {digit}
+          </span>
+        ))}
+    </div>
+  </div>
 
-      </div>
+  {/* Right */}
+  <div className="w-full lg:w-[55%] flex justify-center lg:justify-end">
+    <a
+      href="https://www.rsinfotechsys.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="cursor-pointer font-bold text-[15px] text-gray-800 hover:text-blue-600 transition-colors text-center lg:text-right"
+    >
+      Design & Developed by RIGHT SERVE INFOTECH SYSTEMS PVT.LTD
+    </a>
+  </div>
+
+</div>
 
 
-      {/* Scroll to Top Button */}
+
+
+
+
+      {/* Scroll to Top Button */}    
       <button
         onClick={scrollToTop}
         className="fixed bottom-8 right-8 group w-14 h-14 bg-gray-800 text-white-500 border border-white-500 rounded-full shadow-lg hover:bg-white-500 hover:text-white transform hover:scale-110 transition-all duration-500 flex items-center justify-center z-50"

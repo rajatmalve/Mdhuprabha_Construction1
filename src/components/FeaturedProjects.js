@@ -10,7 +10,7 @@ const currentProjectsData = [
     title: "PRAJAKTA LA-MAISON",
     image: "/images/secondProject.jpg",
     status: "Ongoing",
-    location: "Panday layout",
+    location: "Pandey layout",
     area: "2050 sq.ft - 2600 sq.ft",
     type: "3 / 4 BHK - 7 floor",
     types: "4",
@@ -66,8 +66,8 @@ const FeaturedProjects = () => {
     <section className="py-16 bg-[#01132152] relative overflow-hidden">
       {/* Subtle Red Background Glow */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-32 left-10 w-60 h-60 bg-red-100/40 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-16 w-48 h-48 bg-red-200/40 rounded-full blur-2xl animate-pulse delay-2000" />
+        <div className="absolute top-32 left-10 w-60 h-60 bg-[#011321] rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-16 w-48 h-48 bg-[#011321] rounded-full blur-2xl animate-pulse delay-2000" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -89,7 +89,7 @@ const FeaturedProjects = () => {
           {featuredProjects.map((project) => (
             <div
               key={project.id}
-              className="group relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 border border-red-200"
+              className="group relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 border border-[#011321]"
             >
               {/* Image */}
               <div className="relative h-40 sm:h-44 overflow-hidden rounded-t-2xl">
@@ -100,7 +100,7 @@ const FeaturedProjects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-red-100/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <div className="absolute top-3 right-3">
-                  <div className="px-2 py-1 bg-[#011321] text-white text-xs font-semibold rounded-full shadow-md border border-red-200">
+                  <div className="px-2 py-1 bg-[#011321] text-white text-xs font-semibold rounded-full shadow-md border border-[#011321]">
                     {project.status}
                   </div>
                 </div>
