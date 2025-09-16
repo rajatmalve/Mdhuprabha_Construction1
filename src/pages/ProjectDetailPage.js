@@ -60,7 +60,7 @@ const ProjectDetailPage = () => {
   // Function to get the appropriate PDF brochure for each project
   const getProjectBrochure = (projectTitle) => {
     const brochureMap = {
-      "PRAJAKTA LA-MAISON": "/images/Prajakta La Maison_Brochure(4) (2).pdf",
+      "PRAJAKTA LA-MAISON": "/images/MP LA Maison_Brochure.pdf",
       "PRAJAKTA PARK": "/images/Prajakta-Park-E-Brochure-New-1_compressed (1)(final).pdf",
       "PRAJAKTA CLASSIC": "/images/Prajakta-Park-E-Brochure-New-1_compressed.pdf",
       "Prajakta Green Serenity": "/images/Green Serenity E-brochure..pdf",
