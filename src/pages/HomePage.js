@@ -35,7 +35,7 @@ const HomePage = () => {
       
 
       {/* Testimonials Section */}
-      <section className="relative py-24 bg-gradient-to-br from-white via-red-50 to-white overflow-hidden">
+      {/* <section className="relative py-24 bg-gradient-to-br from-white via-red-50 to-white overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <div className="inline-flex items-center space-x-2 px-6 py-2 rounded-full bg-gray-100 border border-gray-200 shadow-sm mb-6">
@@ -83,18 +83,18 @@ const HomePage = () => {
             ))}
           </div>
 
-          {/* CTA */}
+         
           <div className="text-center mt-14">
             <a
               href="/contact"
-              className="group relative inline-flex items-center space-x-3 px-10 py-4 font-bold rounded-full overflow-hidden transition-all duration-500 hover:scale-105 bg-white text-red-600 border border-red-600 hover:bg-red-600 hover:text-white"
+              className="group relative inline-flex items-center space-x-3 px-10 py-4 font-bold rounded-full overflow-hidden transition-all duration-500 hover:scale-105 bg-white text-[#011321] border border-[#011321] hover:bg-[#011321] hover:text-white"
             >
               <span className="relative z-10">Start Your Project With Us</span>
-              <ArrowRight className="w-5 h-5 text-red-600 relative z-10 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-white" />
+              <ArrowRight className="w-5 h-5 text-[#011321] relative z-10 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-white" />
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

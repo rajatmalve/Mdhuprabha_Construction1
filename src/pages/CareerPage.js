@@ -117,7 +117,7 @@ const CareerPage = () => {
   backgroundSize: "100% 100%",   // pura div fill karega
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-  height: '60vh', // Adjust height as needed
+  height: '90vh', // Adjust height as needed
 }}
       >
         {/* White blur lights */}
@@ -149,7 +149,7 @@ const CareerPage = () => {
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Current{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">Openings</span>
+              <span className="bg-[#011321] bg-clip-text text-transparent">Openings</span>
             </h2>
             <p className="text-base sm:text-xl text-gray-600 max-w-2xl sm:max-w-3xl mx-auto">
               Join a fast-growing construction company focused on quality, safety and innovation.
@@ -202,7 +202,7 @@ const CareerPage = () => {
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Why{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">Work With Us</span>
+              <span className="bg-[#011321] bg-clip-text text-transparent">Work With Us</span>
             </h2>
             <p className="text-base sm:text-xl text-gray-600 max-w-2xl sm:max-w-3xl mx-auto">
               Build iconic projects, grow your career, and be part of a winning team.
@@ -241,7 +241,7 @@ const CareerPage = () => {
             <div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Apply{' '}
-                <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">Now</span>
+                <span className="bg-[#011321] bg-clip-text text-transparent">Now</span>
               </h2>
              
               <div className="relative rounded-2xl p-px bg-gradient-to-br from-red-500/30 via-red-300/20 to-transparent">

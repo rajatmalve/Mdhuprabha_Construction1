@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Image as ImageIcon, Video, Play, ExternalLink, Grid, Search, Award, Newspaper, Users } from 'lucide-react';
 import { galleryImages, galleryVideos } from '../mockData';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 import ImageLightbox from '../components/ImageLightbox';
 import AwardsPage from './AwardsPage';
 import PressPage from './PressPage';
 import CsrActivity from './CsrActivity';
+import Footer from '../components/Footer';
+
 
 const GalleryPage = () => {
   const [activeGalleryTab, setActiveGalleryTab] = useState('gallery');
@@ -43,9 +45,9 @@ const GalleryPage = () => {
 
   const galleryTabs = [
     { id: 'gallery', name: 'Gallery', icon: Grid },
-    { id: 'awards', name: 'Awards', icon: Award },
+    // { id: 'awards', name: 'Awards', icon: Award },
     { id: 'press', name: 'Press', icon: Newspaper },
-    { id: 'csr', name: 'CSR Activity', icon: Users },
+    // { id: 'csr', name: 'CSR Activity', icon: Users },
     { id: 'image', name: 'Images', icon: ImageIcon },
     { id: 'video', name: 'Videos', icon: Video }
   ];
@@ -53,35 +55,36 @@ const GalleryPage = () => {
   return (
     <div className="min-h-screen text-white">
       {/* Hero Section */}
-      <section 
-        className="relative pt-28 pb-20 text-white overflow-hidden"
-        style={{
-          backgroundImage: "url('/images/gellary image.jpg')",
-          backgroundSize: "100% 100%",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          height: '90vh',
-        }}
-      >
-        {/* White blur lights */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
-          <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
-        </div>
+      <section
+  className="relative pt-28 pb-20 text-white overflow-hidden flex items-center justify-center"
+  style={{
+    backgroundImage: "url('/images/gellary image.jpg')",
+    backgroundSize: "100% 100%",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "90vh",
+  }}
+>
+  {/* White blur lights */}
+  <div className="absolute inset-0 opacity-20">
+    <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
+    <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
+  </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-            <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
-              Media
-            </span>
-            <span className="text-white"> Gallery</span>
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl max-w-3xl sm:max-w-4xl mx-auto leading-relaxed font-bold">
-  Explore our achievements, press coverage, and social impact through our comprehensive media collection.
-</p>
-
-        </div>
-      </section>
+  {/* Centered Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
+      <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
+        Media
+      </span>
+      <span className="text-white"> Gallery</span>
+    </h1>
+    <p className="text-base sm:text-lg md:text-xl max-w-3xl sm:max-w-4xl mx-auto leading-relaxed font-bold">
+      Explore our achievements, press coverage, and social impact through our
+      comprehensive media collection.
+    </p>
+  </div>
+</section>
 
       {/* Main Gallery Tabs */}
       <section className="py-8 bg-white border-b border-gray-200 sticky top-20 z-40 backdrop-blur-sm">
@@ -95,8 +98,8 @@ const GalleryPage = () => {
                   onClick={() => setActiveGalleryTab(tab.id)}
                   className={`flex items-center space-x-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
                     activeGalleryTab === tab.id
-                      ? 'bg-red-600 text-white shadow-lg scale-105'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-red-600'
+                      ? 'bg-[#011321] text-white shadow-lg scale-105'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-[#011321]'
                   }`}
                 >
                   <Icon className="w-5 h-5" />
@@ -118,7 +121,7 @@ const GalleryPage = () => {
                 {filteredItems.map((item) => (
                   <div
                     key={item.id}
-                    className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-red-600/40 transition-all duration-500 transform hover:-translate-y-2"
+                    className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-[#011321]/40 transition-all duration-500 transform hover:-translate-y-2"
                   >
                     <div className="relative aspect-square overflow-hidden">
                       <img
@@ -133,7 +136,7 @@ const GalleryPage = () => {
                       <div className="absolute top-4 left-4">
                         <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                           item.category === 'video' 
-                            ? 'bg-red-600 text-white' 
+                            ? 'bg-[#011321] text-white' 
                             : 'bg-white text-black'
                         }`}>
                           {item.category === 'video' ? 'Video' : 'Image'}
@@ -157,7 +160,7 @@ const GalleryPage = () => {
                                 galleryImages.findIndex(image => image.id === item.id)
                               )
                             }
-                            className="p-3 bg-red-600/80 backdrop-blur-sm text-white rounded-full hover:bg-red-700 transform hover:scale-110 transition-all duration-300">
+                            className="p-3 bg-[#011321]/80 backdrop-blur-sm text-white rounded-full hover:bg-red-700 transform hover:scale-110 transition-all duration-300">
                             <ExternalLink className="w-6 h-6" />
                           </button>
                         </div>
@@ -176,7 +179,7 @@ const GalleryPage = () => {
                 {filteredItems.map((item) => (
                   <div
                     key={item.id}
-                    className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-red-600/40 transition-all duration-500 transform hover:-translate-y-2 break-inside-avoid"
+                    className="group relative bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-[#011321]/40 transition-all duration-500 transform hover:-translate-y-2 break-inside-avoid"
                   >
                     <div className="relative h-full overflow-hidden">
                       <img
@@ -191,7 +194,7 @@ const GalleryPage = () => {
                       <div className="absolute top-4 left-4">
                         <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                           item.category === 'video' 
-                            ? 'bg-red-600 text-white' 
+                            ? 'bg-[#011321] text-white' 
                             : 'bg-white text-black'
                         }`}>
                           {item.category === 'video' ? 'Video' : 'Image'}
@@ -215,7 +218,7 @@ const GalleryPage = () => {
                                 galleryImages.findIndex(image => image.id === item.id)
                               )
                             }
-                            className="p-2 bg-red-600/80 text-white rounded-full hover:bg-red-700 transform hover:scale-110 transition-all duration-300">
+                            className="p-2 bg-[#011321]/80 text-white rounded-full hover:bg-red-700 transform hover:scale-110 transition-all duration-300">
                             <ExternalLink className="w-5 h-5" />
                           </button>
                         </div>
@@ -287,7 +290,10 @@ const GalleryPage = () => {
             ></iframe>
           </div>
         </div>
+        
       )}
+      
+ <Footer />
     </div>
   );
 };

@@ -2,97 +2,112 @@ import React from 'react';
 import { Award, Users, Target, CheckCircle } from 'lucide-react';
 import Footer from '../components/Footer';
 
+const testimonials = [
+  {
+    image: "/images/TestiminalProfile.png",
+    name: "Siddarth Wasnik",
+    // role: "Founder & CEO",
+    text: "Prajakta Greenfinty project is good.it is situated very hart of city in nagpur.as per my son recommended this project is very fine & ashish sir is aware of project very well"
+  },
+  {
+    image: "/images/TestiminalProfile.png",
+    name: "Dr.Vivek Nagarle",
+    // role: "Marketing Head",
+    text: "Ashish construction has build a very good project.all the team member are very good. Ashish londhe and his team done very good job.In compact space build a specious apartment.Thank you for giving us our DREAM HOME"
+  },
+  {
+    image: "/images/TestiminalProfile.png",
+    name: "Manoj Sharma",
+    // role: "Project Manager",
+    text: "An absolutely phenomenal project with amazing construction quality."
+  },
+  {
+    image: "/images/TestiminalProfile.png",
+    name: "Anjali Fule",
+    // role: "HR Director",
+    text: "Prajakta greenfinity project its quality of construction is upto the mark. its fine to the best of my knowledge. its beautiful design and aminities in such limited space ,its fabulous."
+  },
+   {
+    image: "/images/TestiminalProfile.png",
+    name: "Dr.Ankita Randhir",
+    // role: "HR Director",
+    text: "Very good and well contructed project.Happy with the interior and furniture of gym and party area.Satisfied with the builders and his staff regarding cooperation."
+  },
+   {
+    image: "/images/TestiminalProfile.png",
+    name: "Dr.Milind Suryawanshi",
+    // role: "HR Director",
+    text: "It perfect project as per my opinion.Its customer friendly.I think Mr.ashish sir has passionate to make home."
+  },
+   {
+    image: "/images/TestiminalProfile.png",
+    name: "Dinesh Badoniya",
+    // role: "HR Director",
+    text: "The construction of the scheme is very good, there is adequate lighting, full care has been taken of sunlight, the outer look and arrangement is very excellent."
+  }
+];
+
+const TestimonialCard = ({ image, name, role, text }) => (
+  <div className="bg-white shadow-lg rounded-xl p-6 max-w-md text-center border-t-4 border-red-500">
+    {/* <h3 className="text-red-500 text-sm font-semibold italic mb-2">
+      our clients
+    </h3> */}
+    {/* <h2 className="text-2xl font-bold mb-6">TESTIMONIAL</h2> */}
+
+    <div className="flex justify-center">
+      <img
+        src={image}
+        alt={name}
+        className="w-24 h-24 rounded-full border-4 border-white shadow-md"
+      />
+    </div>
+
+    <h4 className="text-red-600 font-bold mt-4">{name}</h4>
+    <p className="text-gray-500 text-sm mb-4">{role}</p>
+
+    <p className="text-gray-600 text-sm italic">“{text}”</p>
+
+    <div className="flex justify-center mt-4 text-red-500">
+      {Array(5).fill("⭐").map((star, i) => (
+        <span key={i}>{star}</span>
+      ))}
+    </div>
+  </div>
+);
+
 const TestimonialPage = () => {
-  
-
-  const values = [
-    {
-      icon: Target,
-      title: "Quality First",
-      description: "We never compromise on quality. Every project reflects our commitment to excellence and precision in construction."
-    },
-    {
-      icon: CheckCircle,
-      title: "Timely Delivery",
-      description: "We understand the value of time and ensure all projects are completed within the agreed timeline."
-    },
-    {
-      icon: Users,
-      title: "Customer Focus",
-      description: "Our clients are at the heart of everything we do. We listen, understand, and deliver beyond expectations."
-    },
-    {
-      icon: Award,
-      title: "Innovation",
-      description: "We embrace modern construction techniques and technologies to provide innovative solutions."
-    }
-  ];
-
-  const teamMembers = [
-    {
-      name: "Mr. Ashish Londhe",
-      role: "Founder & Managing Director",
-      experience: "19+ Years Experience",
-      image: "/images/vikashsir.jpeg",
-    },
-    
-  ];
-
-  const awards = [
-    { image: "/images/certification.jpeg", title: "Times Real Estate Award", caption: "Award received for Prajakta Ikebana — Presented by Hon'ble Shri. Nitinji Gadkari" },
-    { image: "/images/PrajactaTai Award-7.jpeg", title: "Recognized for Excellence", caption: "Celebrating innovation and trust at Times Property Real Estate Awards 2022" },
-    { image: "/images/PrajactaTai Award-5.jpeg", title: "Apartment Excellence Award", caption: "Honored with the 1st Position at MP Birla Cement Technocrat Awards 2024 for Apartment Building" },
-    { image: "/images/PrajactaTai Award-6.jpeg", title: "Celebrating Achievement", caption: "Recognized for outstanding contribution at Times Property Awards 2022" },
-    { image: "/images/PrajactaTai Award-4.jpeg", title: "Pride of Achievement", caption: "Recognized with 1st Rank in Apartment Building – MP Birla Cement Awards 2024" },
-    { image: "/images/carazol5.JPG", title: " A Moment of Recognition", caption: "Honored with 1st Rank in Apartment Building at MP Birla Cement Awards 2024" },
-    { image: "/images/Prajktaproject.JPG", title: " Celebrating Success", caption: "Our team being recognized for the 'Prajakta' project" },
-    { image: "/images/PrajctaTai Award-3.jpeg", title: " Recognized for Quality and Excellence", caption: "We are honored to be recognized by the residents of Prajakta Green Serenity" },
-    { image: "/images/all member .JPG", title: "Customer Satisfaction Award", caption: "Client-first approach in every decision" },
-    
-  ];
-
   return (
     <div className="min-h-screen bg-white">
-      
+      {/* Hero Section */}
       <section
-              className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
-              style={{
-                backgroundImage: "url('/images/Testimonial Images.jpg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                height: "90vh",
-              }}
-            >
-             
-              <div className="absolute inset-0 opacity-20">
-                <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
-                <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
-              </div>
-      
-              {/* Overlay to darken image */}
-              <div className="absolute inset-0"></div>
-      
-              <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-12 sm:mb-16">
-                 
-                  <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-                    <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
-                      Building Excellence
-                    </span>
-                    <br />
-                    <span className="text-white">Since 2005</span>
-                  </h1>
-                 
-                </div>
-              </div>
-            </section>
-      
+        className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
+        style={{
+          backgroundImage: "url('/images/TestiminalImages.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "90vh",
+        }}
+      >
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
+        </div>
+      </section>
 
-      {/* Values Section */}
-      
+      {/* Testimonials Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+            What Our Clients Say
+          </h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {testimonials.map((t, index) => (
+              <TestimonialCard key={index} {...t} />
+            ))}
+          </div>
+        </div>
+      </section>
 
-      {/* Our Team Section */}
-     
       <Footer />
     </div>
   );
