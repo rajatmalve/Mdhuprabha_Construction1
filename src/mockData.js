@@ -540,7 +540,7 @@ export const galleryVideos = [
   {
     id: 1,
     title: "Construction Phase 1",
-    thumbnail: "https://madhuprabhaconstructions.in/images/Ashish-Construction-09-13-2025_07_43_PM.png",
+    thumbnail:"/images/Ashish-Construction-09-13-2025_07_43_PM.png",
     duration: "3:42",
     url: "https://www.youtube.com/embed/UpdIzsq1G6w"
   },

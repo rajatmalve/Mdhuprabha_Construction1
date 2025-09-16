@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+<<<<<<< HEAD
 import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, MessageCircle, Award, Briefcase } from 'lucide-react';
+=======
+import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, Award, Briefcase } from 'lucide-react';
+>>>>>>> 61591b270f86135028a7eed52b9e618c1dbd6e41
 import { contactData } from '../mockData';
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
+  const [visitorCount, setVisitorCount] = useState(0);
+
+  // Visitor counter using localStorage
+  useEffect(() => {
+    let count = localStorage.getItem("visitorCount");
+    if (!count) {
+      count = 1;
+    } else {
+      count = parseInt(count) + 1;
+    }
+    localStorage.setItem("visitorCount", count);
+    setVisitorCount(count);
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -143,6 +161,26 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-gray-700 pt-6 flex flex-col sm:flex-row justify-between items-center text-gray-400 text-sm">
           <p>© 2025 Madhuprabha Construction. All rights reserved.</p>
+
+          {/* Visitor Counter */}
+          <div className="flex items-center space-x-2">
+            <span className="text-gray-300"></span>
+            <div className="flex space-x-1">
+              {visitorCount
+                .toString()
+                .padStart(6, "0")
+                .split("")
+                .map((digit, index) => (
+                  <span
+                    key={index}
+                    className="bg-black text-white font-mono text-lg md:text-xl px-2 py-1 rounded-md shadow-inner border border-gray-700"
+                  >
+                    {digit}
+                  </span>
+                ))}
+            </div>
+          </div>
+
           <div className="flex items-center space-x-4 mt-2 sm:mt-0">
             <a href="https://www.rsinfotechsys.com/" className="hover:text-red-500 transition-colors duration-300">
               Design and developed by RIGHT SERVE INFOTECH SYSTEMS PVT. LTD.
@@ -164,11 +202,10 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-28 right-8 group w-14 h-14 bg-green-500 text-white border border-green-600 rounded-full shadow-lg 
-                     hover:bg-green-600 transform hover:scale-110 transition-all duration-500 flex items-center justify-center z-50 animate-spin-slow"
+             hover:bg-green-600 transform hover:scale-110 transition-all duration-500 flex items-center justify-center z-50 animate-spin-slow"
         >
           <FaWhatsapp className="w-7 h-7" />
         </a>
-
       </div>
     </footer>
   );

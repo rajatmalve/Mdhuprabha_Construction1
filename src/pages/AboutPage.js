@@ -79,7 +79,7 @@ const AboutPage = () => {
             <div className="space-y-6 sm:space-y-8">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Our{' '}
-                <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
+                <span className="bg-[#011321] bg-clip-text text-transparent">
                   Journey
                 </span>
               </h2>
@@ -196,7 +196,7 @@ const AboutPage = () => {
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
               Our{' '}
-              <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
+              <span className="bg-[#011321] bg-clip-text text-transparent">
                 Values
               </span>
             </h2>

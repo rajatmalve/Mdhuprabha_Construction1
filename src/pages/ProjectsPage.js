@@ -32,12 +32,12 @@ const ProjectsPage = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-  className="relative pt-24 pb-20 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
+  className="relative flex items-center justify-center text-white overflow-hidden"
   style={{
-    backgroundImage: "url(/images/architects-collaborating-blueprints-construction-site.jpg)", // यहाँ अपनी image का path दो
+    backgroundImage: "url(/images/architects-collaborating-blueprints-construction-site.jpg)", 
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height:"90vh"
+    height: "90vh",
   }}
 >
   {/* Overlay for readability */}
@@ -49,20 +49,21 @@ const ProjectsPage = () => {
     <div className="absolute bottom-20 left-20 w-64 h-64 bg-gray-200 rounded-full blur-2xl"></div>
   </div>
 
-  {/* Content */}
-  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+  {/* Centered Content */}
+  <div className="relative z-10 max-w-5xl px-4 text-center">
+    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6">
       <span className="bg-white bg-clip-text text-transparent drop-shadow-lg">
-        Completed
+        Completed Projects
       </span>
-      <br />
-      <span className="text-white">Projects</span>
+      
+      {/* <span className="text-white">Projects</span> */}
     </h1>
-    <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
+    <p className="text-lg sm:text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
       Explore our portfolio of successfully completed residential construction projects that showcase our commitment to quality, innovation, and customer satisfaction.
     </p>
   </div>
 </section>
+
 
 {/* 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -98,7 +99,7 @@ const ProjectsPage = () => {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute top-2 right-2">
-                        <span className="px-2 py-1 bg-red-600 text-white text-[10px] font-semibold rounded-full shadow">
+                        <span className="px-2 py-1 bg-[#011321] text-white text-[10px] font-semibold rounded-full shadow">
                           {project.status}
                         </span>
                       </div>
@@ -106,11 +107,11 @@ const ProjectsPage = () => {
 
                     {/* Project Content */}
                     <div className="p-4">
-                      <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors duration-300">
+                      <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#011321] transition-colors duration-300">
                         {project.title}
                       </h3>
                       <div className="flex items-center text-gray-600 text-xs mb-2">
-                        <MapPin className="w-3 h-3 mr-1 text-red-600 flex-shrink-0" />
+                        <MapPin className="w-3 h-3 mr-1 text-[#011321] flex-shrink-0" />
                         <span>{project.location}</span>
                       </div>
                       <p className="text-gray-700 text-xs leading-snug mb-4 line-clamp-2">
@@ -118,7 +119,7 @@ const ProjectsPage = () => {
                       </p>
                       <Link
                         to={`/project/${project.id}`}
-                        className="w-full inline-block text-center py-2 px-3 bg-red-600 text-white text-sm font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
+                        className="w-full inline-block text-center py-2 px-3 bg-[#011321] text-white text-sm font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
                       >
                         View
                       </Link>
@@ -132,7 +133,7 @@ const ProjectsPage = () => {
                 <div className="text-left mt-10">
                   <button
                     onClick={() => setShowAll(!showAll)}
-                    className="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
+                    className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
                   >
                     {showAll ? "Show Less" : "Read More"}
                   </button>
@@ -155,7 +156,7 @@ const ProjectsPage = () => {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute top-4 left-4">
-                        <span className="px-3 py-1 bg-red-600 text-white text-xs font-semibold rounded-full shadow-lg">
+                        <span className="px-3 py-1 bg-[#011321] text-white text-xs font-semibold rounded-full shadow-lg">
                           {project.status}
                         </span>
                       </div>
@@ -164,21 +165,21 @@ const ProjectsPage = () => {
                     {/* Content */}
                     <div className="lg:w-2/3 p-8 flex flex-col justify-between">
                       <div>
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors duration-300">
+                        <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-[#011321] transition-colors duration-300">
                           {project.title}
                         </h3>
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
                           <div className="flex items-center text-gray-600 text-sm">
-                            <MapPin className="w-4 h-4 mr-2 text-red-600" />
+                            <MapPin className="w-4 h-4 mr-2 text-[#011321]" />
                             <span>{project.location}</span>
                           </div>
                           <div className="flex items-center text-gray-600 text-sm">
-                            <Home className="w-4 h-4 mr-2 text-red-600" />
+                            <Home className="w-4 h-4 mr-2 text-[#011321]" />
                             <span>{project.area}</span>
                           </div>
                           <div className="flex items-center text-gray-600 text-sm">
-                            <Calendar className="w-4 h-4 mr-2 text-red-600" />
+                            <Calendar className="w-4 h-4 mr-2 text-[#011321]" />
                             <span>{project.completionDate}</span>
                           </div>
                         </div>
@@ -195,7 +196,7 @@ const ProjectsPage = () => {
                       <div className="flex justify-end mt-6">
                         <Link
                           to={`/project/${project.id}`}
-                          className="px-6 py-3 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center space-x-2"
+                          className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-xl hover:bg-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center space-x-2"
                         >
                           <span>View Details</span>
                           <ExternalLink className="w-4 h-4" />
@@ -211,7 +212,7 @@ const ProjectsPage = () => {
                 <div className="text-left mt-10">
                   <button
                     onClick={() => setShowAll(!showAll)}
-                    className="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
+                    className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
                   >
                     {showAll ? "Show Less" : "Read More"}
                   </button>
