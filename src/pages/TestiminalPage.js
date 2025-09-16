@@ -97,7 +97,7 @@ const TestimonialPage = () => {
       {/* Testimonials Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl  font-bold text-center text-gray-800 mb-12">
             What Our Clients Say
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
