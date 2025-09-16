@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Image as ImageIcon, Video, Play, ExternalLink, Grid, Search, Award, Newspaper, Users } from 'lucide-react';
 import { galleryImages, galleryVideos } from '../mockData';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 import ImageLightbox from '../components/ImageLightbox';
 import AwardsPage from './AwardsPage';
 import PressPage from './PressPage';
 import CsrActivity from './CsrActivity';
+import Footer from '../components/Footer';
+
 
 const GalleryPage = () => {
   const [activeGalleryTab, setActiveGalleryTab] = useState('gallery');
@@ -288,7 +290,10 @@ const GalleryPage = () => {
             ></iframe>
           </div>
         </div>
+        
       )}
+      
+ <Footer />
     </div>
   );
 };
