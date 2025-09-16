@@ -60,7 +60,7 @@ const ProjectDetailPage = () => {
   // Function to get the appropriate PDF brochure for each project
   const getProjectBrochure = (projectTitle) => {
     const brochureMap = {
-      "PRAJAKTA LA-MAISON": "/images/Prajakta La Maison_Brochure(4) (2).pdf",
+      "PRAJAKTA LA-MAISON": "/images/MP LA Maison_Brochure.pdf",
       "PRAJAKTA PARK": "/images/Prajakta-Park-E-Brochure-New-1_compressed (1)(final).pdf",
       "PRAJAKTA CLASSIC": "/images/Prajakta-Park-E-Brochure-New-1_compressed.pdf",
       "Prajakta Green Serenity": "/images/Green Serenity E-brochure..pdf",
@@ -277,7 +277,7 @@ const ProjectDetailPage = () => {
     </div>
   </div>
 
-  {isCurrentProject && (
+  {/* {isCurrentProject && (
     <div className="flex items-start space-x-4">
       <TrendingUp className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
       <div>
@@ -286,25 +286,29 @@ const ProjectDetailPage = () => {
         <div className="mt-2 w-full bg-slate-200 rounded-full h-2"></div>
       </div>
     </div>
-  )}
+  )} */}
 
   {/* Architecture */}
+  {project?.architecture && (
   <div className="flex items-start space-x-4">
     <Award className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
     <div>
       <div className="font-semibold text-slate-900">Architecture</div>
-      <div className="text-slate-600">Arjun Kamdi, Arya Vertex</div>
+      <div className="text-slate-600">{project.architecture}</div>
     </div>
   </div>
+   )}
 
   {/* Vastu Consultant */}
+    {project?.vastuConsultant && (
   <div className="flex items-start space-x-4">
     <User className="w-6 h-6 text-slate-500 mt-1 flex-shrink-0" />
     <div>
       <div className="font-semibold text-slate-900">Vastu Consultant</div>
-      <div className="text-slate-600">Kirti Bhai</div>
+      <div className="text-slate-600">{project.vastuConsultant}</div>
     </div>
   </div>
+   )}
 </div>
 
 

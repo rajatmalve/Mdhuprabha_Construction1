@@ -117,7 +117,7 @@ const CareerPage = () => {
   backgroundSize: "100% 100%",   // pura div fill karega
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-  height: '60vh', // Adjust height as needed
+  height: '90vh', // Adjust height as needed
 }}
       >
         {/* White blur lights */}
