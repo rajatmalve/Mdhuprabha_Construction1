@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, MessageCircle, Award, Briefcase } from 'lucide-react';
-=======
 import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, Award, Briefcase } from 'lucide-react';
->>>>>>> 61591b270f86135028a7eed52b9e618c1dbd6e41
 import { contactData } from '../mockData';
 import { FaWhatsapp } from "react-icons/fa";
 

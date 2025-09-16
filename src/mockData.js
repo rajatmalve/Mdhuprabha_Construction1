@@ -578,9 +578,8 @@ export const aboutUsData = {
   shortDescription: "Leading residential construction company with 20 Glorious Years of experience in creating quality construction.",
   fullDescription: ` Madhuprabha Construction was started in the year 2005. The business start was modest with the regular clients in Nagpur. Over the period, in last 20 years, now we are the leading company in the construction group. Our projects not only deal in Nagpur but also in and around Central India. The journey of hard work, dedication, and trust of our clients has brought us this long way. We deal in the commercials and housing society. With the experience in designing and building these, our company has higher standards in terms of quality and at the same time, it remains affordable to everyone. We are also very well known for the perfect carvings and core commitment for every project. With this, we believe to have a futuristic approach so that our work completion is on time for every project undertaken. We also commit the designing a housing society and commercial complex for a progressive India and we adhere to our traditional values which make a place better to live in, with positivity and peace. Quality and transparency are our main criteria. Ashish Constructions is known for its quality factor and service. We do firmly believe that a house is made of walls and beams, but a home is built with love and dreams.
 
-Success is a state of mind. Anything you want, you can have! You just need to have dreams; believe that you deserve those dreams, and work hard to acquire them! This is a motivational factor for our company.              
-                  
-                  `,
+Success is a state of mind. Anything you want, you can have! You just need to have dreams; believe that you deserve those dreams, and work hard to acquire them! This is a motivational factor for our company.`,
+
   experience: "20 Glorious Years",
   projectsCompleted: "25+",
   happyClients: "200+",

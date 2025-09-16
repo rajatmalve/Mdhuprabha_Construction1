@@ -120,7 +120,7 @@ const AboutSection = () => {
               {/* Today, with over 500 completed projects and more than 1000 satisfied clients, we continue to set new standards in construction excellence, always staying true to our founding principles of quality, integrity, and customer satisfaction. */}
             {/* </p> */}
 
-            {/* Mission & Values */}
+            {/* Mission & Values
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <div className="w-2 h-2 bg-[#011321] rounded-full mt-3 flex-shrink-0"></div>
@@ -136,7 +136,7 @@ const AboutSection = () => {
                   <p className="text-slate-600">Our vision is to be one of the top construction industry and organizations which are excellent in quality, and deliver the services in a better way so our clients are satisfied.</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <Link
               to="/about"
