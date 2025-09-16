@@ -90,9 +90,9 @@ const ContactPage = () => {
       <section className="py-20 bg-white mt-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Get In{' '}
-              <span className=" text-[#011321]">Touch</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl  font-bold text-gray-900 mb-6">
+              Get In Touch
+              
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Choose your preferred way to contact us. We're here to help with all your construction needs.
