@@ -43,9 +43,9 @@ const GalleryPage = () => {
 
   const galleryTabs = [
     { id: 'gallery', name: 'Gallery', icon: Grid },
-    { id: 'awards', name: 'Awards', icon: Award },
+    // { id: 'awards', name: 'Awards', icon: Award },
     { id: 'press', name: 'Press', icon: Newspaper },
-    { id: 'csr', name: 'CSR Activity', icon: Users },
+    // { id: 'csr', name: 'CSR Activity', icon: Users },
     { id: 'image', name: 'Images', icon: ImageIcon },
     { id: 'video', name: 'Videos', icon: Video }
   ];
@@ -53,35 +53,36 @@ const GalleryPage = () => {
   return (
     <div className="min-h-screen text-white">
       {/* Hero Section */}
-      <section 
-        className="relative pt-28 pb-20 text-white overflow-hidden"
-        style={{
-          backgroundImage: "url('/images/gellary image.jpg')",
-          backgroundSize: "100% 100%",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          height: '90vh',
-        }}
-      >
-        {/* White blur lights */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
-          <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
-        </div>
+      <section
+  className="relative pt-28 pb-20 text-white overflow-hidden flex items-center justify-center"
+  style={{
+    backgroundImage: "url('/images/gellary image.jpg')",
+    backgroundSize: "100% 100%",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    height: "90vh",
+  }}
+>
+  {/* White blur lights */}
+  <div className="absolute inset-0 opacity-20">
+    <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
+    <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
+  </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-            <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
-              Media
-            </span>
-            <span className="text-white"> Gallery</span>
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl max-w-3xl sm:max-w-4xl mx-auto leading-relaxed font-bold">
-  Explore our achievements, press coverage, and social impact through our comprehensive media collection.
-</p>
-
-        </div>
-      </section>
+  {/* Centered Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
+      <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
+        Media
+      </span>
+      <span className="text-white"> Gallery</span>
+    </h1>
+    <p className="text-base sm:text-lg md:text-xl max-w-3xl sm:max-w-4xl mx-auto leading-relaxed font-bold">
+      Explore our achievements, press coverage, and social impact through our
+      comprehensive media collection.
+    </p>
+  </div>
+</section>
 
       {/* Main Gallery Tabs */}
       <section className="py-8 bg-white border-b border-gray-200 sticky top-20 z-40 backdrop-blur-sm">
