@@ -53,7 +53,7 @@ const ProjectsPage = () => {
   <div className="relative z-10 max-w-5xl px-4 text-center">
     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6">
       <span className="bg-white bg-clip-text text-transparent drop-shadow-lg">
-        Completed Projects
+        Projects
       </span>
       
       {/* <span className="text-white">Projects</span> */}
