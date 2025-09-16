@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Users, Award, Clock, CheckCircle } from 'lucide-react';
+import { Users, Award, Clock, CheckCircle,ArrowRight } from 'lucide-react';
 import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [startCounter, setStartCounter] = useState(false); // scroll detection
+  const [startCounter, setStartCounter] = useState(false); 
 
   const stats = [
     {
-      icon: <Award className="w-8 h-8" />,
+      icon: <Award className="w-8 h-8 text-yellow-500" />,
       number: 200000,
       suffix: "+",
       label: "Sq.Ft Area Delivered",
@@ -16,7 +16,7 @@ const AboutSection = () => {
       bg: "bg-pink-50"
     },
     {
-      icon: <Clock className="w-8 h-8" />,
+      icon:<Clock className="w-8 h-8 text-yellow-500" />,
       number: 20,
       suffix: "+",
       label: "Years Experience",
@@ -24,7 +24,7 @@ const AboutSection = () => {
       bg: "bg-yellow-50"
     },
     {
-      icon: <Users className="w-8 h-8" />,
+      icon: <Users className="w-8 h-8 text-green-500" />,
       number: 200,
       suffix: "+",
       label: "Happy Clients",
@@ -32,7 +32,7 @@ const AboutSection = () => {
       bg: "bg-green-50"
     },
     {
-      icon: <CheckCircle className="w-8 h-8" />,
+      icon: <CheckCircle className="w-8 h-8 text-blue-500" />,
       number: 25,
       suffix: "+",
       label: "Projects done",
@@ -102,49 +102,36 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="py-20 bg-gradient-to-br from-white via-red-50 to-red-100"
+      className="py-20 "
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
-          <div>
+          <div className='mb-8'>
             <h2 className="text-4xl md:text-5xl font-bold text-[#011321] mb-6">
               About <span className="text-[#011321]">Madhuprabha</span>
             </h2>
-            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-            Madhuprabha Construction was started in the year 2005. The business start was modest with the regular clients in Nagpur. Over the period, in last 20 years, now we are the leading company in the construction group. Our projects not only deal in Nagpur but also in and around Central India. The journey of hard work, dedication, and trust of our clients has brought us this long way. We deal in the commercials and housing society. With the experience in designing and building these, our company has higher standards in terms of quality and at the same time, it remains affordable to everyone. We are also very well known for the perfect carvings and core commitment for every project.</p>
+            <p className="text-lg text-slate-600 mb-6 leading-relaxed text-justify">
+              Madhuprabha Construction was started in the year 2005. The business
+              start was modest with the regular clients in Nagpur. Over the period,
+              in last 20 years, now we are the leading company in the construction group.
+              Our projects not only deal in Nagpur but also in and around Central India.
+              The journey of hard work, dedication, and trust of our clients has brought
+              us this long way. We deal in the commercials and housing society.
+              With the experience in designing and building these, our company has
+              higher standards in terms of quality and at the same time, it remains
+              affordable to everyone. We are also very well known for the perfect carvings
+              and core commitment for every project.</p>
 
-            {/* <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              Our transformation to Madhu Prabha Constructions reflects our growth while maintaining the core values that have guided us from the beginning. We believe that construction is not just about building structures; it's about creating spaces where lives unfold, businesses thrive, and communities flourish.  */}
-
-              {/* Today, with over 500 completed projects and more than 1000 satisfied clients, we continue to set new standards in construction excellence, always staying true to our founding principles of quality, integrity, and customer satisfaction. */}
-            {/* </p> */}
-
-            {/* Mission & Values
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-[#011321] rounded-full mt-3 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-semibold text-slate-800 mb-2">Our Mission</h4>
-                  <p className="text-slate-600">Our mission is to maintain the relationship with the clients of trust and loyalty. Also to deliver a good quality of services at affordable prices by our qualified personnel for different types of projects to the customers. We aim at giving our best to deliver what exactly clients have in mind.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-[#011321] rounded-full mt-3 flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-semibold text-slate-800 mb-2">Our Vision</h4>
-                  <p className="text-slate-600">Our vision is to be one of the top construction industry and organizations which are excellent in quality, and deliver the services in a better way so our clients are satisfied.</p>
-                </div>
-              </div>
-            </div> */}
 
             <Link
               to="/about"
-              className="mt-8 bg-[#011321] text-white px-8 py-3 rounded-full font-medium hover:from-red-600 hover:to-red-800 transition-all duration-300 transform hover:scale-105 inline-block"
+              className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300"
             >
-              <button>
-                Learn More About Us
-              </button>
+              <span className="text-white group-hover:text-white">
+                            More About Us
+                 </span>
+                          <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
             </Link>
           </div>
 
@@ -169,40 +156,16 @@ const AboutSection = () => {
             </div>
 
             {/* Floating Card */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md rounded-2xl px-6 py-4 shadow-lg">
+            <div className="absolute top-80 left-2 bg-white/90 backdrop-blur-md rounded-2xl px-6 py-4 shadow-lg">
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-bold text-red-600">20+</span>
+                <span className="text-2xl font-bold text-[#011321]">20+</span>
                 <span className="text-sm text-slate-700">Years of Excellence</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div ref={statsRef} className="mt-32 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((stat, index) => {
-            const count = useCounter(stat.number, 2500, startCounter); // 2.5 sec animation
-            return (
-              <div
-                key={index}
-                className={`text-center group rounded-2xl shadow-md p-6 hover:shadow-xl transition-shadow duration-300 ${stat.bg}`}
-              >
-                <div
-                  className={`inline-flex items-center justify-center w-20 h-20 
-                             bg-gradient-to-br ${stat.gradient} text-white 
-                             rounded-2xl mb-4 border-4 border-white shadow-lg
-                             group-hover:scale-110 transition-transform duration-300`}
-                >
-                  {stat.icon}
-                </div>
-                <div className="text-3xl font-bold text-slate-800 mb-2">
-                  {count}{stat.suffix}
-                </div>
-                <div className="text-slate-600">{stat.label}</div>
-              </div>
-            );
-          })}
-        </div>
+        
       </div>
     </section>
   );

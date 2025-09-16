@@ -9,25 +9,34 @@ const Hero = () => {
     {
       id: 1,
       title: "PRAJAKTA LA-MAISON",
+
       tagline: " The Soul of france now in your city",
+
+
       image: "/images/secondProject.jpg",
+      status: "Ongoing",
+      gradient: "from-blue-400 via-indigo-500 to-purple-600",
     },
     {
       id: 2,
       title: "PRAJAKTA PARK",
       tagline: " 3BHKD park facing premium flats in abhayankar nagar",
       image: "/images/HD PHOTO 1.jpg",
+      status: "Ongoing",
+      gradient: "from-pink-500 via-red-400 to-yellow-400",
     },
     {
       id: 3,
       title: "PRAJAKTA CLASSIC",
-      tagline: "Spacious duplex with garden and parking facility",
+      tagline: "spacious duplex with garden and parking facility",
+      status: "Completed",
       image: "/images/park_img_page-0001.jpg",
     },
     {
       id: 4,
       title: "PRAJAKTA GREEN SERENITY",
       tagline: "Luxury with Quality and Tranquility...",
+      status: "Completed",
       image: "/images/3 (1).png",
     },
   ];
@@ -76,22 +85,40 @@ const Hero = () => {
                     className="w-16 sm:w-20 md:w-28 lg:w-36 object-contain mb-2 sm:mb-4 drop-shadow-lg"
                   />
 
-                  {/* Title + Tagline */}
-                  <h2
-                    style={{ fontFamily: "Playfair Display, serif" }}
-                    className="px-3 py-2 sm:px-4 sm:py-3 rounded-lg 
-                               text-lg sm:text-2xl md:text-4xl lg:text-5xl 
-                               font-extrabold uppercase tracking-wide drop-shadow-2xl 
-                               bg-black/60 text-white"
-                  >
-                    {slide.title}
-                    <span
-                      style={{ fontFamily: "Julee, cursive" }}
-                      className="block mt-1 sm:mt-2 text-xs sm:text-base md:text-lg lg:text-xl font-normal tracking-normal"
-                    >
-                      {slide.tagline}
-                    </span>
-                  </h2>
+                  {/* Title */}
+
+
+               <div className="inline-block text-center">
+  <h2
+    style={{ fontFamily: 'Playfair Display, serif' }}
+    className="relative px-4 py-6 rounded-lg 
+      text-xl sm:text-2xl md:text-4xl lg:text-5xl 
+      font-extrabold uppercase tracking-wider drop-shadow-2xl 
+      bg-black/60 text-white text-center"
+  >
+    {/* Status Badge 👇 (inside h2) */}
+    <span
+      style={{ fontFamily: 'Julee, cursive' }}
+      className={`absolute -top-4 right-4 px-4 py-1 rounded-full text-sm sm:text-base font-semibold shadow-lg 
+        ${slide.status === "Completed" ? "bg-[#011321] text-white" : "bg-yellow-400 text-black"}`}
+    >
+      {slide.status}
+    </span>
+
+    {slide.title}
+    <span
+      style={{ fontFamily: 'Julee, cursive' }}
+      className="block mt-2 text-sm sm:text-base md:text-lg lg:text-xl font-normal tracking-normal"
+    >
+      {slide.tagline}
+    </span>
+  </h2>
+</div>
+
+
+
+
+
                 </div>
 
                 {/* Explore Button (Always Center) */}
@@ -101,7 +128,7 @@ const Hero = () => {
                       style={{ fontFamily: "Playfair Display, serif" }}
                       className="px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-semibold rounded-full 
                                  bg-white/10 backdrop-blur-md border border-white/30 text-white 
-                                 shadow-lg hover:bg-gradient-to-r hover:from-red-500 hover:to-pink-500 
+                                 shadow-lg hover:bg-[#011321]
                                  hover:text-white transition-all duration-500"
                     >
                       EXPLORE PROJECT

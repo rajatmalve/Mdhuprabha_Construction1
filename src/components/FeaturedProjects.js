@@ -8,7 +8,7 @@ const currentProjectsData = [
     title: "PRAJAKTA LA-MAISON",
     image: "/images/secondProject.jpg",
     status: "Ongoing",
-    location: "Panday layout",
+    location: "Pandey layout",
     area: "2050 sq.ft - 2600 sq.ft",
     type: "3 / 4 BHK - 7 floor",
     description:
@@ -43,11 +43,13 @@ const currentProjectsData = [
 
 const FeaturedProjects = () => {
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-br from-white via-red-50 to-red-100 relative overflow-hidden">
-      {/* Background Glow */}
+
+    <section className="py-16 bg-[#01132152] relative overflow-hidden">
+      {/* Subtle Red Background Glow */}
+
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-32 left-10 w-60 h-60 bg-red-100/40 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-16 w-48 h-48 bg-red-200/40 rounded-full blur-2xl animate-pulse delay-2000" />
+        <div className="absolute top-32 left-10 w-60 h-60 bg-[#011321] rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-16 w-48 h-48 bg-[#011321] rounded-full blur-2xl animate-pulse delay-2000" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -69,7 +71,9 @@ const FeaturedProjects = () => {
           {currentProjectsData.map((project) => (
             <div
               key={project.id}
-              className="group relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 border border-[#011321] max-w-sm mx-auto"
+
+              className="group relative bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2 border border-[#011321]"
+
             >
               {/* Image */}
               <div className="relative h-64 overflow-hidden rounded-t-2xl">
@@ -87,21 +91,23 @@ const FeaturedProjects = () => {
               </div>
 
               {/* Content */}
-              <div className="p-5">
-                <h3 className="text-lg font-bold text-[#011321] mb-2 group-hover:text-red-600 transition-colors duration-500 line-clamp-2">
+
+              <div className="p-4">
+                <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-[#011321] transition-colors duration-500 line-clamp-2">
+
                   {project.title}
                 </h3>
 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-slate-600 text-xs">
                     <div className="w-6 h-6 bg-red-50 rounded-full flex items-center justify-center mr-2">
-                      <MapPin className="w-3 h-3 text-red-600" />
+                      <MapPin className="w-3 h-3 text-[#011321]" />
                     </div>
                     <span className="line-clamp-1">{project.location}</span>
                   </div>
                   <div className="flex items-center text-slate-600 text-xs">
                     <div className="w-6 h-6 bg-red-50 rounded-full flex items-center justify-center mr-2">
-                      <Home className="w-3 h-3 text-red-600" />
+                      <Home className="w-3 h-3 text-[#011321]" />
                     </div>
                     <span className="line-clamp-1">
                       {project.area} • {project.type}
@@ -146,12 +152,12 @@ const FeaturedProjects = () => {
         <div className="text-center">
           <Link
             to="/projects"
-            className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-white hover:bg-red-50 transition-all duration-300"
+            className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300"
           >
-            <span className="text-[#011321] group-hover:text-[#011321]">
+            <span className="text-white group-hover:text-white">
               View All Projects
             </span>
-            <ArrowRight className="w-5 h-5 text-[#011321] group-hover:translate-x-2 transition-transform duration-300" />
+            <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
           </Link>
         </div>
       </div>
