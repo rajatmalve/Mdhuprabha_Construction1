@@ -39,7 +39,7 @@ export const projectsData = [
     area: "3BHK - 5 floor",
     type: "Residential",
     status: "Ongoing",
-    image: "/images/HD PHOTO 1.jpg",
+    image: "/images/HDPHOTO1.jpg",
     description: "Prajakta Park – A perfect harmony of nature, comfort, and modern living..",
     fullDescription: "PRAJAKTA PARK – A thoughtfully designed residential project that blends nature with modern living. Prajakta Park offers spacious homes surrounded by greenery, ensuring peace and comfort in every corner. With premium amenities, excellent connectivity, and a vibrant community, it is the perfect place to create memories and celebrate life every day.",
     features: [
@@ -428,7 +428,7 @@ export const currentProjectsData = [
     type: "Residential",
     status: "In Progress",
     
-    image: "/images/HD PHOTO 1.jpg",
+    image: "/images/HDPHOTO1.jpg",
     description: "A 5 level 3BHK luxurious park view apartment located in the lap of nature. A peaceful location in the heart of the city where you can enjoy your mornings with blissful greenery. A Perfect Home with Modern Amenities at Abhyankar Nagar, Nagpur.",    
     fullDescription: "Currently under construction, this prestigious 5-floor luxury apartment complex will feature 40 premium units with breathtaking city views. The project includes a sky lounge, infinity pool, fitness center, and landscaped gardens. Each apartment is designed with premium finishes and smart home features.",
     features: [
