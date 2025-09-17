@@ -44,23 +44,23 @@ const currentProjectsData = [
 const FeaturedProjects = () => {
   return (
 
-    <section className="py-16 bg-[#01132129] relative overflow-hidden">
+    <section className="py-16 bg-[#1e3c72] relative overflow-hidden">
       {/* Subtle Red Background Glow */}
 
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-32 left-10 w-60 h-60 bg-[#011321] rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-16 w-48 h-48 bg-[#011321] rounded-full blur-2xl animate-pulse delay-2000" />
+        <div className="absolute top-32 left-10 w-60 h-60  rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-16 w-48 h-48  rounded-full blur-2xl animate-pulse delay-2000" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
-            <span className="bg-clip-text text-transparent bg-[#011321]">
+            <span className="text-white ">
               Our Projects
             </span>
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-white max-w-2xl mx-auto leading-relaxed">
             Explore our ongoing residential construction projects that reflect
             our dedication to quality, innovation, and detail.
           </p>
