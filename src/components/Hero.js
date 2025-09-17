@@ -24,7 +24,7 @@ const Hero = () => {
       id: 2,
       title: "Prajakta Park",
       tagline: "3BHKD park facing premium flats in abhayankar nagar",
-      image: "/images/HD PHOTO 1.jpg",
+      image: "/images/HDPHOTO1.jpg",
       status: "Ongoing",
       gradient: "from-pink-500 via-red-400 to-yellow-400",
 

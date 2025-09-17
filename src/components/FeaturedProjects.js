@@ -18,7 +18,7 @@ const currentProjectsData = [
   {
     id: 2,
     title: "PRAJAKTA PARK",
-    image: "/images/HD PHOTO 1.jpg",
+    image: "/images/HDPHOTO1.jpg",
     status: "Ongoing",
     location: "Abhyankar Nagar Nagpur, Maharashtra",
     area: "1800 sq.ft",
