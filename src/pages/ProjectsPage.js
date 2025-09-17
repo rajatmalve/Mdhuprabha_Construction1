@@ -96,7 +96,7 @@ const ProjectsPage = () => {
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        className="w-full h-full object-fill group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute top-2 right-2">
                         <span className="px-2 py-1 bg-[#011321] text-white text-[10px] font-semibold rounded-full shadow">
@@ -135,7 +135,7 @@ const ProjectsPage = () => {
                     onClick={() => setShowAll(!showAll)}
                     className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
                   >
-                    {showAll ? "Show Less" : "Read More"}
+                    {showAll ? "Show Less" : "View More"}
                   </button>
                 </div>
               )}
@@ -214,7 +214,7 @@ const ProjectsPage = () => {
                     onClick={() => setShowAll(!showAll)}
                     className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
                   >
-                    {showAll ? "Show Less" : "Read More"}
+                    {showAll ? "Show Less" : "View More"}
                   </button>
                 </div>
               )}

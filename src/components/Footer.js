@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 import { Building, Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin, ArrowUp, Sparkles, MessageCircle, Award, Briefcase } from 'lucide-react';
+
 
 import { contactData } from '../mockData';
 import { FaWhatsapp } from "react-icons/fa";
@@ -186,8 +188,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+         </div>
 
+       
       {/* Bottom Bar */}
    <div className="w-full mt-12 border-t border-gray-700 pt-4 
                 flex flex-col lg:flex-row 
@@ -260,5 +263,7 @@ const Footer = () => {
     </footer>
   );
 };
+
+
 
 export default Footer;

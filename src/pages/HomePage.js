@@ -187,46 +187,51 @@ const HomePage = () => {
       </section>
 
 
-      <section className="bg-white py-16" ref={statsRef}>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          {/* Heading */}
-          <h2 className="text-4xl md:text-5xl font-bold text-[#011321] text-center mb-2">
-            Statistics
-          </h2>
-          <p className="text-lg text-slate-600 max-w-2xl text-center mx-auto  mb-12 leading-relaxed">
-            Strength, Quality, and Trust in Every Structure."
-            (Perfect for “Years of Experience” or “Satisfied Clients” counter)
-          </p>
+ <section className="relative bg-white py-20" ref={statsRef}>
+  <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    {/* Heading */}
+    <div className="text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold text-[#011321] mb-4">
+        Statistics
+      </h2>
+      <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        Strength, Quality, and Trust in Every Structure — showcasing our experience and satisfied clients.
+      </p>
+    </div>
 
-          {/* Counter Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
-            {stats.map((counter, index) => {
-              const count = useCounter(counter.number, 2000, startCounter);
-              return (
-                <div
-                  key={index}
-                  className="flex flex-col items-center border-4 border-[#011321] rounded-2xl p-6 shadow-md hover:shadow-lg transition"
-                >
-                  {/* Icon */}
-                  <div className="text-5xl mb-4">{counter.icon}</div>
+    {/* Counter Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      {stats.map((counter, index) => {
+        const count = useCounter(counter.number, 2000, startCounter);
+        return (
+          <div
+            key={index}
+            className="relative flex flex-col items-center p-8 bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-transform transform hover:-translate-y-2 border border-gray-200"
+          >
+            {/* Decorative Circle */}
+            <div className="absolute -top-6 w-16 h-16 bg-gray-800 text-white rounded-full flex items-center justify-center text-3xl shadow-lg">
+              {counter.icon}
+            </div>
 
-                  {/* Animated Number */}
-                  <span className="text-3xl md:text-4xl font-extrabold text-[#011321]">
-                    {count}
-                    {counter.suffix}
-                  </span>
+            {/* Spacer for icon */}
+            <div className="mt-12 text-center">
+              {/* Animated Number */}
+              <span className="text-3xl md:text-4xl font-extrabold text-[#011321]">
+                {count}{counter.suffix}
+              </span>
 
-                  {/* Label */}
-                  <p className="mt-2 text-sm text-gray-600 max-w-[200px]">
-                    {counter.label}
-                  </p>
-                </div>
-              );
-            })}
+              {/* Label */}
+              <p className="mt-2 text-gray-600 text-sm md:text-base font-medium">
+                {counter.label}
+              </p>
+            </div>
           </div>
+        );
+      })}
+    </div>
+  </div>
+</section>
 
-        </div>
-      </section>
 
       {/* Featured Projects Section with distinct gradient */}
       <div>
