@@ -6,54 +6,45 @@ const testimonials = [
   {
     image: "/images/TestiminalProfile.png",
     name: "Siddarth Wasnik",
-    // role: "Founder & CEO",
     text: "Prajakta Greenfinty project is good.it is situated very hart of city in nagpur.as per my son recommended this project is very fine & ashish sir is aware of project very well"
   },
   {
     image: "/images/TestiminalProfile.png",
     name: "Dr.Vivek Nagarle",
-    // role: "Marketing Head",
     text: "Ashish construction has build a very good project.all the team member are very good. Ashish londhe and his team done very good job.In compact space build a specious apartment.Thank you for giving us our DREAM HOME"
   },
   {
     image: "/images/TestiminalProfile.png",
     name: "Manoj Sharma",
-    // role: "Project Manager",
     text: "An absolutely phenomenal project with amazing construction quality."
   },
   {
     image: "/images/TestiminalProfile.png",
     name: "Anjali Fule",
-    // role: "HR Director",
     text: "Prajakta greenfinity project its quality of construction is upto the mark. its fine to the best of my knowledge. its beautiful design and aminities in such limited space ,its fabulous."
   },
-   {
+  {
     image: "/images/TestiminalProfile.png",
     name: "Dr.Ankita Randhir",
-    // role: "HR Director",
     text: "Very good and well contructed project.Happy with the interior and furniture of gym and party area.Satisfied with the builders and his staff regarding cooperation."
   },
-   {
+  {
     image: "/images/TestiminalProfile.png",
     name: "Dr.Milind Suryawanshi",
-    // role: "HR Director",
     text: "It perfect project as per my opinion.Its customer friendly.I think Mr.ashish sir has passionate to make home."
   },
-   {
+  {
     image: "/images/TestiminalProfile.png",
     name: "Dinesh Badoniya",
-    // role: "HR Director",
     text: "The construction of the scheme is very good, there is adequate lighting, full care has been taken of sunlight, the outer look and arrangement is very excellent."
   }
 ];
 
 const TestimonialCard = ({ image, name, role, text }) => (
-  <div className="bg-white shadow-lg rounded-xl p-6 max-w-md text-center border-t-4 border-red-500">
-    {/* <h3 className="text-red-500 text-sm font-semibold italic mb-2">
-      our clients
-    </h3> */}
-    {/* <h2 className="text-2xl font-bold mb-6">TESTIMONIAL</h2> */}
-
+  <div
+    className="bg-white shadow-lg rounded-xl p-6 max-w-md text-center border-t-4"
+    style={{ borderTopColor: "#011321" }}
+  >
     <div className="flex justify-center">
       <img
         src={image}
@@ -62,12 +53,12 @@ const TestimonialCard = ({ image, name, role, text }) => (
       />
     </div>
 
-    <h4 className="text-red-600 font-bold mt-4">{name}</h4>
+    <h4 className="text-[#011321] font-bold mt-4">{name}</h4>
     <p className="text-gray-500 text-sm mb-4">{role}</p>
 
     <p className="text-gray-600 text-sm italic">“{text}”</p>
 
-    <div className="flex justify-center mt-4 text-red-500">
+    <div className="flex justify-center mt-4 text-[#011321]">
       {Array(5).fill("⭐").map((star, i) => (
         <span key={i}>{star}</span>
       ))}
@@ -97,7 +88,7 @@ const TestimonialPage = () => {
       {/* Testimonials Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl  font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-12">
             What Our Clients Say
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
