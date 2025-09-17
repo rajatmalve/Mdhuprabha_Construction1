@@ -14,12 +14,12 @@ export const projectsData = [
     description: "A Gold Certified Green Building!",
     fullDescription: "Introducing ‘PRAJAKTA La-Masion’, our 7 level 3BHK luxurious view apartment located in the lap of nature. A peaceful location in the heart of the city where you can enjoy your mornings with blissful greenery.A Perfect Home with Modern Amenities at Nagpur.",
     features: [
-      "Seamless Connectivity - Only a 5-minute drive to the airport",
-      "Unbeatable Location - Just steps away from the city's most vibrant hotspot (Radisson Blue Square, Wardha Road), surrounded by malls, pubs, theaters, and metro stations.", 
-      "Luxury at Your Doorstep - Walk to 5-star hotels like Radisson and the upcoming Taj in just 5 minutes.",
-      "Shop with Ease - Enjoy walking-distance access to Westside, Pantaloons, Trends, Sketchers, and more.",
-      "Lifestyle & Leisure - Fine-dine restaurants and lush gardens, all within a 5-minute walk.",
-      "Architectural Elegance - A modern European/Frenchthemed project with a majestic grand lobby on the ground floor.",
+      "Grand entrance lobby on ground floor",
+      "CCTV Cameras in ground floor lobby are parking area", 
+      "Password protected ground floor lobby area.",
+      "Video Door Phones for individual flats",
+      "Safety Doors to all flats",
+      "Digital locks for secured home.",
      
       "2-car covered parking"
     ],
