@@ -22,7 +22,7 @@ const currentProjectsData = [
     status: "Ongoing",
     location: "Abhyankar Nagar Nagpur, Maharashtra",
     area: "1800 sq.ft",
-    type: "3 BHK - 5 floor",
+    type: "3 BHKD - 5 floor",
     description:
       "Affordable yet stylish flats with contemporary architecture and spacious interiors.",
     brouchure: "Prajakta-Park-E-Brochure-New-1_compressed (1)(final).pdf",
