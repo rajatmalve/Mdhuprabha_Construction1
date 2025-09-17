@@ -8,37 +8,57 @@ const Hero = () => {
   const carouselData = [
     {
       id: 1,
-      title: "PRAJAKTA LA-MAISON",
-
-      tagline: " The Soul of france now in your city",
-
-
+      title: "Prajakta La-Maison",
+      tagline: "The Soul of france now in your city",
       image: "/images/secondProject.jpg",
       status: "Ongoing",
       gradient: "from-blue-400 via-indigo-500 to-purple-600",
+
+      fonts: {
+        title: "Dancing Script, cursive",
+        status: "Julee, cursive",
+        tagline: "Merriweather, serif",
+      },
     },
     {
       id: 2,
-      title: "PRAJAKTA PARK",
-      tagline: " 3BHKD park facing premium flats in abhayankar nagar",
+      title: "Prajakta Park",
+      tagline: "3BHKD park facing premium flats in abhayankar nagar",
       image: "/images/HD PHOTO 1.jpg",
       status: "Ongoing",
       gradient: "from-pink-500 via-red-400 to-yellow-400",
+
+      fonts: {
+        title: "Italianno, cursive",
+        status: "Dancing Script, cursive",
+        tagline: "Calibri",
+      },
     },
     {
       id: 3,
       title: "PRAJAKTA CLASSIC",
-      tagline: "spacious duplex with garden and parking facility",
+      tagline: "Spacious duplex with garden and parking facility",
       status: "Completed",
       image: "/images/park_img_page-0001.jpg",
+
+      fonts: {
+        title: "Montserrat, sans-serif",
+        status: "Julee, cursive",
+        tagline: "Open Sans, sans-serif",
+      },
     },
     {
       id: 4,
       title: "PRAJAKTA GREEN SERENITY",
       tagline: "Luxury with Quality and Tranquility...",
       status: "Completed",
-      // image: "/images/3 (1).png",
       image: "/images/greenSerenity.jpg",
+
+      fonts: {
+        title: "Cinzel, serif",
+        status: "Satisfy, cursive",
+        tagline: "Merriweather, serif",
+      },
     },
   ];
 
@@ -91,24 +111,27 @@ const Hero = () => {
 
                   <div className="inline-block text-center">
                     <h2
-                      style={{ fontFamily: 'Playfair Display, serif' }}
+                      style={{ fontFamily: slide.fonts.title }}
                       className="relative px-4 py-6 rounded-lg 
-      text-xl sm:text-2xl md:text-4xl lg:text-5xl 
-      font-extrabold uppercase tracking-wider drop-shadow-2xl 
-      bg-black/60 text-white text-center"
+    text-xl sm:text-2xl md:text-4xl lg:text-4
+    xl 
+    font-extrabold uppercase tracking-wider drop-shadow-2xl 
+    bg-black/60 text-white text-center"
                     >
-                      {/* Status Badge 👇 (inside h2) */}
+                      {/* Status Badge */}
                       <span
-                        style={{ fontFamily: 'Julee, cursive' }}
+                        style={{ fontFamily: slide.fonts.status }}
                         className={`absolute -top-4 right-4 px-4 py-1 rounded-full text-sm sm:text-base font-semibold shadow-lg 
-        ${slide.status === "Completed" ? "bg-[#011321] text-white" : "bg-yellow-400 text-black"}`}
+      ${slide.status === "Completed" ? "bg-[#011321] text-white" : "bg-yellow-400 text-black"}`}
                       >
                         {slide.status}
                       </span>
 
                       {slide.title}
+
+                      {/* Tagline */}
                       <span
-                        style={{ fontFamily: 'Julee, cursive' }}
+                        style={{ fontFamily: slide.fonts.tagline }}
                         className="block mt-2 text-sm sm:text-base md:text-lg lg:text-xl font-normal tracking-normal"
                       >
                         {slide.tagline}
