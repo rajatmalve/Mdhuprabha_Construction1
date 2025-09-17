@@ -83,10 +83,10 @@ const Navbar = () => {
                       onClick={() => setCareerDropdownOpen(!careerDropdownOpen)}
                       className={`relative px-2 py-1 flex items-center space-x-2 font-medium transition cursor-pointer focus:outline-none focus:ring-0
                         ${careerDropdownItems.some(dropdownItem => isActive(dropdownItem.path))
-                          ? 'text-red-600 font-semibold'
+                          ? 'text-[#011321] font-semibold'
                           : location.pathname === '/'
-                          ? (scrolled ? 'text-red-500 hover:text-red-600' : 'text-white hover:text-red-200')
-                          : 'text-red-500 hover:text-red-600'
+                          ? (scrolled ? 'text-[#011321] hover:text-[#011321]' : 'text-white hover:text-[#011321]')
+                          : 'text-[#011321] hover:text-[#011321]'
                         }
                       `}
                     >
@@ -103,8 +103,9 @@ const Navbar = () => {
                             onClick={() => setCareerDropdownOpen(false)}
                             className={`flex items-center space-x-3 px-4 py-2 text-sm transition focus:outline-none focus:ring-0
                               ${isActive(dropdownItem.path)
-                                ? 'bg-red-50 text-red-600 font-semibold'
-                                : 'text-gray-700 hover:bg-gray-50 hover:text-red-600'}`}
+                                ? 'bg-white text-[#011321] font-semibold'
+                                : 'text-[#011321] hover:bg-gray-50 hover:text-[#011321]'}`
+                            }
                           >
                             <span>{dropdownItem.name}</span>
                           </Link>
@@ -123,7 +124,7 @@ const Navbar = () => {
                     ${isActive(item.path)
                       ? 'text-white font-semibold'
                       : location.pathname === '/'
-                      ? (scrolled ? 'text-white hover:text-red-600' : 'text-white hover:text-white')
+                      ? (scrolled ? 'text-white hover:text-[#011321]' : 'text-white hover:text-white')
                       : 'text-white hover:text-white'
                     }
                   `}
@@ -143,8 +144,8 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className={`p-3 rounded-xl transition-colors focus:outline-none focus:ring-0
                 ${location.pathname === '/'
-                  ? (scrolled ? 'bg-slate-800 text-red-500' : 'bg-white/10 backdrop-blur-sm text-white border border-white/20')
-                  : 'bg-slate-800 text-red-500'
+                  ? (scrolled ? 'bg-slate-800 text-[#011321]' : 'bg-white/10 backdrop-blur-sm text-white border border-white/20')
+                  : 'bg-slate-800 text-[#011321]'
                 }
               `}
             >
@@ -162,7 +163,7 @@ const Navbar = () => {
                   <div key={item.name}>
                     <div
                       onClick={() => setCareerDropdownOpen(!careerDropdownOpen)}
-                      className="flex-1 px-6 py-4 mx-3 rounded-2xl flex items-center justify-between transition cursor-pointer text-red-500 hover:bg-red-100 hover:text-red-600 focus:outline-none focus:ring-0"
+                      className="flex-1 px-6 py-4 mx-3 rounded-2xl flex items-center justify-between transition cursor-pointer text-[#011321] hover:bg-gray-100 hover:text-[#011321] focus:outline-none focus:ring-0"
                     >
                       <span className="font-medium">{item.name}</span>
                       <ChevronDown className={`w-4 h-4 transition-transform ${careerDropdownOpen ? 'rotate-180' : ''}`} />
@@ -180,8 +181,9 @@ const Navbar = () => {
                             }}
                             className={`block px-4 py-3 rounded-xl transition focus:outline-none focus:ring-0
                               ${isActive(dropdownItem.path)
-                                ? 'bg-red-600 text-white font-semibold'
-                                : 'text-red-500 hover:bg-red-100 hover:text-red-600'}`}
+                                ? 'bg-white text-[#011321] font-semibold'
+                                : 'text-[#011321] hover:bg-gray-100 hover:text-[#011321]'}`
+                            }
                           >
                             <span className="font-medium">{dropdownItem.name}</span>
                           </Link>
@@ -199,8 +201,8 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block px-6 py-4 mx-3 rounded-2xl transition focus:outline-none focus:ring-0
                     ${isActive(item.path)
-                      ? 'bg-red-600 text-white font-semibold'
-                      : 'text-red-500 hover:bg-red-100 hover:text-red-600'}
+                      ? 'bg-white text-[#011321] font-semibold'
+                      : 'text-[#011321] hover:bg-gray-100 hover:text-[#011321]'}
                   `}
                 >
                   <span className="font-medium">{item.name}</span>
@@ -208,15 +210,15 @@ const Navbar = () => {
               );
             })}
 
-            <div className="px-2 pt-4">
+            {/* <div className="px-2 pt-4">
               <Link
                 to="/contact"
                 onClick={() => setIsOpen(false)}
-                className="block w-full py-2 bg-red-600 text-white text-center font-bold rounded-[30px] focus:outline-none focus:ring-0"
+                className="block w-full py-2 bg-white text-[#011321] text-center font-bold rounded-[30px] focus:outline-none focus:ring-0"
               >
                 Get Quote
               </Link>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
