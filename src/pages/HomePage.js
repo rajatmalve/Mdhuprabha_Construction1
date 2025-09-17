@@ -98,11 +98,11 @@ const HomePage = () => {
         <AboutSection />
       </div>
 
-       <section className="bg-[#01132129] py-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#011321] text-center mb-2">
+       <section className="bg-[#1e3c72] py-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-2">
               Current Projects
             </h2>
-              <p className="text-lg text-slate-600 max-w-2xl text-center mx-auto  mb-12 leading-relaxed">
+              <p className="text-lg text-white max-w-2xl text-center mx-auto  mb-12 leading-relaxed">
            Building your vision with precision and care.
 From concept to creation, we deliver structures that stand the test of time.
           </p>
