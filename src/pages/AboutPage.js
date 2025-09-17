@@ -72,7 +72,7 @@ const AboutPage = () => {
           Journey
         </span>
       </h2>
-      <p className="text-gray-700 text-lg mb-4 italic border-l-4 border-blue-600 pl-4 ">
+      <p className="text-gray-700 text-lg mb-4 italic border-l-4 border-[#3357a7] pl-4 ">
         "A house is made of walls and beams; a home is built with love and dreams."
       </p>
       <p className="text-gray-600 text-lg mb-4 leading-relaxed">
@@ -196,17 +196,18 @@ const AboutPage = () => {
 
 
 
-      {/* Leadership Section */}
-<section className="relative py-20 bg-white overflow-hidden">
+{/* Leadership Section */}
+<section className="relative py-20 bg-gradient-to-br from-[#264b8d] via-white to-[#264b8d] overflow-hidden">
   {/* Optional floating blob */}
-  <div className="absolute top-0 right-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000 -z-10"></div>
+  <div className="absolute top-0 right-0 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000 -z-10"></div>
+  <div className="absolute bottom-0 left-0 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob -z-10"></div>
 
   <div className="max-w-7xl mx-auto px-6 lg:px-8">
     <div className="text-center mb-12 animate-fade-in-up">
       <h2 className="text-4xl font-bold text-gray-900">
         Leadership <span className="text-[#2a5298]">Excellence</span>
       </h2>
-      <p className="text-gray-600 mt-3">
+      <p className="text-gray-700 mt-3">
         Meet the visionary driving our company’s success
       </p>
     </div>
@@ -217,13 +218,13 @@ const AboutPage = () => {
         <h3 className="text-2xl font-bold text-gray-900 mb-6">
           Experienced Leadership
         </h3>
-        <p className="text-gray-600 text-lg mb-4">
+        <p className="text-gray-700 text-lg mb-4">
           Mr. Ashish Londhe (B.E, M.B.A) is the sole proprietor of the company.
           He has served as JOINT SECRETARY in CREDAI (Confederation of Real Estate
           Developers Association of India) from 2015 - 2019. Presently is serving
           as VICE PRESIDENT for 2019-2023 in CREDAI.
         </p>
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-700 text-lg">
           CREDAI TREASURER 2023-2025, an association with 13,000+ members nationwide,
           25 state chapters, 180 city chapters. Nagpur has nearly 350 members. Known
           for construction quality & transparency.
@@ -248,48 +249,7 @@ const AboutPage = () => {
       </div>
     </div>
   </div>
-
-  {/* Animations */}
-  <style jsx>{`
-    .animate-blob {
-      animation: blob 7s infinite;
-    }
-    .animation-delay-2000 {
-      animation-delay: 2s;
-    }
-    @keyframes blob {
-      0% { transform: translate(0px, 0px) scale(1); }
-      33% { transform: translate(30px, -50px) scale(1.1); }
-      66% { transform: translate(-20px, 20px) scale(0.9); }
-      100% { transform: translate(0px, 0px) scale(1); }
-    }
-
-    .animate-fade-in-up {
-      animation: fadeInUp 1s ease forwards;
-    }
-    .animate-fade-in-left {
-      animation: fadeInLeft 1s ease forwards;
-    }
-    .animate-fade-in-right {
-      animation: fadeInRight 1s ease forwards;
-    }
-
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInLeft {
-      0% { opacity: 0; transform: translateX(-20px); }
-      100% { opacity: 1; transform: translateX(0); }
-    }
-    @keyframes fadeInRight {
-      0% { opacity: 0; transform: translateX(20px); }
-      100% { opacity: 1; transform: translateX(0); }
-    }
-  `}</style>
 </section>
-
-
       {/* Values Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
