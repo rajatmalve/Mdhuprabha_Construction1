@@ -137,7 +137,6 @@ const Hero = () => {
                         {slide.tagline}
                       </span>
                     </h2>
-
                   </div>
 
 
