@@ -31,7 +31,8 @@ const CsrActivity = () => {
        <section 
         className="relative pt-28 pb-20 text-white overflow-hidden"
         style={{
-          backgroundImage: "url('/images/CSR IMAGES.jpg')",
+          // backgroundImage: "url('/images/CSR IMAGES.jpg')",
+          backgroundImage: "url('/images/csr_activity.jpg')",
           backgroundSize: "100% 100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -87,7 +88,7 @@ const CsrActivity = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-fill"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">

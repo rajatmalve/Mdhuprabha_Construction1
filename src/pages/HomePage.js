@@ -98,7 +98,7 @@ const stats = [
         <AboutSection />
       </div>
 
-       <section className="bg-[#01132152] py-16">
+       <section className="bg-[#01132129] py-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#011321] text-center mb-2">
               Current Projects
             </h2>
