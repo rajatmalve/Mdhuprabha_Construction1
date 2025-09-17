@@ -89,32 +89,32 @@ const Hero = () => {
                   {/* Title */}
 
 
-               <div className="inline-block text-center">
-  <h2
-    style={{ fontFamily: 'Playfair Display, serif' }}
-    className="relative px-4 py-6 rounded-lg 
+                  <div className="inline-block text-center">
+                    <h2
+                      style={{ fontFamily: 'Playfair Display, serif' }}
+                      className="relative px-4 py-6 rounded-lg 
       text-xl sm:text-2xl md:text-4xl lg:text-5xl 
       font-extrabold uppercase tracking-wider drop-shadow-2xl 
       bg-black/60 text-white text-center"
-  >
-    {/* Status Badge 👇 (inside h2) */}
-    <span
-      style={{ fontFamily: 'Julee, cursive' }}
-      className={`absolute -top-4 right-4 px-4 py-1 rounded-full text-sm sm:text-base font-semibold shadow-lg 
+                    >
+                      {/* Status Badge 👇 (inside h2) */}
+                      <span
+                        style={{ fontFamily: 'Julee, cursive' }}
+                        className={`absolute -top-4 right-4 px-4 py-1 rounded-full text-sm sm:text-base font-semibold shadow-lg 
         ${slide.status === "Completed" ? "bg-[#011321] text-white" : "bg-yellow-400 text-black"}`}
-    >
-      {slide.status}
-    </span>
+                      >
+                        {slide.status}
+                      </span>
 
-    {slide.title}
-    <span
-      style={{ fontFamily: 'Julee, cursive' }}
-      className="block mt-2 text-sm sm:text-base md:text-lg lg:text-xl font-normal tracking-normal"
-    >
-      {slide.tagline}
-    </span>
-  </h2>
-</div>
+                      {slide.title}
+                      <span
+                        style={{ fontFamily: 'Julee, cursive' }}
+                        className="block mt-2 text-sm sm:text-base md:text-lg lg:text-xl font-normal tracking-normal"
+                      >
+                        {slide.tagline}
+                      </span>
+                    </h2>
+                  </div>
 
 
 
