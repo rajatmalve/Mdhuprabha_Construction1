@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Users, Award, Clock, CheckCircle,ArrowRight } from 'lucide-react';
+import { Users, Award, Clock, CheckCircle,ArrowRight, CheckCheck, Check } from 'lucide-react';
 import { Link } from "react-router-dom";
 
 const AboutSection = () => {
@@ -107,33 +107,57 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
-          <div className='mb-8'>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#011321] mb-6">
-              About <span className="text-[#011321]">Madhuprabha</span>
-            </h2>
-            <p className="text-lg text-slate-600 mb-6 leading-relaxed text-justify">
-              Madhuprabha Construction was started in the year 2005. The business
-              start was modest with the regular clients in Nagpur. Over the period,
-              in last 20 years, now we are the leading company in the construction group.
-              Our projects not only deal in Nagpur but also in and around Central India.
-              The journey of hard work, dedication, and trust of our clients has brought
-              us this long way. We deal in the commercials and housing society.
-              With the experience in designing and building these, our company has
-              higher standards in terms of quality and at the same time, it remains
-              affordable to everyone. We are also very well known for the perfect carvings
-              and core commitment for every project.</p>
+          <div className="mb-8">
+  <p className="text-1xl md:text-1xl font-bold text-[#facc15] mb-0">
+    ABOUT COMPANY
+  </p>
+  <h5 className="text-2xl md:text-2xl font-bold text-[#011321] mb-3">
+    WELCOME TO MADHUPRABHA CONSTRUCTION
+  </h5>
+  <p className="text-md text-slate-600 mb-3 leading-relaxed text-justify">
+    Madhuprabha Construction was started in the year 2005. The business start
+    was modest with the regular clients in Nagpur. Over the period, in last
+    20 years, now we are the leading company in the construction group. Our
+    projects not only deal in Nagpur but also in and around Central India.
+    The journey of hard work, dedication, and trust of our clients has brought
+    us this long way. We deal in the commercials and housing society.
+  </p>
 
+  {/* Four Points Section */}
+  <div className="mb-6 space-y-1">
+    {[
+      "Expert construction with quality materials",
+      "On-time project completion",
+      "Affordable pricing and transparent contracts",
+      "Strong focus on safety and sustainability",
+    ].map((point, index) => (
+      <div key={index} className="flex items-center space-x-1">
+        <Check  className="w-5 h-5 text-[red]" />
+        <span className="text-md text-[#011321] font-medium">{point}</span>
+      </div>
+    ))}
+  </div>
 
-            <Link
-              to="/about"
-              className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300"
-            >
-              <span className="text-white group-hover:text-white">
-                            More About Us
-                 </span>
-                          <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
-            </Link>
-          </div>
+  <Link
+    to="/about"
+    className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300 mr-2"
+  >
+    <span className="text-white group-hover:text-white">
+      MORE ABOUT US
+    </span>
+    <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
+  </Link>
+  <Link
+    to="/projects"
+    className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300"
+  >
+    <span className="text-white group-hover:text-white">
+      OUR PROJECTS
+    </span>
+    <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
+  </Link>
+</div>
+
 
           {/* Right Carousel */}
           <div className="relative w-full flex justify-center items-center">

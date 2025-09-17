@@ -119,7 +119,7 @@ const AwardsPage = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-64 object-cover transform-gpu transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-64 object-fill transform-gpu transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                 />
 

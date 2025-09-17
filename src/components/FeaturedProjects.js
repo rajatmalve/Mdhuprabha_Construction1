@@ -44,7 +44,7 @@ const currentProjectsData = [
 const FeaturedProjects = () => {
   return (
 
-    <section className="py-16 bg-[#01132152] relative overflow-hidden">
+    <section className="py-16 bg-[#01132129] relative overflow-hidden">
       {/* Subtle Red Background Glow */}
 
       <div className="absolute inset-0 pointer-events-none">
