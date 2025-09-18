@@ -56,35 +56,35 @@ const GalleryPage = () => {
     <div className="min-h-screen text-white">
       {/* Hero Section */}
       <section
-  className="relative pt-28 pb-20 text-white overflow-hidden flex items-center justify-center"
-  style={{
-    backgroundImage: "url('/images/gellary image.jpg')",
-    backgroundSize: "100% 100%",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    height: "90vh",
-  }}
->
-  {/* White blur lights */}
-  <div className="absolute inset-0 opacity-20">
-    <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
-    <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
-  </div>
+        className="relative pt-28 pb-20 text-white overflow-hidden flex items-center justify-center"
+        style={{
+          backgroundImage: "url('/images/gellary image.jpg')",
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          height: "90vh",
+        }}
+      >
+        {/* White blur lights */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
+        </div>
 
-  {/* Centered Content */}
-  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-      <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
-        Media
-      </span>
-      <span className="text-white"> Gallery</span>
-    </h1>
-    <p className="text-base sm:text-lg md:text-xl max-w-3xl sm:max-w-4xl mx-auto leading-relaxed font-bold">
-      Explore our achievements, press coverage, and social impact through our
-      comprehensive media collection.
-    </p>
-  </div>
-</section>
+        {/* Centered Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
+            <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
+              Media
+            </span>
+            <span className="text-white"> Gallery</span>
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl max-w-3xl sm:max-w-4xl mx-auto leading-relaxed font-bold">
+            Explore our achievements, press coverage, and social impact through our
+            comprehensive media collection.
+          </p>
+        </div>
+      </section>
 
       {/* Main Gallery Tabs */}
       <section className="py-8 bg-white border-b border-gray-200 sticky top-20 z-40 backdrop-blur-sm">
@@ -96,11 +96,10 @@ const GalleryPage = () => {
                 <button
                   key={tab.id}
                   onClick={() => setActiveGalleryTab(tab.id)}
-                  className={`flex items-center space-x-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
-                    activeGalleryTab === tab.id
-                      ? 'bg-[#011321] text-white shadow-lg scale-105'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-[#011321]'
-                  }`}
+                  className={`flex items-center space-x-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 ${activeGalleryTab === tab.id
+                    ? 'bg-[#011321] text-white shadow-lg scale-105'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200 hover:text-[#011321]'
+                    }`}
                 >
                   <Icon className="w-5 h-5" />
                   <span>{tab.name}</span>
@@ -116,7 +115,6 @@ const GalleryPage = () => {
         <section className="py-20 ">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {viewMode === 'grid' ? (
-              // GRID VIEW
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {filteredItems.map((item) => (
                   <div
@@ -134,17 +132,16 @@ const GalleryPage = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       {/* Badge */}
                       <div className="absolute top-4 left-4">
-                        <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                          item.category === 'video' 
-                            ? 'bg-[#011321] text-white' 
-                            : 'bg-white text-black'
-                        }`}>
+                        <span className={`px-3 py-1 rounded-full text-xs font-semibold ${item.category === 'video'
+                          ? 'bg-[#011321] text-white'
+                          : 'bg-white text-black'
+                          }`}>
                           {item.category === 'video' ? 'Video' : 'Image'}
                         </span>
                       </div>
                       {/* Video Play */}
                       {item.category === 'video' && (
-                        <div 
+                        <div
                           className="absolute inset-0 flex items-center justify-center cursor-pointer"
                           onClick={() => setActiveVideo(item.url)}
                         >
@@ -154,7 +151,7 @@ const GalleryPage = () => {
                       {/* Image Open */}
                       {item.category === 'image' && (
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <button 
+                          <button
                             onClick={() =>
                               setSelectedImageIndex(
                                 galleryImages.findIndex(image => image.id === item.id)
@@ -192,17 +189,16 @@ const GalleryPage = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       {/* Badge */}
                       <div className="absolute top-4 left-4">
-                        <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                          item.category === 'video' 
-                            ? 'bg-[#011321] text-white' 
-                            : 'bg-white text-black'
-                        }`}>
+                        <span className={`px-3 py-1 rounded-full text-xs font-semibold ${item.category === 'video'
+                          ? 'bg-[#011321] text-white'
+                          : 'bg-white text-black'
+                          }`}>
                           {item.category === 'video' ? 'Video' : 'Image'}
                         </span>
                       </div>
                       {/* Video Play */}
                       {item.category === 'video' && (
-                        <div 
+                        <div
                           className="absolute inset-0 flex items-center justify-center cursor-pointer"
                           onClick={() => setActiveVideo(item.url)}
                         >
@@ -212,7 +208,7 @@ const GalleryPage = () => {
                       {/* Image Open */}
                       {item.category === 'image' && (
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <button 
+                          <button
                             onClick={() =>
                               setSelectedImageIndex(
                                 galleryImages.findIndex(image => image.id === item.id)
@@ -259,7 +255,7 @@ const GalleryPage = () => {
       )}
 
       {/* Lightbox */}
-      {['gallery','image'].includes(activeGalleryTab) && (
+      {['gallery', 'image'].includes(activeGalleryTab) && (
         <ImageLightbox
           images={galleryImages}
           currentIndex={selectedImageIndex}
@@ -271,9 +267,9 @@ const GalleryPage = () => {
       )}
 
       {/* Video Lightbox */}
-      {['gallery','video'].includes(activeGalleryTab) && activeVideo && (
+      {['gallery', 'video'].includes(activeGalleryTab) && activeVideo && (
         <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
-          <button 
+          <button
             className="absolute top-6 right-6 text-white text-3xl font-bold"
             onClick={() => setActiveVideo(null)}
           >
@@ -290,10 +286,10 @@ const GalleryPage = () => {
             ></iframe>
           </div>
         </div>
-        
+
       )}
-      
- <Footer />
+
+      <Footer />
     </div>
   );
 };
