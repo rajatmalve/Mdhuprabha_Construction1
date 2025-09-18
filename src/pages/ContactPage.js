@@ -67,7 +67,7 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
- <section 
+      <section
         className="relative pt-28 pb-20 text-white overflow-hidden"
         style={{
           backgroundImage: "url('/images/contact image.jpg')",
@@ -83,16 +83,16 @@ const ContactPage = () => {
           <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
         </div>
 
-       
+
       </section>
 
       {/* Contact Methods */}
       <section className="py-20 bg-white mt-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl  font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl  font-bold text-gray-900 mb-6 -mt-[20px]">
               Get In Touch
-              
+
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Choose your preferred way to contact us. We're here to help with all your construction needs.
@@ -122,167 +122,167 @@ const ContactPage = () => {
 
       {/* Contact Form & Map */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-[200px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-           {/* Contact Form */}
-<div className="bg-white text-[#011321] border border-red-200 rounded-2xl shadow-lg p-8 sm:p-10">
-  <h3 className="text-3xl font-bold text-gray-900 mb-8">
-    Send Us a{" "}
-    <span className="text-[#011321]">
-      Message
-    </span>
-  </h3>
+            {/* Contact Form */}
+            <div className="bg-white text-[#011321] border border-red-200 rounded-2xl shadow-lg p-8 sm:p-10">
+              <h3 className="text-3xl font-bold text-gray-900 mb-8">
+                Send Us a{" "}
+                <span className="text-[#011321]">
+                  Message
+                </span>
+              </h3>
 
-  <form onSubmit={handleSubmit} className="space-y-6">
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-          Full Name *
-        </label>
-        <div className="relative">
-          <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
-            placeholder="Your Name"
-          />
-        </div>
-      </div>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                      Full Name *
+                    </label>
+                    <div className="relative">
+                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        value={formData.name}
+                        onChange={handleChange}
+                        className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                        placeholder="Your Name"
+                      />
+                    </div>
+                  </div>
 
-      <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-          Phone Number *
-        </label>
-        <div className="relative">
-          <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            required
-            value={formData.phone}
-            onChange={handleChange}
-            className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
-            placeholder="+91 98765 43210"
-          />
-        </div>
-      </div>
-    </div>
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      Phone Number *
+                    </label>
+                    <div className="relative">
+                      <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                        value={formData.phone}
+                        onChange={handleChange}
+                        className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                        placeholder="+91 98765 43210"
+                      />
+                    </div>
+                  </div>
+                </div>
 
-    <div>
-      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-        Email Address *
-      </label>
-      <div className="relative">
-        <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
-          placeholder="your@email.com"
-        />
-      </div>
-    </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    Email Address *
+                  </label>
+                  <div className="relative">
+                    <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      <div>
-        <label htmlFor="projectType" className="block text-sm font-medium text-gray-700 mb-2">
-          Project Type
-        </label>
-        <select
-          id="projectType"
-          name="projectType"
-          value={formData.projectType}
-          onChange={handleChange}
-          className="w-full px-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
-        >
-          <option value="">Select Project Type</option>
-          {projectTypes.map((type) => (
-            <option key={type} value={type}>
-              {type}
-            </option>
-          ))}
-        </select>
-      </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="projectType" className="block text-sm font-medium text-gray-700 mb-2">
+                      Project Type
+                    </label>
+                    <select
+                      id="projectType"
+                      name="projectType"
+                      value={formData.projectType}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                    >
+                      <option value="">Select Project Type</option>
+                      {projectTypes.map((type) => (
+                        <option key={type} value={type}>
+                          {type}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
 
-      <div>
-        <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
-          Budget Range
-        </label>
-        <select
-          id="budget"
-          name="budget"
-          value={formData.budget}
-          onChange={handleChange}
-          className="w-full px-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
-        >
-          <option value="">Select Budget Range</option>
-          {budgetRanges.map((range) => (
-            <option key={range} value={range}>
-              {range}
-            </option>
-          ))}
-        </select>
-      </div>
-    </div>
+                  <div>
+                    <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
+                      Budget Range
+                    </label>
+                    <select
+                      id="budget"
+                      name="budget"
+                      value={formData.budget}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                    >
+                      <option value="">Select Budget Range</option>
+                      {budgetRanges.map((range) => (
+                        <option key={range} value={range}>
+                          {range}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
 
-    <div>
-      <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
-        Project Location
-      </label>
-      <div className="relative">
-        <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-        <input
-          type="text"
-          id="location"
-          name="location"
-          value={formData.location}
-          onChange={handleChange}
-          className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
-          placeholder="e.g., Andheri West, Mumbai"
-        />
-      </div>
-    </div>
+                <div>
+                  <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
+                    Project Location
+                  </label>
+                  <div className="relative">
+                    <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                    <input
+                      type="text"
+                      id="location"
+                      name="location"
+                      value={formData.location}
+                      onChange={handleChange}
+                      className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                      placeholder="e.g., Andheri West, Mumbai"
+                    />
+                  </div>
+                </div>
 
-    <div>
-      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-        Project Details *
-      </label>
-      <div className="relative">
-        <MessageSquare className="absolute left-3 top-4 text-gray-400 w-5 h-5" />
-        <textarea
-          id="message"
-          name="message"
-          required
-          rows={4}
-          value={formData.message}
-          onChange={handleChange}
-          className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300 resize-none"
-          placeholder="Tell us about your project requirements, timeline, and any specific needs..."
-        ></textarea>
-      </div>
-    </div>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    Project Details *
+                  </label>
+                  <div className="relative">
+                    <MessageSquare className="absolute left-3 top-4 text-gray-400 w-5 h-5" />
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={4}
+                      value={formData.message}
+                      onChange={handleChange}
+                      className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300 resize-none"
+                      placeholder="Tell us about your project requirements, timeline, and any specific needs..."
+                    ></textarea>
+                  </div>
+                </div>
 
-    <button
-      type="submit"
-      className="group w-full flex items-center justify-center space-x-3 py-4 px-6 
+                <button
+                  type="submit"
+                  className="group w-full flex items-center justify-center space-x-3 py-4 px-6 
       bg-white text-[#011321] font-semibold rounded-xl 
       border border-[#011321] hover:bg-red-50"
-    >
-      <Send className="w-5 h-5 text-[#011321] group-hover:translate-x-1 transition-transform duration-300" />
-      <span>Send Message</span>
-    </button>
-  </form>
-</div>
+                >
+                  <Send className="w-5 h-5 text-[#011321] group-hover:translate-x-1 transition-transform duration-300" />
+                  <span>Send Message</span>
+                </button>
+              </form>
+            </div>
 
             {/* Map and Office Info */}
             <div className="space-y-8">

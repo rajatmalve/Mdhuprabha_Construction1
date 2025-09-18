@@ -3,7 +3,7 @@ import { Award, Users, Target, CheckCircle } from 'lucide-react';
 import Footer from '../components/Footer';
 
 const AwardsPage = () => {
-  
+
 
   const values = [
     {
@@ -35,7 +35,7 @@ const AwardsPage = () => {
       experience: "20+ Years Experience",
       image: "/images/vikashsir.jpeg",
     },
-    
+
   ];
 
   const awards = [
@@ -48,44 +48,43 @@ const AwardsPage = () => {
     { image: "/images/Prajktaproject.JPG", title: " Celebrating Success", caption: "Our team being recognized for the 'Prajakta' project" },
     { image: "/images/PrajctaTai Award-3.jpeg", title: " Recognized for Quality and Excellence", caption: "We are honored to be recognized by the residents of Prajakta Green Serenity" },
     { image: "/images/all member .JPG", title: "Customer Satisfaction Award", caption: "Client-first approach in every decision" },
-    
+
   ];
 
   return (
     <div className="min-h-screen bg-white">
       {/* Awards Gallery */}
       <section
-  className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
-  style={{
-    backgroundImage: "url('/images/Awards image 4.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    height: "90vh",
-  }}
->
-  {/* White blur lights */}
-  <div className="absolute inset-0 opacity-20">
-    <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
-    <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
-  </div>
+        className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
+        style={{
+          backgroundImage: "url('images/award-heros.jpg')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          height: "90vh",
 
-  {/* Overlay to darken image */}
-  <div className="absolute inset-0 bg-black/40"></div>
+        }}
+      >
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
+        </div>
+        <div className="absolute inset-0 bg-black/40"></div>
 
-  {/* Centered content */}
-  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
-    <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-      <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
-        Our Journey
-      </span>
-      <br />
-      <span className="text-white">Crowned with Awards</span>
-    </h1>
-    <p className="text-base sm:text-lg md:text-xl text-red-100 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
-      Every award is a milestone in our journey of building excellence.
-    </p>
-  </div>
-</section>
+        {/* Centered content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
+            <span className="text-white">
+              Our Journey
+            </span>
+            <br />
+            <span className="text-white">Crowned with Awards</span>
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl text-red-100 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
+            Every award is a milestone in our journey of building excellence.
+          </p>
+        </div>
+      </section>
 
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -122,7 +121,6 @@ const AwardsPage = () => {
                   className="w-full h-64 object-fill transform-gpu transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                 />
-
                 {/* Overlay gradient */}
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-70 group-hover:opacity-80 transition-opacity duration-300" />
 
@@ -141,12 +139,6 @@ const AwardsPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Values Section */}
-      
-
-      {/* Our Team Section */}
-     
       <Footer />
     </div>
   );

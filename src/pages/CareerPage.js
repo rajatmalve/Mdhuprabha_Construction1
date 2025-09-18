@@ -3,9 +3,9 @@ import { Award, Users, Building2, CheckCircle, User, Mail, Phone, Briefcase, Upl
 import Footer from '../components/Footer';
 
 const CareerPage = () => {
-  
 
-  
+
+
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -23,14 +23,14 @@ const CareerPage = () => {
   const positions = [
     { title: "Site Engineer", type: "Full-time", location: "Nagpur", tags: ["On-site", "Civil"] },
     { title: "Project Manager", type: "Full-time", location: "Nagpur", tags: ["Leadership", "Planning"] },
-    { 
-  title: "Accountant", 
-  type: "Contract", 
-  location: "Remote", 
-  tags: ["Tally prime", "MS Excel"] 
-}
+    {
+      title: "Accountant",
+      type: "Contract",
+      location: "Remote",
+      tags: ["Tally prime", "MS Excel"]
+    }
 
-    
+
   ];
 
   const handleChange = (e) => {
@@ -113,33 +113,23 @@ const CareerPage = () => {
       <section
         className="relative pt-24 sm:pt-28 pb-16 sm:pb-20   text-white overflow-hidden"
         style={{
-  backgroundImage: "url('/images/career 1.jpg')",
-  backgroundSize: "100% 100%",   // pura div fill karega
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  height: '90vh', // Adjust height as needed
-}}
+          backgroundImage: "url('/images/career 1.jpg')",
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          height: '90vh',
+        }}
       >
-        {/* White blur lights */}
-        <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
           <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
         </div>
-
-        
         <div className="absolute inset-0 "></div>
-
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            
-           
             <p className="text-base sm:text-lg md:text-xl text-red-100 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
-              
             </p>
           </div>
-
-          
-          
         </div>
       </section>
 
@@ -243,7 +233,7 @@ const CareerPage = () => {
                 Apply{' '}
                 <span className="bg-[#011321] bg-clip-text text-transparent">Now</span>
               </h2>
-             
+
               <div className="relative rounded-2xl p-px bg-gradient-to-br from-red-500/30 via-red-300/20 to-transparent">
                 <div className="rounded-2xl bg-white p-5 sm:p-6 shadow-lg border border-red-100">
                   <form onSubmit={handleSubmit} className="space-y-4">
@@ -326,10 +316,7 @@ const CareerPage = () => {
           </div>
         </div>
       </section>
-
-      
-      
-      <Footer />
+    <Footer />
     </div>
   );
 };
