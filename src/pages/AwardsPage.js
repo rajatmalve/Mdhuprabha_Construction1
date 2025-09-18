@@ -57,10 +57,12 @@ const AwardsPage = () => {
       <section
         className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
         style={{
-          backgroundImage: "url('/images/Awards image 4.jpg')",
+          backgroundImage: "url('images/award-heros.jpg')",
           backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           height: "90vh",
+
         }}
       >
         <div className="absolute inset-0 opacity-20">
@@ -72,7 +74,7 @@ const AwardsPage = () => {
         {/* Centered content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-            <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
+            <span className="text-white">
               Our Journey
             </span>
             <br />
@@ -137,7 +139,7 @@ const AwardsPage = () => {
           </div>
         </div>
       </section>
-   <Footer />
+      <Footer />
     </div>
   );
 };

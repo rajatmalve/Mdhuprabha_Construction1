@@ -32,40 +32,40 @@ const ProjectsPage = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section
-  className="relative flex items-center justify-center text-white overflow-hidden"
-  style={{
-    backgroundImage: "url(/images/architects-collaborating-blueprints-construction-site.jpg)", 
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    height: "90vh",
-  }}
->
-  {/* Overlay for readability */}
-  <div className="absolute inset-0 bg-black/40"></div>
+        className="relative flex items-center justify-center text-white overflow-hidden"
+        style={{
+          backgroundImage: "url(/images/architects-collaborating-blueprints-construction-site.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "90vh",
+        }}
+      >
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-black/40"></div>
 
-  {/* Decorative blobs */}
-  <div className="absolute inset-0 opacity-20 z-0">
-    <div className="absolute top-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-    <div className="absolute bottom-20 left-20 w-64 h-64 bg-gray-200 rounded-full blur-2xl"></div>
-  </div>
+        {/* Decorative blobs */}
+        <div className="absolute inset-0 opacity-20 z-0">
+          <div className="absolute top-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-64 h-64 bg-gray-200 rounded-full blur-2xl"></div>
+        </div>
 
-  {/* Centered Content */}
-  <div className="relative z-10 max-w-5xl px-4 text-center">
-    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6">
-      <span className="bg-white bg-clip-text text-transparent drop-shadow-lg">
-        Projects
-      </span>
-      
-      {/* <span className="text-white">Projects</span> */}
-    </h1>
-    <p className="text-lg sm:text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
-      Explore our portfolio of successfully completed residential construction projects that showcase our commitment to quality, innovation, and customer satisfaction.
-    </p>
-  </div>
-</section>
+        {/* Centered Content */}
+        <div className="relative z-10 max-w-5xl px-4 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6">
+            <span className="bg-white bg-clip-text text-transparent drop-shadow-lg">
+              Projects
+            </span>
+
+            {/* <span className="text-white">Projects</span> */}
+          </h1>
+          <p className="text-lg sm:text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
+            Explore our portfolio of successfully completed residential construction projects that showcase our commitment to quality, innovation, and customer satisfaction.
+          </p>
+        </div>
+      </section>
 
 
-{/* 
+      {/* 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
             <span className="bg-white bg-clip-text text-transparent drop-shadow-lg">
@@ -85,7 +85,7 @@ const ProjectsPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {viewMode === 'grid' ? (
             <div>
-              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {visibleProjects.map((project) => (
                   <div
                     key={project.id}
@@ -133,7 +133,7 @@ const ProjectsPage = () => {
                 <div className="text-left mt-10">
                   <button
                     onClick={() => setShowAll(!showAll)}
-                    className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
+                    className="px-6 py-3 bg-[#000] text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
                   >
                     {showAll ? "Show Less" : "View More"}
                   </button>
