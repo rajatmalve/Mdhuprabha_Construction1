@@ -184,31 +184,8 @@ const ProjectDetailPage = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-stretch">
-            <motion.div
-              className="bg-white/20 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-8 shadow-xl w-full max-w-full overflow-hidden"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: false, amount: 0.3 }}
-              variants={zoomInUp}
-            >
-              <h2 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-slate-200 mb-4 sm:mb-6 text-center">
-                Key Features
-              </h2>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-4">
-                {project.features.map((feature, index) => (
-                  <div
-                    key={index}
-                    className="flex items-start space-x-3 p-3 sm:p-4 rounded-2xl transition-colors duration-300"
-                  >
-                    <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 mt-0.5 flex-shrink-0 text-white" />
-                    <span className="text-slate-200 text-sm sm:text-base leading-relaxed break-words hyphens-auto">
-                      {feature}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
+            
+            {/* Project Information LEFT */}
             <motion.div
               className="bg-white/20 backdrop-blur-md rounded-3xl p-8 shadow-xl"
               initial="hidden"
@@ -283,6 +260,33 @@ const ProjectDetailPage = () => {
                 </a>
               </div>
             </motion.div>
+
+            {/* Key Features RIGHT */}
+            <motion.div
+              className="bg-white/20 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-8 shadow-xl w-full max-w-full overflow-hidden"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.3 }}
+              variants={zoomInUp}
+            >
+              <h2 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-slate-200 mb-4 sm:mb-6 text-center">
+                Key Features
+              </h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-4">
+                {project.features.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="flex items-start space-x-3 p-3 sm:p-4 rounded-2xl transition-colors duration-300"
+                  >
+                    <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 mt-0.5 flex-shrink-0 text-white" />
+                    <span className="text-slate-200 text-sm sm:text-base leading-relaxed break-words hyphens-auto">
+                      {feature}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -326,7 +330,6 @@ const ProjectDetailPage = () => {
         </Swiper>
 
         {/* Custom Swiper Button Styling */}
-
       </div>
 
       {/* Image Lightbox */}

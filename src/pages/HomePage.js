@@ -5,60 +5,37 @@ import FeaturedProjects from '../components/FeaturedProjects';
 import AboutSection from '../components/AboutSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
-import { testimonials } from '../mockData';
-import { Star, Quote, ArrowRight, Users, Award, Clock, CheckCircle } from 'lucide-react';
+import { Star, Quote, ArrowRight, Users, Award, Clock, CheckCircle, MapPin, Home } from 'lucide-react';
 
 const HomePage = () => {
+  const statsRef = useRef(null);
   const [startCounter, setStartCounter] = useState(false);
 
   const stats = [
-    {
-      icon: <Award className="w-8 h-8 text-yellow-500" />,
-      number: 200000,
-      suffix: "+",
-      label: "Sq.Ft Area Delivered",
-      gradient: "from-pink-500 to-red-500",
-      bg: "bg-pink-50"
-    },
-    {
-      icon: <Clock className="w-8 h-8 text-yellow-500" />,
-      number: 20,
-      suffix: "+",
-      label: "Years Experience",
-      gradient: "from--400 to-orange-500",
-      bg: "bg-yellow-50"
-    },
-    {
-      icon: <Users className="w-8 h-8 text-green-500" />,
-      number: 200,
-      suffix: "+",
-      label: "Happy Clients",
-      gradient: "from-green-400 to-emerald-500",
-      bg: "bg-green-50"
-    },
-    {
-      icon: <CheckCircle className="w-8 h-8 text-blue-500" />,
-      number: 25,
-      suffix: "+",
-      label: "Projects done",
-      gradient: "from-blue-500 to-indigo-600",
-      bg: "bg-blue-50"
-    }
+    { icon: <Award className="w-8 h-8 text-yellow-500" />, number: 200000, suffix: "+", label: "Sq.Ft Area Delivered" },
+    { icon: <Clock className="w-8 h-8 text-yellow-500" />, number: 20, suffix: "+", label: "Years Experience" },
+    { icon: <Users className="w-8 h-8 text-green-500" />, number: 200, suffix: "+", label: "Happy Clients" },
+    { icon: <CheckCircle className="w-8 h-8 text-blue-500" />, number: 25, suffix: "+", label: "Projects done" },
   ];
 
+  // Updated useCounter hook to reset when not visible
   const useCounter = (end, duration = 2000, start = false) => {
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-      if (!start) return; // only start when section is visible
+      if (!start) {
+        setCount(0); // reset counter if section not visible
+        return;
+      }
 
       let startVal = 0;
       const increment = end / (duration / 30);
+
       const timer = setInterval(() => {
         startVal += increment;
         if (startVal >= end) {
-          clearInterval(timer);
           setCount(end);
+          clearInterval(timer);
         } else {
           setCount(Math.ceil(startVal));
         }
@@ -70,13 +47,14 @@ const HomePage = () => {
     return count;
   };
 
-  // Detect when Stats Section is visible
-  const statsRef = useRef(null);
+  // Intersection Observer to detect visibility
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setStartCounter(true);
+          setStartCounter(true); // section visible → animate
+        } else {
+          setStartCounter(false); // section hidden → reset
         }
       },
       { threshold: 0.3 } // 30% visible
@@ -90,105 +68,76 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen  text-gray-900">
+    <div className="min-h-screen text-gray-900">
       <Hero />
+      <AboutSection />
 
-      {/* About Section with subtle gradient */}
-      <div>
-        <AboutSection />
-      </div>
+      {/* Current Projects */}
+      <section className="bg-[#1e3c72b5] py-16">
+        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-2">Current Projects</h2>
+        <p className="text-lg text-white max-w-2xl text-center mx-auto mb-12 leading-relaxed">
+          Building your vision with precision and care. From concept to creation, we deliver structures that stand the test of time.
+        </p>
 
-<section className="bg-[#1e3c72b5] py-16">
-  <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-2">
-    Current Projects
-  </h2>
-  <p className="text-lg text-white max-w-2xl text-center mx-auto mb-12 leading-relaxed">
-    Building your vision with precision and care. 
-    From concept to creation, we deliver structures that stand the test of time.
-  </p>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Project 1 */}
+          <div className="relative group rounded-2xl overflow-hidden shadow-lg h-[400px]">
+            <img
+              src="/images/HDPHOTO1.jpg"
+              alt="Prajakta Park"
+              className="w-full h-full object-fill transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-black/80 flex flex-col justify-center items-center text-center text-white px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h3 className="text-2xl font-bold mb-2 text-['#011321']">Prajakta Park</h3>
+              <p className="text-sm leading-relaxed mb-3 max-w-md">
+                A thoughtfully designed residential project blending nature with modern living. Spacious homes surrounded by greenery.
+              </p>
+              <div className="flex items-center space-x-2 text-sm mb-1">
+                <MapPin className="w-4 h-4 text-white" />
+                <span>Abhyankar Nagar, Nagpur</span>
+              </div>
+              <div className="flex items-center space-x-2 text-sm">
+                <Home className="w-4 h-4 text-['#fff']" />
+                <span>Residential</span>
+              </div>
+            </div>
+          </div>
 
-  <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
-    
-    {/* Project 1 */}
-    <div className="space-y-0">
-      {/* Card */}
-      <div className="bg-white text-slate-600 rounded-t-2xl shadow-lg p-6 relative border-t-4 border-[#011321] h-[400px]">
-        <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 
-                        w-16 h-16 rounded-full bg-[#011321] flex items-center 
-                        justify-center shadow-md text-2xl">
-          🏢
+          {/* Project 2 */}
+          <div className="relative group rounded-2xl overflow-hidden shadow-lg h-[400px]">
+            <img
+              src="/images/secondProject.jpg"
+              alt="Prajakta La Maison"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-black/80 flex flex-col justify-center items-center text-center text-white px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h3 className="text-2xl font-bold mb-2 text-['#011321']">Prajakta La Maison</h3>
+              <p className="text-sm leading-relaxed mb-3 max-w-md">
+                A 7-level luxurious 3BHK apartment located in the lap of nature. Peaceful mornings in the heart of the city with blissful greenery.
+              </p>
+              <div className="flex items-center space-x-2 text-sm mb-1">
+                <MapPin className="w-4 h-4 text-white" />
+                <span>Pandey Layout</span>
+              </div>
+              <div className="flex items-center space-x-2 text-sm">
+                <Home className="w-4 h-4 text-['#fff']" />
+                <span>Residential</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 className="mt-10 text-xl font-bold text-[#011321] text-center">
-          Prajakta Park
-        </h3>
-        <div className="mt-4  leading-relaxed">
-          <p>
-            PRAJAKTA PARK – A thoughtfully designed residential project that blends
-            nature with modern living. Spacious homes surrounded by greenery, ensuring
-            peace and comfort in every corner.
-          </p>
-          <p><strong>Location:</strong> Abhyankar Nagar, Nagpur</p>
-          <p><strong>Type:</strong> Residential</p>
-        </div>
-      </div>
-      {/* Image */}
-      <div className="w-full h-[400px] overflow-hidden rounded-b-2xl shadow-lg">
-        <img
-          src="/images/HDPHOTO1.jpg"
-          alt="Prajakta Park"
-          className="w-full h-full object-fill"
-        />
-      </div>
-    </div>
+      </section>
 
-    {/* Project 2 */}
-    <div className="space-y-0">
-      {/* Card */}
-      <div className="bg-white text-slate-600 rounded-t-2xl shadow-lg p-6 relative border-t-4 border-[#011321] h-[400px]">
-        <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 
-                        w-16 h-16 rounded-full bg-[#011321] flex items-center 
-                        justify-center shadow-md text-2xl">
-          🏢
-        </div>
-        <h3 className="mt-10 text-xl font-bold text-[#011321] text-center">
-          Prajakta La Maison
-        </h3>
-        <div className="mt-4  leading-relaxed">
-          <p>
-            Introducing ‘PRAJAKTA La-Masion’, our 7 level 3BHK luxurious view apartment
-            located in the lap of nature. A peaceful location in the heart of the city
-            where you can enjoy your mornings with blissful greenery.
-          </p>
-          <p><strong>Location:</strong> Pandey Layout</p>
-          <p><strong>Type:</strong> Residential</p>
-        </div>
-      </div>
-      {/* Image */}
-      <div className="w-full h-[400px] overflow-hidden rounded-b-2xl shadow-lg">
-        <img
-          src="/images/secondProject.jpg"
-          alt="Prajakta La Maison"
-          className="w-full h-full object-fill"
-        />
-      </div>
-    </div>
-
-  </div>
-</section>
-
+      {/* Statistics Section */}
       <section className="relative bg-white py-20" ref={statsRef}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#011321] mb-4">
-              Statistics
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#011321] mb-4">Statistics</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
               Strength, Quality, and Trust in Every Structure — showcasing our experience and satisfied clients.
             </p>
           </div>
 
-          {/* Counter Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
             {stats.map((counter, index) => {
               const count = useCounter(counter.number, 2000, startCounter);
@@ -197,19 +146,13 @@ const HomePage = () => {
                   key={index}
                   className="relative flex flex-col items-center p-8 bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-transform transform hover:-translate-y-2 border border-gray-200"
                 >
-                  {/* Decorative Circle */}
                   <div className="absolute -top-6 w-16 h-16 bg-gray-800 text-white rounded-full flex items-center justify-center text-3xl shadow-lg">
                     {counter.icon}
                   </div>
-
-                  {/* Spacer for icon */}
                   <div className="mt-12 text-center">
-                    {/* Animated Number */}
                     <span className="text-3xl md:text-4xl font-extrabold text-[#011321]">
                       {count}{counter.suffix}
                     </span>
-
-                    {/* Label */}
                     <p className="mt-2 text-gray-600 text-sm md:text-base font-medium">
                       {counter.label}
                     </p>
@@ -221,21 +164,7 @@ const HomePage = () => {
         </div>
       </section>
 
-
-      {/* Featured Projects Section with distinct gradient */}
-      <div>
-        <FeaturedProjects />
-      </div>
-
-      {/* Contact Section */}
-      <div>
-        <ContactSection />
-      </div>
-
-
-
-
-
+      <FeaturedProjects />
       <Footer />
     </div>
   );
