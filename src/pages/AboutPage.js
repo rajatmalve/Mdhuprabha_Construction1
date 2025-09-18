@@ -1,5 +1,5 @@
 import React from "react";
-import { Award, Users, Target, CheckCircle, Eye, } from "lucide-react";
+import { Award, Users, Target, CheckCircle, Eye, Check,   } from "lucide-react";
 import Footer from "../components/Footer";
 
 const AboutPage = () => {
@@ -36,7 +36,7 @@ const AboutPage = () => {
       <section
         className="relative flex items-center justify-center text-white overflow-hidden"
         style={{
-          backgroundImage: "url('/images/About image.jpg')",
+          backgroundImage: "url('/images/Green and White Modern Simple Minimalist Geometric Abstract Shape Real Estate Presentation[1].png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "90vh",
