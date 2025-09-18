@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [careerDropdownOpen, setCareerDropdownOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -20,15 +19,18 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Disable background scroll when mobile menu is open
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (careerDropdownOpen && !event.target.closest('.career-dropdown')) {
-        setCareerDropdownOpen(false);
-      }
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto';
     };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [careerDropdownOpen]);
+  }, [isOpen]);
 
   const navItems = [
     { name: 'Home', path: '/' },
@@ -40,10 +42,6 @@ const Navbar = () => {
     { name: 'Testimonials', path: '/testimonials' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' }
-  ];
-
-  const careerDropdownItems = [
-    { name: 'Career', path: '/career' },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -79,8 +77,6 @@ const Navbar = () => {
                 className={`relative px-2 py-1 font-medium transition focus:outline-none focus:ring-0
                   ${isActive(item.path)
                     ? 'text-white font-semibold'
-                    : location.pathname === '/'
-                    ? (scrolled ? 'text-white hover:text-[#011321]' : 'text-white hover:text-white')
                     : 'text-white hover:text-white'
                   }
                 `}
@@ -92,6 +88,7 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
+          
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
@@ -109,26 +106,38 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="lg:hidden mt-4 bg-white rounded-3xl shadow">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                onClick={() => setIsOpen(false)}
-                className={`block px-6 py-4 mx-3 rounded-2xl transition focus:outline-none focus:ring-0
-                  ${isActive(item.path)
-                    ? 'bg-[#011321] text-white font-semibold shadow-md'
-                    : 'text-[#011321] hover:bg-gray-100 hover:text-[#011321]'
-                  }
-                `}
-              >
-                <span className="font-medium">{item.name}</span>
-              </Link>
-            ))}
-          </div>
-        )}
+        {/* Mobile Navigation - Small menu */}
+{isOpen && (
+  <div className="fixed inset-0 z-50 flex flex-col pt-6 bg-[#2a5298]">
+    {/* Close Button */}
+    <div className="flex justify-end px-6">
+      <button
+        onClick={() => setIsOpen(false)}
+        className="p-2 rounded-full bg-white text-[#2a5298] focus:outline-none"
+      >
+        <X className="w-6 h-6" />
+      </button>
+    </div>
+
+    {/* Menu Items */}
+    <div className="flex flex-col mt-4">
+      {navItems.map((item) => (
+        <Link
+          key={item.name}
+          to={item.path}
+          onClick={() => setIsOpen(false)}
+          className={`block px-6 py-3 mx-4 my-1 rounded-lg transition
+            ${isActive(item.path)
+              ? 'bg-[#011321] text-white font-semibold'
+              : 'text-white hover:bg-white/20 hover:text-white'
+            }`}
+        >
+          {item.name}
+        </Link>
+      ))}
+    </div>
+  </div>
+)}
       </div>
     </nav>
   );

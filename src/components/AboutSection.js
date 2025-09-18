@@ -145,7 +145,7 @@ const AboutSection = () => {
                     <img
                       src={img}
                       alt={`Slide ${index + 1}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-fill"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
                   </div>
