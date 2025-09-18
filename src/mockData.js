@@ -99,7 +99,7 @@ export const projectsData = [
     area: "3BHK",
     type: "Residential",
     status: "Complete",
-    image: "/images/portfolio3.png",
+    image: "/images/cam_no_32_FINAL_Right_Night_copy[1].jpg",
     description: 'An expansive retail complex designed with modern entertainment zones and hassle-free parking solutions.',
     fullDescription: `Madhuprabha Constructions – A trusted name in real estate for over two decades, Madhuprabha Constructions has been delivering projects that stand as symbols of trust, quality, and innovation. Now, adding another proud chapter to its journey, we present “Prajakta Green Serenity” – a home with a modern touch, where comfort meets elegance. Designed with thoughtful planning and premium amenities, it is not just a place to live, but a lifestyle crafted to celebrate every moment.`,
     features: [

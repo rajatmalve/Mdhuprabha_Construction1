@@ -1,5 +1,5 @@
 import React from "react";
-import { Award, Users, Target, CheckCircle, Eye,   } from "lucide-react";
+import { Award, Users, Target, CheckCircle, Eye, Check,   } from "lucide-react";
 import Footer from "../components/Footer";
 
 const AboutPage = () => {
@@ -36,7 +36,7 @@ const AboutPage = () => {
       <section
         className="relative flex items-center justify-center text-white overflow-hidden"
         style={{
-          backgroundImage: "url('/images/About image.jpg')",
+          backgroundImage: "url('/images/Green and White Modern Simple Minimalist Geometric Abstract Shape Real Estate Presentation[1].png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "90vh",
@@ -47,7 +47,7 @@ const AboutPage = () => {
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
             Building Trust,
             <br />
-            <span className="text-yellow-400">Shaping The Future</span>
+            <span className="text-white-400">Shaping The Future</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl max-w-2xl mx-auto text-gray-200">
             With decades of experience in the construction industry, we craft
@@ -55,6 +55,82 @@ const AboutPage = () => {
           </p>
         </div>
       </section>
+
+
+{/* Leadership Section */}
+<section className="relative py-20 bg-gradient-to-br from-[#f0f7ff] via-white to-[#264b8d] overflow-hidden">
+  {/* Floating blobs */}
+  <div className="absolute top-0 right-0 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000 -z-10"></div>
+  <div className="absolute bottom-0 left-0 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob -z-10"></div>
+
+  <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    {/* Heading */}
+    <div className="text-center mb-16 animate-fade-in-up">
+      <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 drop-shadow-sm">
+        Leadership <span className="text-[#2a5298]">Excellence</span>
+      </h2>
+      <p className="text-gray-700 mt-4 text-lg">
+        Meet the visionary driving our company’s success
+      </p>
+      <div className="mt-4 w-24 h-1 bg-gradient-to-r from-[#234683] to-[#011321] mx-auto rounded-full"></div>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      {/* Text */}
+      <div className="animate-fade-in-left">
+        <h3 className="text-2xl font-bold text-gray-900 ">
+          Mr. Ashish Londhe
+        </h3>
+        <p className="text-[#234683] font-semibold ">
+          Founder & Managing Director
+        </p>
+        
+        <p className="text-gray-700 text-lg leading-relaxed mt-2">
+          Mr. Ashish Londhe (B.E, M.B.A) is the sole proprietor of the company.
+          He has served as JOINT SECRETARY in CREDAI (Confederation of Real Estate
+          Developers Association of India) from 2015 - 2019. Presently is serving
+          as VICE PRESIDENT for 2019-2023 in CREDAI.
+        </p>
+        <p className="text-gray-700 text-lg leading-relaxed mt-2">
+          CREDAI TREASURER 2023-2025, an association with 13,000+ members nationwide,
+          25 state chapters, 180 city chapters. Nagpur has nearly 350 members. Known
+          for construction quality & transparency.
+        </p>
+
+         {/* Four Points Section */}
+            <div className="mb-6 space-y-1 mt-4">
+              {[
+                "Visionary Leader ",
+                "Strong Ethics",
+                "Quality Focus",
+                
+              ].map((point, index) => (
+                <div key={index} className="flex items-center space-x-1">
+                  <Check className="w-5 h-5 text-[red]" />
+                  <span className="text-md text-[#011321] font-medium">{point}</span>
+                </div>
+              ))}
+            </div>
+      </div>
+ 
+      {/* Image with animation */}
+      <div className="flex flex-col items-center lg:items-end text-center lg:text-right animate-fade-in-right">
+        <div className="relative group">
+          <img
+            src="/images/vikashsir.jpeg"
+            alt="Leadership"
+            className="w-full max-w-md rounded-3xl object-cover shadow-2xl transition-transform duration-700 transform group-hover:scale-105 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.4)]"
+          />
+          {/* Floating badge */}
+          <div className="absolute -top-4 -right-4 bg-gradient-to-r from-[#234683] to-[#011321] text-white px-5 py-2 rounded-2xl shadow-xl text-sm sm:text-base font-semibold animate-bounce">
+            20+ Years Experience
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 {/* Journey Section */}
 <section className="py-20 sm:py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
@@ -196,60 +272,7 @@ const AboutPage = () => {
 
 
 
-{/* Leadership Section */}
-<section className="relative py-20 bg-gradient-to-br from-[#264b8d] via-white to-[#264b8d] overflow-hidden">
-  {/* Optional floating blob */}
-  <div className="absolute top-0 right-0 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000 -z-10"></div>
-  <div className="absolute bottom-0 left-0 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob -z-10"></div>
 
-  <div className="max-w-7xl mx-auto px-6 lg:px-8">
-    <div className="text-center mb-12 animate-fade-in-up">
-      <h2 className="text-4xl font-bold text-gray-900">
-        Leadership <span className="text-[#2a5298]">Excellence</span>
-      </h2>
-      <p className="text-gray-700 mt-3">
-        Meet the visionary driving our company’s success
-      </p>
-    </div>
-
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      {/* Text */}
-      <div className="animate-fade-in-left">
-        <h3 className="text-2xl font-bold text-gray-900 mb-6">
-          Experienced Leadership
-        </h3>
-        <p className="text-gray-700 text-lg mb-4">
-          Mr. Ashish Londhe (B.E, M.B.A) is the sole proprietor of the company.
-          He has served as JOINT SECRETARY in CREDAI (Confederation of Real Estate
-          Developers Association of India) from 2015 - 2019. Presently is serving
-          as VICE PRESIDENT for 2019-2023 in CREDAI.
-        </p>
-        <p className="text-gray-700 text-lg">
-          CREDAI TREASURER 2023-2025, an association with 13,000+ members nationwide,
-          25 state chapters, 180 city chapters. Nagpur has nearly 350 members. Known
-          for construction quality & transparency.
-        </p>
-      </div>
-
-      {/* Image */}
-      <div className="flex flex-col items-center lg:items-end text-center lg:text-right animate-fade-in-right">
-        <div className="relative group">
-          <img
-            src="/images/vikashsir.jpeg"
-            alt="Leadership"
-            className="w-full max-w-md rounded-2xl object-cover shadow-xl transition-transform duration-500 transform hover:scale-105 hover:shadow-2xl"
-          />
-          {/* Floating badge */}
-          <div className="absolute -top-4 -right-4 bg-gradient-to-r from-[#234683] to-[#011321] text-white px-4 py-2 rounded-xl shadow-lg text-sm font-semibold">
-            20+ Years Experience
-          </div>
-        </div>
-        <h3 className="text-xl font-bold text-gray-900 mt-4">Mr. Ashish Londhe</h3>
-        <p className="text-[#234683] font-semibold">Founder & Managing Director</p>
-      </div>
-    </div>
-  </div>
-</section>
       {/* Values Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
