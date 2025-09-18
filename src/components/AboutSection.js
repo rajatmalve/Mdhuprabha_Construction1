@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [startCounter, setStartCounter] = useState(false); 
+  const [startCounter, setStartCounter] = useState(false);
 
   const stats = [
     {
@@ -16,7 +16,7 @@ const AboutSection = () => {
       bg: "bg-pink-50"
     },
     {
-      icon:<Clock className="w-8 h-8 text-yellow-500" />,
+      icon: <Clock className="w-8 h-8 text-yellow-500" />,
       number: 20,
       suffix: "+",
       label: "Years Experience",
@@ -63,7 +63,7 @@ const AboutSection = () => {
           setStartCounter(true);
         }
       },
-      { threshold: 0.3 } 
+      { threshold: 0.3 }
     );
 
     if (statsRef.current) observer.observe(statsRef.current);
@@ -153,7 +153,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-           
+
             <div
               className="
                 absolute 
@@ -163,8 +163,8 @@ const AboutSection = () => {
                 rounded-2xl px-6 py-4 shadow-lg
               "
             >
-              <div className="flex flex-col items-center md:items-start">
-                <span className="text-2xl font-bold text-[#011321]">20+</span>
+              <div className="flex flex-col items-center md:items-center">
+                <span className="text-2xl font-bold  text-[#011321]">20+</span>
                 <span className="text-sm text-slate-700">Years of Excellence</span>
               </div>
             </div>

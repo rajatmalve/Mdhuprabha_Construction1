@@ -138,8 +138,8 @@ const BecomePartnerPage = () => {
               <p className="text-lg text-gray-600 mb-6">
                 People interested in getting into joint ventures, real estate property dealings or property development and investment in our projects can contact us by filling this form below. Thank you.
               </p>
-              <div className="relative rounded-2xl p-px bg-gradient-to-br from-red-500/30 via-red-300/20 to-transparent h-full">
-                <div className="rounded-2xl bg-white p-6 shadow-lg border border-red-100 h-full">
+              <div className="relative rounded-2xl p-px bg-['#011321'] h-full">
+                <div className="rounded-2xl bg-white p-6 shadow-lg border border-['#011321'] h-full">
                   <form onSubmit={handleSubmit} className="space-y-4 h-full flex flex-col justify-between">
 
                     {/* Company & Contact */}
@@ -152,7 +152,8 @@ const BecomePartnerPage = () => {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           type="text"
-                          className={`w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 ${touched.companyName && errors.companyName ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-red-500"
+                          className={`w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 ${touched.companyName && errors.companyName ? "border-[#011321] focus:ring-[#011321]"
+                            : "border-gray-300 focus:ring-[#011321]"
                             }`}
                           placeholder="Enter company name"
                         />
@@ -166,8 +167,8 @@ const BecomePartnerPage = () => {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           type="text"
-                          className={`w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 ${touched.contactPerson && errors.contactPerson ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-red-500"
-                            }`}
+                          className={`w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 ${touched.contactPerson && errors.contactPerson ? "border-[#011321] focus:ring-[#011321]"
+                            : "border-gray-300 focus:ring-[#011321]"}`}
                           placeholder="Enter contact person name"
                         />
                         {touched.contactPerson && errors.contactPerson && <p className="mt-1 text-xs text-red-600">{errors.contactPerson}</p>}
@@ -184,7 +185,8 @@ const BecomePartnerPage = () => {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           type="email"
-                          className={`w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 ${touched.email && errors.email ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-red-500"
+                          className={`w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 ${touched.email && errors.email ? "border-[#011321] focus:ring-[#011321]"
+                            : "border-gray-300 focus:ring-[#011321]"
                             }`}
                           placeholder="company@email.com"
                         />
@@ -198,8 +200,8 @@ const BecomePartnerPage = () => {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           type="tel"
-                          className={`w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 ${touched.phone && errors.phone ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-red-500"
-                            }`}
+                          className={`w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 ${touched.phone && errors.phone ? "border-[#011321] focus:ring-[#011321]"
+                            : "border-gray-300 focus:ring-[#011321]"}`}
                           placeholder="+91-XXXXXXXXXX"
                         />
                         {touched.phone && errors.phone && <p className="mt-1 text-xs text-red-600">{errors.phone}</p>}
@@ -215,8 +217,10 @@ const BecomePartnerPage = () => {
                           value={formData.partnershipType}
                           onChange={handleChange}
                           onBlur={handleBlur}
-                          className={`w-full rounded-lg border px-3 py-2 bg-white focus:outline-none focus:ring-2 ${touched.partnershipType && errors.partnershipType ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-red-500"
+                          className={`w-full rounded-lg border px-3 py-2 bg-white focus:outline-none focus:ring-2 ${touched.partnershipType && errors.partnershipType ? "border-[#011321] focus:ring-[#011321]"
+                            : "border-gray-300 focus:ring-[#011321]"
                             }`}
+
                         >
                           <option value="">Select partnership type</option>
                           {partnershipTypes.map((p, i) => (
@@ -233,7 +237,8 @@ const BecomePartnerPage = () => {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           type="text"
-                          className={`w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 ${touched.location && errors.location ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-red-500"
+                          className={`w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 ${touched.location && errors.location ? "border-[#011321] focus:ring-[#011321]"
+                            : "border-gray-300 focus:ring-[#011321]"
                             }`}
                           placeholder="City, State"
                         />
@@ -250,7 +255,7 @@ const BecomePartnerPage = () => {
                         onChange={handleChange}
                         type="number"
                         min="0"
-                        className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
+                        className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#011321]"
                         placeholder="e.g., 5"
                       />
                     </div>
@@ -263,7 +268,7 @@ const BecomePartnerPage = () => {
                         value={formData.message}
                         onChange={handleChange}
                         rows="4"
-                        className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
+                        className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#011321]"
                         placeholder="Describe your company, capabilities, and why you want to partner with us"
                       ></textarea>
                     </div>
