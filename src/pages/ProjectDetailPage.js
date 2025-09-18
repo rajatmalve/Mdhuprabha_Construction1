@@ -83,9 +83,9 @@ const ProjectDetailPage = () => {
         <button
           onClick={() => {
             if (window.history.length > 2) {
-              navigate(-1); 
+              navigate(-1);
             } else {
-              navigate("/projects"); 
+              navigate("/projects");
             }
           }}
           className="absolute top-4 left-4 sm:top-6 sm:left-6 z-20 
@@ -109,17 +109,17 @@ const ProjectDetailPage = () => {
         <div className="relative z-10 flex flex-col items-start justify-end h-full text-left px-4 sm:px-6 lg:px-12 pb-8 sm:pb-12 lg:pb-16">
           <div
             className={`inline-flex items-center space-x-2 px-4 py-2 rounded-full mb-4 sm:mb-6 ${isCurrentProject
-              ? "bg-gradient-to-r from-emerald-500/20 to-green-500/20 border border-emerald-400/30"
-              : "bg-gradient-to-r from-amber-500/20 to-yellow-500/20 border border-amber-400/30"
+              ? "text-['#fff'] border border-['#fff']"
+              : "text-['#fff'] border border-['#fff']"
               }`}
           >
             {isCurrentProject ? (
-              <Clock className="w-4 h-4 text-emerald-400" />
+              <Clock className="w-4 h-4 text-['#fff']" />
             ) : (
-              <CheckCircle className="w-4 h-4 text-amber-400" />
+              <CheckCircle className="w-4 h-4 text-['#fff']" />
             )}
             <span
-              className={`text-sm font-semibold ${isCurrentProject ? "text-emerald-300" : "text-amber-300"
+              className={`text-sm font-semibold ${isCurrentProject ? "text-['#fff']" : "text-['#fff']"
                 }`}
             >
               {project.status}
@@ -128,9 +128,9 @@ const ProjectDetailPage = () => {
           <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 leading-tight max-w-3xl">
             <span
               className={`bg-gradient-to-r ${isCurrentProject
-                ? "from-emerald-400 to-green-500"
-                : "from-amber-400 to-yellow-500"
-                } bg-clip-text text-transparent`}
+                ? "text-['#fff']"
+                : "text-['#fff']"
+                } "text-['#fff']"`}
             >
               {project.title}
             </span>

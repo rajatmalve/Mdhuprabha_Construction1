@@ -71,17 +71,32 @@ const TestimonialPage = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section
-        className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
+        className="relative pt-28 pb-20 text-white overflow-hidden flex items-center justify-center"
         style={{
-          backgroundImage: "url('/images/TestiminalImages.jpg')",
-          backgroundSize: "cover",
+          backgroundImage: "url('images/testimonials-heros.jpg')",
+          backgroundSize: "100% 100%",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           height: "90vh",
         }}
       >
+        {/* White blur lights */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 sm:top-20 right-10 sm:right-20 w-48 sm:w-96 h-48 sm:h-96 bg-white rounded-full blur-2xl"></div>
           <div className="absolute bottom-10 sm:bottom-20 left-10 sm:left-20 w-40 sm:w-64 h-40 sm:h-64 bg-white rounded-full blur-2xl"></div>
+        </div>
+
+        {/* Centered Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
+            {/* <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
+              What
+            </span>
+            <span className="text-white"> Our Clients Say</span> */}
+          </h1>
+          {/* <p className="text-base sm:text-lg md:text-xl max-w-3xl sm:max-w-4xl mx-auto leading-relaxed font-bold text-black">
+            DISCOVER WHAT OUR CLIENTS SAY ABOUT US — GENUINE STORIES OF SUCCESS, TRUST, AND PARTNERSHIP.
+          </p> */}
         </div>
       </section>
 

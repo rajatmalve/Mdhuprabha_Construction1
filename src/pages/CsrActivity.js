@@ -47,7 +47,7 @@ const CsrActivity = () => {
         {/* Centered Content */}
         <div className="relative z-10 max-w-7xl mx-auto h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
-            <span className="bg-gradient-to-r from-white to-red-200 bg-clip-text text-transparent">
+            <span className="text-white">
               Our Commitment
             </span>
           </h1>
@@ -56,7 +56,7 @@ const CsrActivity = () => {
           </p>
         </div>
       </section>
-       <div className="py-16 sm:py-20">
+      <div className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
