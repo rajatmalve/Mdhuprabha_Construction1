@@ -52,16 +52,17 @@ const AwardsPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white ">
       {/* Awards Gallery */}
       <section
-        className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white overflow-hidden"
+        className="relative pt-24 sm:pt-28 pb-16 sm:pb-20 text-white  overflow-hidden"
         style={{
           backgroundImage: "url('images/award-heros.jpg')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           height: "90vh",
+
 
         }}
       >
@@ -80,7 +81,7 @@ const AwardsPage = () => {
             <br />
             <span className="text-white">Crowned with Awards</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-red-100 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-white max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
             Every award is a milestone in our journey of building excellence.
           </p>
         </div>

@@ -47,7 +47,7 @@ const AboutPage = () => {
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
             Building Trust,
             <br />
-            <span className="text-yellow-400">Shaping The Future</span>
+            <span className="text-white">Shaping The Future</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl max-w-2xl mx-auto text-gray-200">
             With decades of experience in the construction industry, we craft

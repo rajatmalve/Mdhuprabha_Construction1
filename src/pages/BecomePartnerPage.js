@@ -118,7 +118,7 @@ const BecomePartnerPage = () => {
             <br />
             <span className="text-white">Trusted Partner</span>
           </h1>
-          <p className="text-lg md:text-xl text-red-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl  text-white max-w-3xl mx-auto leading-relaxed">
             Join hands with Madhuprabha Construction and grow your business while contributing to our vision of building excellence.
           </p>
         </div>
