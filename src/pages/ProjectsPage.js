@@ -51,7 +51,7 @@ const ProjectsPage = () => {
 
         {/* Centered Content */}
         <div className="relative z-10 max-w-5xl px-4 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-6">
             <span className="bg-white bg-clip-text text-transparent drop-shadow-lg">
               Projects
             </span>
@@ -89,7 +89,7 @@ const ProjectsPage = () => {
                 {visibleProjects.map((project) => (
                   <div
                     key={project.id}
-                    className="group bg-white border border-red-100 rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden transform hover:-translate-y-2"
+                    className="group bg-white border border-['#011321'] rounded-xl shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden transform hover:-translate-y-2"
                   >
                     {/* Project Image */}
                     <div className="relative h-48 overflow-hidden">
@@ -119,7 +119,7 @@ const ProjectsPage = () => {
                       </p>
                       <Link
                         to={`/project/${project.id}`}
-                        className="w-full inline-block text-center py-2 px-3 bg-[#011321] text-white text-sm font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
+                        className="w-full inline-block text-center py-2 px-3 bg-[#011321] text-white text-sm font-semibold rounded-lg hover:bg-['#011321'] transform hover:scale-105 transition-all duration-300"
                       >
                         View
                       </Link>
@@ -133,7 +133,7 @@ const ProjectsPage = () => {
                 <div className="text-left mt-10">
                   <button
                     onClick={() => setShowAll(!showAll)}
-                    className="px-6 py-3 bg-[#000] text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
+                    className="px-6 py-3 bg-[#000] text-white font-semibold rounded-lg hover:bg-['#011321'] transform hover:scale-105 transition-all duration-300"
                   >
                     {showAll ? "Show Less" : "View More"}
                   </button>
@@ -145,7 +145,7 @@ const ProjectsPage = () => {
               {visibleProjects.map((project) => (
                 <div
                   key={project.id}
-                  className="group bg-white border border-red-100 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+                  className="group bg-white border border-['#011321']] rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
                 >
                   <div className="flex flex-col lg:flex-row">
                     {/* Image */}
@@ -188,7 +188,7 @@ const ProjectsPage = () => {
                           {project.description}
                         </p>
 
-                        <div className="inline-flex px-3 py-1 bg-red-100 text-red-800 text-sm font-medium rounded-full">
+                        <div className="inline-flex px-3 py-1 bg-['#011321'] text-red-800 text-sm font-medium rounded-full">
                           {project.type}
                         </div>
                       </div>
@@ -196,7 +196,7 @@ const ProjectsPage = () => {
                       <div className="flex justify-end mt-6">
                         <Link
                           to={`/project/${project.id}`}
-                          className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-xl hover:bg-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center space-x-2"
+                          className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-xl hover:bg-['#011321'] transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center space-x-2"
                         >
                           <span>View Details</span>
                           <ExternalLink className="w-4 h-4" />
@@ -212,7 +212,7 @@ const ProjectsPage = () => {
                 <div className="text-left mt-10">
                   <button
                     onClick={() => setShowAll(!showAll)}
-                    className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-lg hover:bg-red-700 transform hover:scale-105 transition-all duration-300"
+                    className="px-6 py-3 bg-[#011321] text-white font-semibold rounded-lg hover:bg-['#011321'] "
                   >
                     {showAll ? "Show Less" : "View More"}
                   </button>

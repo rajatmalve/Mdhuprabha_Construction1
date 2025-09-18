@@ -44,10 +44,10 @@ const AboutPage = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
+          <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight">
             Building Trust,
             <br />
-            <span className="text-white-400">Shaping The Future</span>
+            <span className="text-white">Shaping The Future</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl max-w-2xl mx-auto text-gray-200">
             With decades of experience in the construction industry, we craft
