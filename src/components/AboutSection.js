@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Users, Award, Clock, CheckCircle,ArrowRight, CheckCheck, Check } from 'lucide-react';
+import { Users, Award, Clock, CheckCircle, ArrowRight, Check } from 'lucide-react';
 import { Link } from "react-router-dom";
 
 const AboutSection = () => {
@@ -43,7 +43,6 @@ const AboutSection = () => {
 
   const carouselImages = [
     "/images/about.jpg",
-    // "/images/WhatsApp Image 2025-09-13 at 16.54.10_5316750b.jpg",
     "/images/vikashsir.jpeg",
   ];
 
@@ -55,31 +54,6 @@ const AboutSection = () => {
     return () => clearInterval(interval);
   }, [carouselImages.length]);
 
-  // Counter hook
-  const useCounter = (end, duration = 2000, start = false) => {
-    const [count, setCount] = useState(0);
-
-    useEffect(() => {
-      if (!start) return; // only start when section is visible
-
-      let startVal = 0;
-      const increment = end / (duration / 30);
-      const timer = setInterval(() => {
-        startVal += increment;
-        if (startVal >= end) {
-          clearInterval(timer);
-          setCount(end);
-        } else {
-          setCount(Math.ceil(startVal));
-        }
-      }, 30);
-
-      return () => clearInterval(timer);
-    }, [end, duration, start]);
-
-    return count;
-  };
-
   // Detect when Stats Section is visible
   const statsRef = useRef(null);
   useEffect(() => {
@@ -89,7 +63,7 @@ const AboutSection = () => {
           setStartCounter(true);
         }
       },
-      { threshold: 0.3 } // 30% visible
+      { threshold: 0.3 } 
     );
 
     if (statsRef.current) observer.observe(statsRef.current);
@@ -100,64 +74,64 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section
-      id="about"
-      className="py-20 "
-    >
-      <div className="container mx-auto px-4 ">
+    <section id="about" className="py-20">
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
           <div className="mb-8">
-  <p className="text-1xl md:text-1xl font-bold text-[#facc15] mb-0">
-    ABOUT COMPANY
-  </p>
-  <h5 className="text-2xl md:text-2xl font-bold text-[#011321] mb-3">
-    WELCOME TO MADHUPRABHA CONSTRUCTION
-  </h5>
-  <p className="text-md text-slate-600 mb-3 leading-relaxed text-justify">
-    Madhuprabha Construction was started in the year 2005. The business start
-    was modest with the regular clients in Nagpur. Over the period, in last
-    20 years, now we are the leading company in the construction group. Our
-    projects not only deal in Nagpur but also in and around Central India.
-    The journey of hard work, dedication, and trust of our clients has brought
-    us this long way. We deal in the commercials and housing society.
-  </p>
+            <p className="text-1xl md:text-1xl font-bold text-[#facc15] mb-0">
+              ABOUT COMPANY
+            </p>
+            <h5 className="text-2xl md:text-2xl font-bold text-[#011321] mb-3">
+              WELCOME TO MADHUPRABHA CONSTRUCTION
+            </h5>
+            <p className="text-md text-slate-600 mb-3 leading-relaxed text-justify">
+              Madhuprabha Construction was started in the year 2005. The business start
+              was modest with the regular clients in Nagpur. Over the period, in last
+              20 years, now we are the leading company in the construction group. Our
+              projects not only deal in Nagpur but also in and around Central India.
+              The journey of hard work, dedication, and trust of our clients has brought
+              us this long way. We deal in the commercials and housing society.
+            </p>
 
-  {/* Four Points Section */}
-  <div className="mb-6 space-y-1">
-    {[
-      "Expert construction with quality materials",
-      "On-time project completion",
-      "Affordable pricing and transparent contracts",
-      "Strong focus on safety and sustainability",
-    ].map((point, index) => (
-      <div key={index} className="flex items-center space-x-1">
-        <Check  className="w-5 h-5 text-[red]" />
-        <span className="text-md text-[#011321] font-medium">{point}</span>
-      </div>
-    ))}
-  </div>
+            {/* Four Points Section */}
+            <div className="mb-6 space-y-1">
+              {[
+                "Expert construction with quality materials",
+                "On-time project completion",
+                "Affordable pricing and transparent contracts",
+                "Strong focus on safety and sustainability",
+              ].map((point, index) => (
+                <div key={index} className="flex items-center space-x-1">
+                  <Check className="w-5 h-5 text-[red]" />
+                  <span className="text-md text-[#011321] font-medium">{point}</span>
+                </div>
+              ))}
+            </div>
 
-  <Link
-    to="/about"
-    className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300 mr-2"
-  >
-    <span className="text-white group-hover:text-white">
-      MORE ABOUT US
-    </span>
-    <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
-  </Link>
-  <Link
-    to="/projects"
-    className="group inline-flex items-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300"
-  >
-    <span className="text-white group-hover:text-white">
-      OUR PROJECTS
-    </span>
-    <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
-  </Link>
-</div>
+            {/* Buttons responsive */}
+            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0 mt-4">
+              <Link
+                to="/about"
+                className="group inline-flex items-center justify-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300 w-full sm:w-auto"
+              >
+                <span className="text-white group-hover:text-white">
+                  MORE ABOUT US
+                </span>
+                <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
+              </Link>
 
+              <Link
+                to="/projects"
+                className="group inline-flex items-center justify-center space-x-2 px-8 py-3 font-semibold text-sm rounded-full border border-[#011321] bg-[#011321] hover:bg-[#011321] transition-all duration-300 w-full sm:w-auto"
+              >
+                <span className="text-white group-hover:text-white">
+                  OUR PROJECTS
+                </span>
+                <ArrowRight className="w-5 h-5 text-white group-hover:translate-x-2 transition-transform duration-300" />
+              </Link>
+            </div>
+          </div>
 
           {/* Right Carousel */}
           <div className="relative w-full flex justify-center items-center">
@@ -179,17 +153,23 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* Floating Card */}
-            <div className="absolute top-80 left-2 bg-white/90 backdrop-blur-md rounded-2xl px-6 py-4 shadow-lg">
-              <div className="flex flex-col items-center">
+           
+            <div
+              className="
+                absolute 
+                bottom-4 left-1/2 transform -translate-x-1/2
+                md:bottom-auto md:top-80 md:left-2 md:transform-none
+                bg-white/90 backdrop-blur-md 
+                rounded-2xl px-6 py-4 shadow-lg
+              "
+            >
+              <div className="flex flex-col items-center md:items-start">
                 <span className="text-2xl font-bold text-[#011321]">20+</span>
                 <span className="text-sm text-slate-700">Years of Excellence</span>
               </div>
             </div>
           </div>
         </div>
-
-        
       </div>
     </section>
   );

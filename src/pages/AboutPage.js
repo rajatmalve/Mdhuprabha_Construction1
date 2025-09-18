@@ -1,5 +1,5 @@
 import React from "react";
-import { Award, Users, Target, CheckCircle, Eye, } from "lucide-react";
+import { Award, Users, Target, CheckCircle, Eye, Check,   } from "lucide-react";
 import Footer from "../components/Footer";
 
 const AboutPage = () => {
@@ -36,7 +36,7 @@ const AboutPage = () => {
       <section
         className="relative flex items-center justify-center text-white overflow-hidden"
         style={{
-          backgroundImage: "url('/images/About image.jpg')",
+          backgroundImage: "url('/images/Green and White Modern Simple Minimalist Geometric Abstract Shape Real Estate Presentation[1].png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "90vh",
@@ -47,7 +47,7 @@ const AboutPage = () => {
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
             Building Trust,
             <br />
-            <span className="text-yellow-400">Shaping The Future</span>
+            <span className="text-white-400">Shaping The Future</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl max-w-2xl mx-auto text-gray-200">
             With decades of experience in the construction industry, we craft
