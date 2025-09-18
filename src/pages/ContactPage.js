@@ -59,10 +59,10 @@ const ContactPage = () => {
   ];
 
   const contactMethods = [
-    { icon: Phone, title: "Call Us", detail: contactData.phone1, description: "Speak directly with our team", color: "from-red-500 to-red-700" },
-    { icon: Mail, title: "Email Us", detail: contactData.email, description: "Send us your requirements", color: "from-red-500 to-red-700" },
-    { icon: MapPin, title: "Visit Our Office", detail: contactData.address, description: "Come for a face-to-face meeting", color: "from-red-500 to-red-700" },
-    { icon: Clock, title: "Working Hours", detail: contactData.workingHours, description: "We're available during these hours", color: "from-red-500 to-red-700" }
+    { icon: Phone, title: "Call Us", detail: contactData.phone1, description: "Speak directly with our team", color: "from-['#011321']-500 to-['#011321']" },
+    { icon: Mail, title: "Email Us", detail: contactData.email, description: "Send us your requirements", color: "from-['#011321']-500 to-['#011321']" },
+    { icon: MapPin, title: "Visit Our Office", detail: contactData.address, description: "Come for a face-to-face meeting", color: "from-['#011321']-500 to-['#011321']" },
+    { icon: Clock, title: "Working Hours", detail: contactData.workingHours, description: "We're available during these hours", color: "from-['#011321']-500 to-['#011321']" }
   ];
 
   return (
@@ -103,13 +103,13 @@ const ContactPage = () => {
             {contactMethods.map((method, index) => {
               const Icon = method.icon;
               return (
-                <div key={index} className="group text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-red-300 transition-all duration-300 border border-red-100 transform hover:-translate-y-2">
-                  <div className={`w-16 h-16 bg-gradient-to-r ${method.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                <div key={index} className="group text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-white-300 transition-all duration-300 border border-['#011321'] transform hover:-translate-y-2">
+                  <div className={`w-16 h-16 bg-[#011321] ${method.color} rounded-2xl flex items-center justify-center mx-auto mb-6  transition-transform duration-300 shadow-lg`}>
                     <Icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{method.title}</h3>
-                  {method.title === "Call Us" && <a href={`tel:${method.detail}`} className="text-gray-700 font-medium mb-2 hover:text-[#011321] transition-colors duration-300">{method.detail}</a>}
-                  {method.title === "Email Us" && <a href={`mailto:${method.detail}`} className="text-gray-700 font-medium mb-2 hover:text-[#011321] transition-colors duration-300 break-words text-sm">{method.detail}</a>}
+                  {method.title === "Call Us" && <a href={`tel:${method.detail}`} className="text-gray-700 font-medium mb-2 hover:text-[#fff] transition-colors duration-300">{method.detail}</a>}
+                  {method.title === "Email Us" && <a href={`mailto:${method.detail}`} className="text-gray-700 font-medium mb-2  transition-colors duration-300 break-words text-sm">{method.detail}</a>}
                   {method.title === "Visit Our Office" && <a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(method.detail)}`} target="_blank" rel="noopener noreferrer" className="text-gray-700 font-medium mb-2 hover:text-[#011321] transition-colors duration-300">{method.detail}</a>}
                   {method.title === "Working Hours" && <p className="text-gray-700 font-medium mb-2">{method.detail}</p>}
                   <p className="text-sm text-gray-500">{method.description}</p>
@@ -125,7 +125,7 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-[200px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <div className="bg-white text-[#011321] border border-red-200 rounded-2xl shadow-lg p-8 sm:p-10">
+            <div className="bg-white text-[#011321] border border-['#011321'] rounded-2xl shadow-lg p-8 sm:p-10">
               <h3 className="text-3xl font-bold text-gray-900 mb-8">
                 Send Us a{" "}
                 <span className="text-[#011321]">
@@ -148,7 +148,7 @@ const ContactPage = () => {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                        className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-[#011321] focus:border-transparent outline-none transition-all duration-300"
                         placeholder="Your Name"
                       />
                     </div>
@@ -167,7 +167,7 @@ const ContactPage = () => {
                         required
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                        className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-[#011321] focus:border-transparent outline-none transition-all duration-300"
                         placeholder="+91 98765 43210"
                       />
                     </div>
@@ -187,7 +187,7 @@ const ContactPage = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                      className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-[#011321] focus:border-transparent outline-none transition-all duration-300"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -203,7 +203,7 @@ const ContactPage = () => {
                       name="projectType"
                       value={formData.projectType}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                      className="w-full px-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-[#011321] focus:border-transparent outline-none transition-all duration-300"
                     >
                       <option value="">Select Project Type</option>
                       {projectTypes.map((type) => (
@@ -223,7 +223,7 @@ const ContactPage = () => {
                       name="budget"
                       value={formData.budget}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                      className="w-full px-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-[#011321] focus:border-transparent outline-none transition-all duration-300"
                     >
                       <option value="">Select Budget Range</option>
                       {budgetRanges.map((range) => (
@@ -247,7 +247,7 @@ const ContactPage = () => {
                       name="location"
                       value={formData.location}
                       onChange={handleChange}
-                      className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300"
+                      className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-[#011321] focus:border-transparent outline-none transition-all duration-300"
                       placeholder="e.g., Andheri West, Mumbai"
                     />
                   </div>
@@ -266,7 +266,7 @@ const ContactPage = () => {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition-all duration-300 resize-none"
+                      className="w-full pl-12 pr-4 py-3 border border-[#011321] rounded-xl focus:ring-2 focus:ring-[#011321] focus:border-transparent outline-none transition-all duration-300 resize-none"
                       placeholder="Tell us about your project requirements, timeline, and any specific needs..."
                     ></textarea>
                   </div>
@@ -276,7 +276,7 @@ const ContactPage = () => {
                   type="submit"
                   className="group w-full flex items-center justify-center space-x-3 py-4 px-6 
       bg-white text-[#011321] font-semibold rounded-xl 
-      border border-[#011321] hover:bg-red-50"
+      border border-[#011321] "
                 >
                   <Send className="w-5 h-5 text-[#011321] group-hover:translate-x-1 transition-transform duration-300" />
                   <span>Send Message</span>
@@ -306,7 +306,7 @@ const ContactPage = () => {
               </div>
 
               {/* Office Details Card */}
-              <div className="bg-white text-[#011321] rounded-2xl p-8 shadow-xl border border-red-100">
+              <div className="bg-white text-[#011321] rounded-2xl p-8 shadow-xl border border-['#011321']">
                 <h4 className="text-2xl font-bold mb-6">Visit Our Office</h4>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">

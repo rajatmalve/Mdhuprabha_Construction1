@@ -1,5 +1,5 @@
 import React from "react";
-import { Award, Users, Target, CheckCircle, Eye, Check,   } from "lucide-react";
+import { Award, Users, Target, CheckCircle, Eye, Check, } from "lucide-react";
 import Footer from "../components/Footer";
 
 const AboutPage = () => {
@@ -44,7 +44,7 @@ const AboutPage = () => {
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold leading-tight">
+          <h1 className="text-4xl sm:text-4xl md:text-6xl font-bold leading-tight">
             Building Trust,
             <br />
             <span className="text-white">Shaping The Future</span>

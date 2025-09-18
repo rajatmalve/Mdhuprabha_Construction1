@@ -46,7 +46,7 @@ const CsrActivity = () => {
 
         {/* Centered Content */}
         <div className="relative z-10 max-w-7xl mx-auto h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold leading-tight mb-4 sm:mb-6">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 sm:mb-6">
             <span className="text-white">
               Our Commitment
             </span>
