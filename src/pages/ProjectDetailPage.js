@@ -18,7 +18,6 @@ import ImageLightbox from "../components/ImageLightbox";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-// import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const ProjectDetailPage = () => {
@@ -27,9 +26,9 @@ const ProjectDetailPage = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const zoomInUp = {
-  hidden: { opacity: 0, y: 40, scale: 0.9 },
-  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
-};
+    hidden: { opacity: 0, y: 40, scale: 0.9 },
+    visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.8, ease: "easeOut" } },
+  };
 
   useEffect(() => {
     document.body.style.overflow = lightboxOpen ? "hidden" : "auto";
@@ -40,27 +39,7 @@ const ProjectDetailPage = () => {
 
   const allProjects = [...projectsData, ...currentProjectsData];
   const project = allProjects.find((p) => p.id === parseInt(id));
-
-  if (!project) {
-    return (
-      <div className="min-h-screen pt-28 bg-slate-100 flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-slate-900 mb-4">
-            Project Not Found
-          </h1>
-          <Link
-            to="/projects"
-            className="text-amber-600 hover:text-amber-700 font-semibold"
-          >
-            ← Back to Projects
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
   const isCurrentProject = project.status === "Ongoing";
-
   const getProjectBrochure = (projectTitle) => {
     const brochureMap = {
       "PRAJAKTA LA-MAISON": "/images/MP LA Maison_Brochure.pdf",
@@ -101,6 +80,30 @@ const ProjectDetailPage = () => {
           className="absolute inset-0 w-full h-full object-fill"
         />
         <div className="absolute inset-0 bg-black/30"></div>
+        <button
+          onClick={() => {
+            if (window.history.length > 2) {
+              navigate(-1); 
+            } else {
+              navigate("/projects"); 
+            }
+          }}
+          className="absolute top-4 left-4 sm:top-6 sm:left-6 z-20 
+               flex items-center space-x-2 text-white/80 hover:text-white 
+               transition-colors duration-300 bg-black/40 px-3 py-2 
+               rounded-full backdrop-blur-sm"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+          <span className="hidden sm:inline">Back</span>
+        </button>
 
         {/* Text Content */}
         <div className="relative z-10 flex flex-col items-start justify-end h-full text-left px-4 sm:px-6 lg:px-12 pb-8 sm:pb-12 lg:pb-16">
@@ -149,16 +152,13 @@ const ProjectDetailPage = () => {
           >
             Project Overview
           </motion.h2>
-
-
-          {/* Animated Description */}
           <motion.div
             className="flex flex-col items-center space-y-6"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={{
-              visible: { transition: { staggerChildren: 0.5 } }, // ek-ek line
+              visible: { transition: { staggerChildren: 0.5 } },
             }}
           >
             {project.fullDescription.split("\n").map((line, index) => (
@@ -176,123 +176,116 @@ const ProjectDetailPage = () => {
           </motion.div>
         </div>
       </section>
-      {/* Parallax - Project Information */}
-     <div
-  className="relative bg-fixed bg-center bg-cover py-16 sm:py-20 lg:py-24"
-  style={{ backgroundImage: `url(${project.image})` }}
->
-  <div className="absolute inset-0 bg-black/60"></div>
-
-  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-stretch">
-
-      {/* ✅ Left Box → Key Features */}
-      <motion.div
-        className="bg-white/20 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-8 shadow-xl w-full max-w-full overflow-hidden"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={zoomInUp}
+      <div
+        className="relative bg-fixed bg-center bg-cover py-16 sm:py-20 lg:py-24"
+        style={{ backgroundImage: `url(${project.image})` }}
       >
-        <h2 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-slate-200 mb-4 sm:mb-6 text-center">
-          Key Features
-        </h2>
+        <div className="absolute inset-0 bg-black/60"></div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-4">
-          {project.features.map((feature, index) => (
-            <div
-              key={index}
-              className="flex items-start space-x-3 p-3 sm:p-4 rounded-2xl transition-colors duration-300"
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-stretch">
+            <motion.div
+              className="bg-white/20 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-8 shadow-xl w-full max-w-full overflow-hidden"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.3 }}
+              variants={zoomInUp}
             >
-              <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 mt-0.5 flex-shrink-0 text-white" />
-              <span className="text-slate-200 text-sm sm:text-base leading-relaxed break-words hyphens-auto">
-                {feature}
-              </span>
-            </div>
-          ))}
-        </div>
-      </motion.div>
+              <h2 className="text-2xl sm:text-2xl lg:text-3xl font-bold text-slate-200 mb-4 sm:mb-6 text-center">
+                Key Features
+              </h2>
 
-      {/* ✅ Right Box → Project Information */}
-      <motion.div
-        className="bg-white/20 backdrop-blur-md rounded-3xl p-8 shadow-xl"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={zoomInUp}
-      >
-        <h3 className="text-2xl font-bold text-slate-200 mb-6 text-center">Project Information</h3>
-        <div className="space-y-6">
-          <div className="flex items-start space-x-4">
-            <MapPin className="w-6 h-6 text-slate-200 mt-1 flex-shrink-0" />
-            <div>
-              <div className="font-semibold text-slate-200">Location</div>
-              <div className="text-slate-200">{project.location}</div>
-            </div>
-          </div>
-          <div className="flex items-start space-x-4">
-            <Home className="w-6 h-6 text-slate-200 mt-1 flex-shrink-0" />
-            <div>
-              <div className="font-semibold text-slate-200">Type</div>
-              <div className="text-slate-200">{project.type}</div>
-            </div>
-          </div>
-          <div className="flex items-start space-x-4">
-            <Calendar className="w-6 h-6 text-slate-200 mt-1 flex-shrink-0" />
-            <div>
-              <div className="font-semibold text-slate-200">
-                {isCurrentProject ? "Ongoing" : "Completed"}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-4">
+                {project.features.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="flex items-start space-x-3 p-3 sm:p-4 rounded-2xl transition-colors duration-300"
+                  >
+                    <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 mt-0.5 flex-shrink-0 text-white" />
+                    <span className="text-slate-200 text-sm sm:text-base leading-relaxed break-words hyphens-auto">
+                      {feature}
+                    </span>
+                  </div>
+                ))}
               </div>
-              <div className="text-slate-200">
-                {isCurrentProject ? project.expectedCompletion : project.completionDate}
+            </motion.div>
+            <motion.div
+              className="bg-white/20 backdrop-blur-md rounded-3xl p-8 shadow-xl"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.3 }}
+              variants={zoomInUp}
+            >
+              <h3 className="text-2xl font-bold text-slate-200 mb-6 text-center">Project Information</h3>
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <MapPin className="w-6 h-6 text-slate-200 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-slate-200">Location</div>
+                    <div className="text-slate-200">{project.location}</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <Home className="w-6 h-6 text-slate-200 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-slate-200">Type</div>
+                    <div className="text-slate-200">{project.type}</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <Calendar className="w-6 h-6 text-slate-200 mt-1 flex-shrink-0" />
+                  <div>
+                    <div className="font-semibold text-slate-200">
+                      {isCurrentProject ? "Ongoing" : "Completed"}
+                    </div>
+                    <div className="text-slate-200">
+                      {isCurrentProject ? project.expectedCompletion : project.completionDate}
+                    </div>
+                  </div>
+                </div>
+                {project.architecture && (
+                  <div className="flex items-start space-x-4">
+                    <Award className="w-6 h-6 text-slate-200 mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-semibold text-slate-200">Architecture</div>
+                      <div className="text-slate-200">{project.architecture}</div>
+                    </div>
+                  </div>
+                )}
+                {project.vastuConsultant && (
+                  <div className="flex items-start space-x-4">
+                    <User className="w-6 h-6 text-slate-200 mt-1 flex-shrink-0" />
+                    <div>
+                      <div className="font-semibold text-slate-200">Vastu Consultant</div>
+                      <div className="text-slate-200">{project.vastuConsultant}</div>
+                    </div>
+                  </div>
+                )}
               </div>
-            </div>
-          </div>
-          {project.architecture && (
-            <div className="flex items-start space-x-4">
-              <Award className="w-6 h-6 text-slate-200 mt-1 flex-shrink-0" />
-              <div>
-                <div className="font-semibold text-slate-200">Architecture</div>
-                <div className="text-slate-200">{project.architecture}</div>
-              </div>
-            </div>
-          )}
-          {project.vastuConsultant && (
-            <div className="flex items-start space-x-4">
-              <User className="w-6 h-6 text-slate-200 mt-1 flex-shrink-0" />
-              <div>
-                <div className="font-semibold text-slate-200">Vastu Consultant</div>
-                <div className="text-slate-200">{project.vastuConsultant}</div>
-              </div>
-            </div>
-          )}
-        </div>
 
-        {/* CTA Button */}
-        <div className="mt-8 pt-6 border-t border-slate-200">
-          <a
-            href={getProjectBrochure(project.title)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative w-full py-4 px-6 font-bold rounded-2xl 
+              {/* CTA Button */}
+              <div className="mt-8 pt-6 border-t border-slate-200">
+                <a
+                  href={getProjectBrochure(project.title)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative w-full py-4 px-6 font-bold rounded-2xl 
               overflow-hidden transition-all duration-500 transform hover:scale-105 
               flex items-center justify-center space-x-2"
-          >
-            <div className="absolute inset-0 bg-[#011321] group-hover:bg-[#022d57] transition-all duration-500"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent 
+                >
+                  <div className="absolute inset-0 bg-[#011321] group-hover:bg-[#022d57] transition-all duration-500"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent 
               skew-x-12 -translate-x-full group-hover:translate-x-full 
               transition-transform duration-1000"></div>
-            <div className="absolute -inset-1 bg-[#011321] rounded-2xl blur opacity-30 
+                  <div className="absolute -inset-1 bg-[#011321] rounded-2xl blur opacity-30 
               group-hover:opacity-60 transition-opacity duration-500"></div>
-            <span className="relative z-10 text-white">Download E-Brochure</span>
-          </a>
+                  <span className="relative z-10 text-white">Download E-Brochure</span>
+                </a>
+              </div>
+            </motion.div>
+          </div>
         </div>
-      </motion.div>
-    </div>
-  </div>
-</div>
-
-
+      </div>
       {/* Project Gallery */}
       <div className="bg-white rounded-3xl shadow-xl p-8 border border-slate-200/50">
         {/* Centered Heading */}
